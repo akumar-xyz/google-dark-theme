@@ -1,4 +1,4 @@
-@-moz-document regexp("^(https?)://(www|ogs|translate|policies|accounts|myaccount|adssettings|posts|artsandculture|about.artsandculture|docs|contacts|calendar|meet|tasks|keep|workspace).google.*") {
+@-moz-document regexp("^(https?)://(www|ogs|translate|policies|accounts|myaccount|adssettings|posts|artsandculture|about.artsandculture|docs|contacts|calendar|meet|tasks|keep|workspace|photos).google.*") {
 :root {
 	--bg-dark: #202124;
 	--bg-dark-2: #212428;
@@ -34,6 +34,7 @@
 	--bg-grey-4: #5d5d5d;
 	--bg-grey-5: #595959;
 	--bg-grey-6: #585858;
+	--bg-grey-7: #5d6064;
 	--bg-dark-yellow: #3e3c37;
 	--bg-dark-yellow-2: #332f22;
 	--bg-dark-green: #262f28;
@@ -81,6 +82,7 @@
 	--bg-transparent-20: rgba(255, 255 ,255, .18);
 	--bg-transparent-21: rgba(187, 187, 187, .4);
 	--bg-transparent-22: rgba(204, 210, 215, .039);
+	--bg-transparent-23: rgba(255, 255, 255, .04);
 	--bg-transparent-dark: #202124b8;
 	--bg-transparent-dark-2: rgba(32, 33, 36, .65);
 	--bg-transparent-dark-3: rgba(53, 53, 53, .8);
@@ -95,6 +97,8 @@
 	--bg-transparent-dark-12: #4a4b4d80;
 	--bg-transparent-dark-13: rgba(204, 210, 215, .039);
 	--bg-transparent-dark-14: rgba(32, 33, 36, .961);
+	--bg-transparent-dark-15: rgba(32, 33, 36, .70);
+	--bg-transparent-dark-16: rgba(56, 59, 64, .8);
 	--bg-full-transparent: #0000;
 	--bg-dark-gradient: -webkit-gradient(linear,left top,left bottom,from(#28292a),to(#28292a));
 	--bg-dark-gradient-2: linear-gradient(#282828,#212228) #282828;
@@ -258,6 +262,8 @@
 	--box-shadow-15: 5px 0 0 #202124, -5px 0 0 #202124;
 	--box-shadow-16: -10px 0 10px 0 #383b40;
 	--box-shadow-17: 0 1px 0 #4a4a4a;
+	--box-shadow-18: 0 -5px 0 0 #202124, 0px 1px 1px 0px rgb(65 69 73 / 30%), 0px 1px 3px 1px rgb(65 69 73 / 15%);
+	--box-shadow-19: 0 0 0 1px #4a4b4f;
 	--box-shadow-inset: inset 0 1px 2px 0 rgba(255, 255, 255, .1);
 	--box-shadow-inset-2: inset 1px 0 0 #4a4b4f, inset -1px 0 0 #4a4b4f, 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
 	--box-shadow-inset-3: inset 0 0 0 1px #4a4b4f;
@@ -5990,7 +5996,7 @@ body[jsaction="wINJic:.CLIENT"] {
 .quantumWizMenuPapermenuMenu, .picker.modal-dialog-bg, .Y7Vyje, .docssharedWizOmnilistItemRoot, .eizQhe-ObfsIf-mJRMzd-PFprWc, .appsMaterialWizDialogPaperdialogEl, .freebirdCommonSidebarSidebar, .freebirdFormeditorViewColorpickerEl, .UytvX, .appsMaterialWizButtonPaperbuttonProtected, .zoa7Ve, .k831u, .tuQOVc, .FGgXHc, input.HhCfbe {
 	background-color: var(--bg-dark);
 }
-.freebirdFormeditorViewHeaderDocTitle .exportInput, .freebirdFormeditorViewHeaderTitleSizer, .m2 .freebirdFormeditorViewPageTitleInput .exportTextarea, .m2 .freebirdFormeditorViewPageDescriptionInput .exportTextarea, .m2 .freebirdFormeditorViewPageMinimizedDescription, .m2 .freebirdFormeditorViewItemInactive .freebirdFormeditorViewItemTitleInput .exportPlaceholder, .m2 .freebirdFormeditorViewQuestionFooterToggleLabel, .m2 .freebirdFormeditorViewOmnilistItemValueInput .exportInput, .m2 .freebirdFormeditorViewOmnilistItemValuePlaceholder, .m2 .freebirdFormeditorViewOmnilistMorselTypeIndicator, .m2 .freebirdFormeditorViewOmnilistGhostitemInput .exportInput, .m2 .freebirdFormeditorViewOmnilistGhostitemOtherDivider, .m2 .freebirdFormeditorViewOmnilistGhostitemInputPlaceholder, .m2 .freebirdFormeditorViewItemHelpTextInput .exportTextarea, .freebirdFormeditorViewResponsesResponsesCount, .m2 .freebirdFormeditorDialogLinkformLabelText, .m2 .freebirdFormeditorDialogLinkformTitleInput .exportInput, .m2 .freebirdCommonAnalyticsNoResponsesLabel, .m2 .freebirdAnalyticsViewQuestionTitle, .m2 .freebirdAnalyticsViewQuestionResponsesCount, .freebirdCommonSidebarHeader, .freebirdFormeditorThemeWidgetsHeading, .freebirdFormviewerComponentsQuestionTimeTimeInput .exportInput, .freebirdFormviewerComponentsQuestionBaseDescription, .m2 .freebirdFormeditorViewQuestionBodyScalebodyLabelInput .exportTextarea, .m2 .freebirdFormeditorViewQuestionBodyScalebodyLabelInput .exportInput, .m2 .freebirdFormeditorViewQuestionBodyScalebodyBoundDisplay, .m2 .freebirdFormeditorViewQuestionBodyScalebodySelectDivider, .freebirdFormviewerViewItemsSectionheaderTitle, .m2 .freebirdFormviewerViewItemsItemItemTitle, .m2 .freebirdFormeditorViewPageGoToPageSelectLabel, .m2 .freebirdFormeditorQuestionimportCheckbox, .m2 .freebirdFormeditorQuestionimportTitle, .m2 .freebirdFormviewerComponentsQuestionTimeSep, .WbUJNb:hover .VfPpkd-jY41G-V67aGc, .WbUJNb:active .VfPpkd-jY41G-V67aGc, .WbUJNb:not(.UMrnmb-AHmuwe-L6cTce):focus .VfPpkd-jY41G-V67aGc, .WbUJNb.VfPpkd-ksKsZd-mWPk3d-OWXEXe-AHe6Kc-XpnDCe .VfPpkd-jY41G-V67aGc, .lvXqQc, .H0zpEd {
+.freebirdFormeditorViewHeaderDocTitle .exportInput, .freebirdFormeditorViewHeaderTitleSizer, .m2 .freebirdFormeditorViewPageTitleInput .exportTextarea, .m2 .freebirdFormeditorViewPageDescriptionInput .exportTextarea, .m2 .freebirdFormeditorViewPageMinimizedDescription, .m2 .freebirdFormeditorViewItemInactive .freebirdFormeditorViewItemTitleInput .exportPlaceholder, .m2 .freebirdFormeditorViewQuestionFooterToggleLabel, .m2 .freebirdFormeditorViewOmnilistItemValueInput .exportInput, .m2 .freebirdFormeditorViewOmnilistItemValuePlaceholder, .m2 .freebirdFormeditorViewOmnilistMorselTypeIndicator, .m2 .freebirdFormeditorViewOmnilistGhostitemInput .exportInput, .m2 .freebirdFormeditorViewOmnilistGhostitemOtherDivider, .m2 .freebirdFormeditorViewOmnilistGhostitemInputPlaceholder, .m2 .freebirdFormeditorViewItemHelpTextInput .exportTextarea, .freebirdFormeditorViewResponsesResponsesCount, .m2 .freebirdFormeditorDialogLinkformLabelText, .m2 .freebirdFormeditorDialogLinkformTitleInput .exportInput, .m2 .freebirdCommonAnalyticsNoResponsesLabel, .m2 .freebirdAnalyticsViewQuestionTitle, .m2 .freebirdAnalyticsViewQuestionResponsesCount, .freebirdCommonSidebarHeader, .freebirdFormeditorThemeWidgetsHeading, .freebirdFormviewerComponentsQuestionTimeTimeInput .exportInput, .freebirdFormviewerComponentsQuestionBaseDescription, .m2 .freebirdFormeditorViewQuestionBodyScalebodyLabelInput .exportTextarea, .m2 .freebirdFormeditorViewQuestionBodyScalebodyLabelInput .exportInput, .m2 .freebirdFormeditorViewQuestionBodyScalebodyBoundDisplay, .m2 .freebirdFormeditorViewQuestionBodyScalebodySelectDivider, .freebirdFormviewerViewItemsSectionheaderTitle, .m2 .freebirdFormviewerViewItemsItemItemTitle, .m2 .freebirdFormeditorViewPageGoToPageSelectLabel, .m2 .freebirdFormeditorQuestionimportCheckbox, .m2 .freebirdFormeditorQuestionimportTitle, .m2 .freebirdFormviewerComponentsQuestionTimeSep, .WbUJNb:hover .VfPpkd-jY41G-V67aGc, .WbUJNb:active .VfPpkd-jY41G-V67aGc, .WbUJNb:not(.UMrnmb-AHmuwe-L6cTce):focus .VfPpkd-jY41G-V67aGc, .WbUJNb.VfPpkd-ksKsZd-mWPk3d-OWXEXe-AHe6Kc-XpnDCe .VfPpkd-jY41G-V67aGc, .lvXqQc, .H0zpEd, .SWVz1b {
 	color: var(--white-3);
 }
 .freebirdFormeditorViewPageHeaderCard, .m2 .freebirdFormeditorViewItemTypechooserTypeChooserSelect, .m2 .freebirdFormeditorViewQuestionFooterFooterRow, .m2 .freebirdFormeditorViewQuestionFooterFooterSeparator, .eizQhe-ObfsIf-jXK9ad.eizQhe-ObfsIf-yEEHq {
@@ -6118,7 +6124,7 @@ body[jsaction="wINJic:.CLIENT"] {
 	color: var(--white-3);
 	border-color: var(--border-1);
 }
-.freebirdFormeditorSidebarThemeSection, .freebirdFormeditorThemeWidgetsFontSelect.freebirdFormeditorThemeWidgetsFontSelect, .freebirdFormviewerViewHeaderCard, .m2 .freebirdFormeditorQuestionimportHeader, .smart-journey-help-panel .help-panel-feedback__option, .material2 .help-panel-card:not(:last-child):after {
+.freebirdFormeditorSidebarThemeSection, .freebirdFormeditorThemeWidgetsFontSelect.freebirdFormeditorThemeWidgetsFontSelect, .freebirdFormviewerViewHeaderCard, .m2 .freebirdFormeditorQuestionimportHeader, .smart-journey-help-panel .help-panel-feedback__option, .material2 .help-panel-card:not(:last-child):after, .uORMl {
 	border-color: var(--border-1);
 }
 [class="freebirdFormeditorViewColorpickerSwatchColor freebirdFormeditorViewColorpickerLightIcon"][style="background-color:#EEEEEE;"] {
@@ -6179,10 +6185,10 @@ span.ee-qj-sl.a-b-c.ee-Bj-Qc-ze {
 .DqGZed, .N6Tgib, .kYFr3d, .dsdQzc, .pGxpHc {
 	border-color: var(--bg-dark-blue-2);
 }
-.tScaie, .uHIcTe, .WbUJNb .VfPpkd-jY41G-V67aGc, .Lsmfef, .OlR1df, div .LbpK6d, .uFNHRc, .jlpDMe, .ca2xib, .FX4Q3d {
+.tScaie, .uHIcTe, .WbUJNb .VfPpkd-jY41G-V67aGc, .Lsmfef, .OlR1df, div .LbpK6d, .uFNHRc, .jlpDMe, .ca2xib, .FX4Q3d, .Cvr4mf {
 	color: var(--grey-1);
 }
-.Himm7d, .SZKwg, .i08tlf, .F4qf5, .WRhLx, .jyBTLc, .k2xJdd, .qhML4e, .C5Vtsf, .xTYH9b .MocG8c {
+.Himm7d, .SZKwg, .i08tlf, .F4qf5, .WRhLx, .jyBTLc, .k2xJdd, .qhML4e, .C5Vtsf, .xTYH9b .MocG8c, .Ag1myf {
 	color: var(--white-4);
 }
 .FMI9qf {
@@ -6288,23 +6294,23 @@ span.ee-qj-sl.a-b-c.ee-Bj-Qc-ze {
 .material2 .help-panel-header__back-button, .material2 .help-panel-header__close-button, .help-panel-header__search-button {
 	fill: var(--white-4);
 }
-.material2 .help-panel-header__title, .smart-journey-help-panel .help-panel-card__title, .NiKRG, .lXfzDe, .VPQpCe, .A1P7T .VF2XFd, .NgRtZ, .Jq0aCd, .Af21Ie, .z8gr9e {
+.material2 .help-panel-header__title, .smart-journey-help-panel .help-panel-card__title, .NiKRG, .lXfzDe, .VPQpCe, .A1P7T .VF2XFd, .NgRtZ, .Jq0aCd, .Af21Ie, .z8gr9e, .ZEmz6b, .xA0gfb {
 	color: var(--white-4);
 }
-.material2 .help-panel-header__search-input, .material2 .help-panel-search-result__text, .hcfe h1, .hcfe h2, .hcfe h3, .hcfe h4, .hcfe h5, .as .title, .iD2gKb, .f4Tqvf, .vad0sc, .lqmQld, .bDGIze, .vbr5i, .c8d6zd, .FpiMuf {
+.material2 .help-panel-header__search-input, .material2 .help-panel-search-result__text, .hcfe h1, .hcfe h2, .hcfe h3, .hcfe h4, .hcfe h5, .as .title, .iD2gKb, .f4Tqvf, .vad0sc, .lqmQld, .bDGIze, .vbr5i, .c8d6zd, .FpiMuf, .v8h7Rd {
 	color: var(--white-3);
 }
 .hcfe {
 	background-color: var(--bg-dark);
 	color: var(--white-4);
 }
-.hcfe .context-selector-menu, .context-selector-tabs a, .context-selector-tabs a:visited, .context-selector-tabs .goog-flat-menu-button-caption, .RPl4Nb, .N3Klwb {
+.hcfe .context-selector-menu, .context-selector-tabs a, .context-selector-tabs a:visited, .context-selector-tabs .goog-flat-menu-button-caption, .RPl4Nb, .N3Klwb, .JuHOOc {
 	color: var(--grey-1);
 }
 .hcfe .context-selector-tabs, .cc .zippy, .cc .zippy-last, .sub-article-container.shaded, .d8RIFd, .KzUZ2b, .R9BwU {
 	border-color: var(--border-1);
 }
-.cc .zippy-content:before {
+.cc .zippy-content:before, .Pk50Ic {
 	background-color: var(--border-1);
 }
 .as .as-button, .sub-article-container__open-external {
@@ -6411,7 +6417,196 @@ span.ee-qj-sl.a-b-c.ee-Bj-Qc-ze {
 .usJj9c .st, .Y3iVZd {
 	color: var(--lightblue);
 }
-[jsname="Lfzded"] div div:nth-of-type(2) a g-img {
+[jsname="Lfzded"] div div:nth-of-type(2) a g-img, .NXVOsd, .bR1LEf {
 	filter: var(--invert-3);
+}
+.xoqcGf .QtDoYb, .eReC4e.FbgB9, .BZXMjd, .TTlRAe:not(:last-child) .e0CX4d, .X0f2Ie, .QfyHQc, .lnQi4, .w240vc, .l9dCke, .qEdrrc, .ajQY2:hover, .aMW3Dc {
+	border-color: var(--border-1);
+}
+.QtDoYb, .wDSX5e, .eReC4e, .Cv8Rjc, .ghp-header-drag-only-loading, .o2T7Xc .MJvped, .xoqcGf.DKHcHb .Aul2T, .xFGsVc .Aul2T:not(.RDPZE), .CiYUUe, .v3Iwj88yxmA__leaderboard, .hMYuh, .LyicNe, .zDBTmf>div, .NIYF4b, .wPAPDb .tA1iOd, .B5cMMd, .fgfPVd, .MdN6ze, .dhgHyf {
+	background-color: var(--bg-dark);
+}
+.EIug8e, .ZSB8G, .mJ7Vpd .WNmljc, .gyqWff, .hwDBSe, .BZXMjd .chfDde, .UKzvpf .YvjW7c, .UKzvpf .oXxEid, .E9F9ef, .bFJFBf, .IWg69d, .P0eWkf, .SxIwif, .frneod, .kKG0Qd, .rN6Qmb, .eT2rxc, .Ecvatc, .FtiXNe, .FJuSM, .egWY1b, .QmUPuf, .niePN, .Afhsje, .ycKFmf, .HrGXnb, .dVHaXd, .zcNkt, .WMnOad {
+	color: var(--grey-1);
+}
+.G6iPcb .JUQOtc, .TTlRAe .oXxEid, .U9bOZe .JUQOtc, .p7lsb .txMZRd .JUQOtc {
+	fill: var(--grey-1);
+}
+.Aul2T, .wDSX5e .DOAbib:hover {
+	background-color: var(--bg-dark-2);
+}
+.wDSX5e .DOAbib.ixImeb:hover {
+	background-color: var(--bg-dark-blue-1);
+}
+.wDSX5e .ixImeb, .yVr0Vb, .notification.notification--dismissable, .OGNeob, .p137Zd, .rtIMgb.WjVZdb {
+	background-color: var(--bg-dark-blue-2);
+}
+.mJ7Vpd .dal1Fd:hover {
+	background-color: var(--bg-transparent-16);
+}
+.G7ubtf, .RLo1Hf, .yk5vcd, .BZXMjd .MrqLTc, .UKzvpf .ASWyTc, .TTlRAe .oevqcc, .pPZ24, .IGdgBf, .FkWMmd, .sRtKQc, .avzd9e, .LAL5ie .ZAGvjd, .bCPWJc, .FXE2Ie.kOygNb .f4aBC, .FXE2Ie.QWDSNc .f4aBC, .QeP71d {
+	color: var(--white-4);
+}
+.DOAbib .JUQOtc, .o7Osof .Ce1Y1c {
+	color: var(--grey-1);
+	fill: var(--grey-1);
+}
+.ztTj8d, .UKzvpf:not(:last-child) .e0CX4d:after, .Ud9NFb .DFG23b, .swa7If, .IBP7ye {
+	background-color: var(--border-1);
+}
+.DNLJJe, .HrGXnb, .KALWyc {
+	background-color: var(--bg-transparent-dark-15);
+}
+.OgirMe, .tzFvIf, .nfTM4e, .mSbCD, .qJ3sed, .Qizfvf, .obNJBf, .QWd4Mb, .imso_mh_s__wt-pen-sc, .zCubwf, .Q9aKTe, .xvKqge, .cL5NYb {
+	color: var(--white-3);
+}
+.wDSX5e .wesoxe, .f8NrLc, .C96I0d, .ARSUIf, .s4MBmb, .o7Osof.BvuOLd .g5m1dc, .BrvAFe {
+	color: var(--grey-5);
+}
+.imso_mh_s__psn-sc, .HA4Wwf, .sQjzEd, .R1ZKVe, .cM009b, .SXRxaf, .ayRjaf {
+	color: var(--grey-2);
+}
+.warning-bar .dismiss-link:before, .notification .dismiss-link:before, [src="//lh3.googleusercontent.com/kv95JYEd4XkMhqx97VprswytXI_KaEFnzRQLH1CHBrFf_3T9MtzjIvE4lbITMaHKMBow=w18"], [src="//lh3.googleusercontent.com/3_l97rr0GvhSP2XV5OoCkV2ZDTIisAOczrSdzNCBxhIKWrjXjHucxNwocghoUa39gw=w36-h36"] {
+	filter: var(--invert-1-hue);
+}
+c-wiz.uGCjIb[style="background: white;"] {
+	background-color: var(--bg-dark) !important;
+}
+.IzuY1c .ZWZruf {
+	background-color: var(--bg-transparent-23);
+}
+.R4HkWb .orgUxc {
+	fill: var(--white-54);
+}
+.bButFf {
+	background-color: var(--bg-transparent-dark-6);
+	color: var(--white-4);
+}
+.CiYUUe .JUQOtc {
+	fill: var(--white-87);
+}
+.GVj7ae, .nGqo8b, .gx824b {
+	coloR: var(--white-87);
+}
+.cI2tlc .tWfTvb .jBmls {
+	box-shadow: var(--box-shadow-18);
+}
+.vI9sif {
+	background-color: var(--bg-transparent-dark-16);
+}
+.qJnhT, .LpN4Jc {
+	background-color: var(--bg-dark-5);
+	border-color: var(--border-6);
+}
+.MSylQd, .LpN4Jc.oqTEOb {
+	border-color: var(--border-6);
+}
+.Oo683d {
+	color: var(--white-4);
+	border-color: var(--border-32);
+}
+.zDBTmf {
+	box-shadow: var(--box-shadow-19);
+}
+.wT7Fwf {
+	border-bottom-color: var(--border-11);
+}
+.d2nddb .JUQOtc {
+	fill: var(--grey-5);
+}
+.FGIAeb, .oJXnTc {
+	border-color: var(--bg-dark);
+}
+.Les8Md, .l8aFYc .QtDoYb, .l8aFYc.QtDoYb, .l8aFYc .NRbSyd, .rtIMgb.WjVZdb.N4EBib{
+	background-color: var(--bg-dark-5);
+}
+.Rwoxjc, .M9qPhf, .q20Fs, .UNoCVe, .Yyy4Hc, .wC6Qxe, .dhzwN, .WLLPqb, .R5XrWc {
+	color: var(--white-3);
+}
+.UacmFd, .KSYHh, .wPAPDb, .sSmC1b, .qEdrrc, .Bofz6, .ZjEvzc, .KxwMuc, .hUsHhf, .IcLQae, .J2j0Cc.uH98yc, textarea.ajQY2.v3oaBb, .KWdEHf.QtDoYb, .hXm5q, .BUzZed, .qYQJEe, .WLLPqb, .hi7xwe, .Nehgve, .aHPraf, .NLiuKe, textarea.ajQY2, .KG4Qee, .RODueb, .Aul2T.qs41qe {
+	background-color: var(--bg-dark);
+}
+.Rwoxjc .JUQOtc, .so14xf .JUQOtc {
+	fill: var(--grey-1);
+}
+.rPu1qc, .TjYOR, .i5AMKc, .wTeskd, .IrANcf, .Q53E8c, .I7yCae, .nF9lHc, .VrbXbf, .kzRzlf, .BQKtac, .Y49mT, .o7Osof .HhLEze, .vB8bIb, .hHNMv, .SjYFRc, .goTwYb, .mplJGb, .pRVpNc, .qjYJaf, .eFLo1d, .gDfXWb {
+	color: var(--grey-1);
+}
+.Ebw6d, .H9eFkc, .hPriQc, .ex6r4d, .J2j0Cc, .iOokGb, .BnQsec, .qYQJEe, .Fmedib, .yERkJe {
+	color: var(--white-4);
+}
+span.VfPpkd-kBDsod svg circle[fill="#FFF"] {
+	fill: var(--bg-dark);
+}
+.P9g29d.N2RpBe .g0N6M {
+	background-color: var(--bg-grey-7);
+}
+.JKHkQc {
+	border-color: var(--bg-grey-7);
+}
+.YI2CVc:hover {
+	background-color: var(--bg-transparent-16);
+}
+.zY6fPd .JUQOtc {
+	fill: var(--white-54);
+}
+.DcsHOb {
+	border-coloR: var(--border-1);
+	color: var(--white-4);
+}
+.iuBRIc {
+	color: var(--grey-1);
+	border-color: var(--border-1);
+}
+.mboUdc, .lDDKpd .ajQY2 {
+	border-color: var(--border-1);
+}
+.RunE3b {
+	background-color: var(--bg-dark);
+	color: var(--grey-5);
+	fill: var(--grey-5);
+}
+.k92Qpc:not(.sMVRZe) .hRIVxb.u3bW4e>.ZFr60d, .k92Qpc:not(.sMVRZe) .hRIVxb:hover>.ZFr60d {
+	background-color: var(--bg-transparent-18);
+}
+.qM0aWd::-webkit-scrollbar-thumb {
+	background: var(--bg-dark-20);
+	border-color: var(--bg-dark);
+}
+html[style="overflow: hidden;"] body[dir="ltr"][ng-csp][style="overflow: hidden;"] {
+	background-color: var(--bg-full-transparent) !important;
+}
+.MSeqDf {
+	border-color: var(--border-1);
+	fill: var(--grey-1);
+}
+.QT8Hbf:hover {
+	background-color: var(--border-1);
+}
+.QT8Hbf {
+	background-color: var(--bg-dark);
+	border-color: var(--border-1);
+}
+.lDDKpd .hi7xwe .Fmedib::after, .lDDKpd .hi7xwe .biyFUd::after {
+	border-color: var(--border-11);
+}
+.of4ZEb {
+	fill: var(--white-87);
+}
+.qjYJaf svg circle[fill="#FFF"] {
+	fill: var(--bg-dark);
+}
+.LAL5ie .yNVtPc {
+	-webkit-text-fill-color: var(--grey-4);
+}
+.YAIXpe .jBmls {
+	box-shadow: var(--box-shadow-18);
+}
+.rWgZgf {
+	background-color: var(--bg-dark);
+	border-color: var(--border-11);
+}
+.YWcUP .JUQOtc {
+	fill: var(--white-4);
 }
 }
