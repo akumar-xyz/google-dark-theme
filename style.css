@@ -1,4 +1,4 @@
-@-moz-document regexp("^(https?)://(www|ogs|translate|policies|accounts|myaccount|adssettings|posts|artsandculture|about.artsandculture|docs|contacts|calendar|meet|tasks|keep|workspace|photos|play|ads|drive|classroom).google.*") {
+@-moz-document regexp("^(https?)://(www|ogs|translate|policies|accounts|myaccount|adssettings|posts|artsandculture|about.artsandculture|docs|contacts|calendar|meet|tasks|keep|workspace|photos|play|ads|drive|classroom|jamboard).google.*") {
 :root {
 	--bg-dark: #202124;
 	--bg-dark-2: #212428;
@@ -93,6 +93,7 @@
 	--bg-transparent-24: rgba(204, 210, 215, .078);
 	--bg-transparent-25: rgba(204, 210, 215, .08);
 	--bg-transparent-26: rgba(175, 179, 185, .039);
+	--bg-transparent-27: rgba(175, 179, 185, .04);
 	--bg-transparent-dark: #202124b8;
 	--bg-transparent-dark-2: rgba(32, 33, 36, .65);
 	--bg-transparent-dark-3: rgba(53, 53, 53, .8);
@@ -114,6 +115,8 @@
 	--bg-transparent-dark-19: rgba(48, 48, 48, .75);
 	--bg-transparent-dark-20: rgba(32, 33, 36, .05);
 	--bg-transparent-dark-21: rgba(40, 41, 47, .38);
+	--bg-transparent-dark-22: rgba(32, 33, 36, .08);
+	--bg-transparent-dark-23: rgba(56, 59, 64, .35);
 	--bg-full-transparent: #0000;
 	--bg-dark-gradient: -webkit-gradient(linear,left top,left bottom,from(#28292a),to(#28292a));
 	--bg-dark-gradient-2: linear-gradient(#282828,#212228) #282828;
@@ -299,6 +302,7 @@
 	--border-60: #5d5f62;
 	--border-61: #484848;
 	--border-yellow: #403a28;
+	--border-blue: #7a889f;
 	--box-shadow-1: 0 1px 6px rgba(208, 209, 212, 28%);
 	--box-shadow-2: 0 2px 12px 0 rgb(155 155 155 / 30%);
 	--box-shadow-3: 0 2px 8px 1px rgba(176, 165, 185, 24%);
@@ -338,6 +342,8 @@
 	--box-shadow-inset-10: inset 0 0 0 1px rgb(0 0 0 / 27%), inset 0 2px 0 #464646;
 	--box-shadow-inset-11: inset 0 0 0 20px rgba(255, 255, 255, .12);
 	--box-shadow-inset-12: inset 0 -1px 0 0 rgba(255, 255, 255, .12);
+	--box-shadow-inset-13: 0px 2px 10px rgb(0 0 0 / 30%), 0px 0px 1px rgb(0 0 0 / 10%), inset 0px 1px 0px #20212440, inset 0px -1px 0px rgb(0 0 0 / 15%);
+	--box-shadow-inset-14: rgba(32, 33, 36, .9) 0px 1px 0px inset, rgb(0 0 0 / 3%) 0px -1px 0px inset, rgb(0 0 0 / 20%) 0px 1px 3px;
 	--invert-1-hue: invert(1) hue-rotate(180deg);
 	--invert-1: invert(1);
 	--invert-2: invert(90.4%) sepia(11%) saturate(382%) hue-rotate(187deg) brightness(98%) contrast(92%);
@@ -382,6 +388,7 @@
 	--mdc-theme-text-primary-on-background: var(--white-87);
 	--mdc-checkbox-unchecked-color: var(--grey-1);
 	--mdc-checkbox-ink-color: var(--bg-dark);
+	--mdc-theme-surface: var(--bg-dark);
 	--title-color: var(--white-4);
 	--subtitle-color: rgba(255, 255, 255, .502);
 	--subhead-color: rgba(255, 255, 255, .8);
@@ -409,6 +416,7 @@
 	--gm-neutral-outline-color: var(--border-1);
 	--gm-theme-color-highlight: var(--bg-dark-blue-2);
 	--gm-text-color--on-theme-background: var(--white-1);
+	--gm-neutraltextbutton-disabled-ink-color: rgba(204, 210, 215, .38);
 	--icon-circle-stroke: var(--bg-dark);
     --icon-circle-x-fill: var(--bg-dark);
 }
@@ -818,8 +826,11 @@ a, a.fl:link, .fl a, .gl a:link, .WpKAof {
 .U5K4re {
 	border-bottom-color: var(--bg-dark-6);
 }
-.w8qArf .fl, [style="color:#202124"] {
+.w8qArf .fl {
 	color: var(--white-2) !important;
+}
+[style="color:#202124"] {
+	color: var(--white-3) !important;
 }
 .LrzXr {
 	color: var(--white-2);
@@ -8281,7 +8292,255 @@ iframe[id="Zh7gQcIframe"][name="Zh7gQcIframe"] {
 .FzCfme, .hMJ0yc {
 	color: var(--grey-2);
 }
-.jRdbpf .lGvmZc {
+.jRdbpf .lGvmZc, #jam-bar.jam-bar-material, .jam-frame-container {
 	border-color: var(--border-1);
+}
+.igMPle.F9PbJd {
+	background-color: var(--bg-dark-blue-2);
+}
+.aAU, .jam-list-material .jam-list-header, #jam-body.jam-body-material, .jam-list-material .jam-list-create-jam-button, .jam-menu-material, .jam-bar, .jam-horizontal-toolbar.goog-toolbar, .ndlgBc, .jam-jamlist-item-metadata {
+	background-color: var(--bg-dark);
+}
+.eQ47Fc {
+	background-color: var(--bg-dark);
+	border-color: var(--border-1);
+	color: var(--white-4);
+}
+.AGLhIc:hover, .eQ47Fc:hover, .IK8sod:hover {
+	background-color: var(--bg-hover-1);
+}
+.AGLhIc {
+	border-color: var(--border-1);
+	color: var(--grey-2);
+}
+.IK8sod {
+	background-color: var(--bg-dark);
+	border-color: var(--border-1);
+	color: var(--grey-2);
+}
+.jam-list-material .jam-list-header-title, .jam-body-material .jam-body-noitems-heading, .jam-body-material .jam-body-noitems-body {
+	color: var(--grey-1);
+}
+.jam-list-material .jam-list-create-jam-button:hover {
+	background-color: var(--bg-hover-1);
+}
+.jam-list-create-jam-button {
+	background-color: var(--bg-dark);
+	box-shadow: var(--box-shadow-inset-13);
+}
+.jam-list-create-jam-button:hover, .jam-list-create-jam-button:focus, .jam-list-create-jam-button:active {
+	box-shadow: var(--box-shadow-inset-13);
+}
+.jam-list-material .jam-list-create-jam-button:focus, .jam-list-material .jam-list-create-jam-button:active {
+	background-color: var(--bg-active-1);
+}
+.jam-flatbutton-overlay {
+	background-color: var(--white-1);
+}
+.jam-flatbutton-content, .jam-flatbutton-select-dropdown {
+	color: var(--grey-1);
+	fill: var(--grey-1);
+}
+.jam-menu-material .goog-menuitem.apps-menuitem .goog-menuitem-label {
+	color: var(--white-3);
+}
+.jam-flatbutton-active .jam-flatbutton-content, .jam-flatbutton-open .jam-flatbutton-content, .jam-flatbutton-active .jam-flatbutton-select-dropdown, .jam-flatbutton-open .jam-flatbutton-select-dropdown {
+	color: var(--white-3);
+	fill: var(--white-3);
+}
+.jam-icon-overflow, .jam-icon-arrow-right-black, .jam-icon-arrow-left-black, .jam-icon-zoom-in, .jam-icon-redo, .jam-icon-undo, .jam-vertical-toolbar .jam-action-toolbar-menu-button-selected .jam-action-toolbar-menu-button-dropdown, .jam-popup-menu .docs-icon-img-container, .goog-menuitem-icon .docs-icon-img-container, .jam-icon-arrow-right, .jam-icon-arrow-left, .jam-menu-material .goog-menuitem.apps-menuitem.goog-option-selected .goog-menuitem-checkbox {
+	filter: var(--invert-1-hue);
+}
+.jam-bar-rename-button {
+	color: var(--white-1);
+}
+.jam-collapsed-presence-bar .text, .jam-vertical-toolbar {
+	color: var(--white-4);
+}
+[fill="#80868B"] {
+	fill: var(--grey-5);
+}
+[stroke="#3C4043"] {
+	stroke: var(--white-4);
+}
+.jam-vertical-toolbar {
+	background-color: var(--bg-dark);
+	border-color: var(--border-1);
+}
+#drawingButton:not(.jam-action-toolbar-menu-button-selected) .jam-rounded-vertical-toolbar-button, #shapeButton:not(.jam-action-toolbar-menu-button-selected) .jam-rounded-vertical-toolbar-button {
+	fill: var(--white-4);
+}
+#drawingButton.jam-action-toolbar-menu-button-selected .jam-button-selected-overlay, .jam-vertical-toolbar .jam-action-toolbar-menu-button-selected:not(#shapeButton) .jam-button-selected-overlay, .jam-vertical-toolbar .goog-toolbar-button-selected .jam-button-selected-overlay {
+	fill: var(--bg-dark);
+}
+.CpRZQe {
+	color: var(--grey-18);
+}
+.DmnNTb, .fuRKz {
+	background-color: var(--bg-dark);
+}
+#jam-body {
+	background-color: var(--bg-dark-2);
+}
+.jam-vertical-toolbar .jam-action-toolbar-menu-button-selected.jam-action-toolbar-menu-button-hover .jam-button-hover-overlay, .jam-vertical-toolbar .goog-toolbar-button-selected.goog-toolbar-button-hover .jam-button-hover-overlay {
+	background-color: var(--bg-transparent-dark-22);
+}
+[style="user-select: none;color: rgb(60, 64, 67);"] {
+	color: var(--white-4) !important;
+}
+[class="modal-dialog-userInput jfk-textinput"] {
+	background-color: var(--bg-dark);
+}
+.jam-popup-menu {
+	background-color: var(--bg-dark-17);
+	box-shadow: var(--box-shadow-inset-14);
+}
+.docs-presence-plus-widget-status {
+	color: var(--white-2);
+}
+.docs-gm .goog-menuitem-accel, .docs-gm .goog-menuitem-disabled .goog-menuitem-accel, .jam-jamlist-item-time, .navigation li span {
+	color: var(--grey-5);
+}
+.jam-menu-background-larger .jam-icon-inner {
+    box-shadow: inset 0 0 0 1px var(--border-1);
+}
+.jam-jamlist-card .jam-jamlist-item-thumb, .navigation .nav-security-and-management, .navigation .nav-solutions-right-links, .navigation .nav-resources-support, .g-team-pricing-s-k-u-list-sticky, .g-team-pricing-s-k-u-list-sticky .sku, .g-team-pricing-question, .g-team-pricing-add .product {
+	background-color: var(--bg-dark-17);
+}
+.jam-jamlist-item-thumb, .jam-jamlist-item, .navigation .navigator-link-title {
+	border-color: var(--border-1);
+}
+.jam-jamlist-item-title, .navigation .nav-individuals li a, .navigation .nav-resources-links li a, .navigation .nav-resources-support li a, .navigation .nav-solutions-right-links li a, .navigation .navigator-group-title, .navigation .navigator-link-title span, .navigation li a:link, .navigation li a {
+	color: var(--white-4);
+}
+.jam-jamlist-item:hover .jam-jamlist-item-metadata {
+    background-color: var(--bg-transparent-27);
+}
+.jam-jamlist-item-thumb-next-button, .jam-jamlist-item-thumb-prev-button, .g-team-pricing-s-k-u-list, .g-team-pricing-s-k-u-list .sku .price, .g-team-pricing-feature-list .animate-if, .g-team-pricing-feature-list .table td, table tr :nth-of-type(even), .g-team-pricing-s-k-u-list-sticky .sku.popular {
+	background-color: var(--bg-dark);
+}
+.gb_Oc, .gb_Pc {
+	color: var(--white-87);
+}
+.gb_Oc:hover {
+	 background-color: var(--bg-transparent-4);
+}
+.gb_Lc:not(:last-child) {
+	border-color: var(--border-13);
+}
+.hero-fb__dark-theme, .content-image-swap__dark-theme, .icon-copy-grid__dark-theme {
+	background-color: var(--bg-dark-16);
+}
+blockquote, h1, h2, h3, h4 {
+	color: var(--white-3);
+}
+.icon-copy-grid--item-description, .g-team-pricing-s-k-u-list .sku-clarifications p {
+	color: var(--grey-24);
+}
+.footer--locales .locale--switcher:hover, .g-team-pricing-try-free .subtitle {
+	color: var(--white-9);
+}
+.footer--locales .locale--switcher, .g-team-pricing-intro .subtitle, .g-team-pricing-intro .logo :last-child, .g-team-pricing-s-k-u-list .sku .price .value strong, .g-team-pricing-s-k-u-list .sku .price .clarifications, .g-team-pricing-s-k-u-list .features li span, .g-team-pricing-question .answer, .g-team-pricing-add .product .description {
+	color: var(--grey-20);
+}
+.navigation .nav-included-applications {
+	border-color: var(--border-19);
+}
+.navigation__close, .g-team-pricing-feature-list .see-more-features p {
+	color: var(--grey-8);
+}
+.h-c-header__cta-li-link--bordered:active, .h-c-header__cta-li-link--bordered:hover {
+	border-color: var(--border-blue);
+}
+.g-team-pricing-intro .title, .g-team-pricing-question .heading .question, .g-team-pricing-add .product .title {
+	color: var(--white-5);
+}
+.g-team-pricing-s-k-u-list .most-popular, .g-team-pricing-s-k-u-list-sticky .sku .most-popular {
+	background-color: var(--bg-dark-blue-2);
+}
+.g-team-pricing-s-k-u-list .sku, .g-team-pricing-s-k-u-list .features, table tr td, table tr th {
+	border-color: var(--border-25);
+}
+.button.button--secondary:active, .button.button--secondary:hover {
+	background-color: var(--bg-transparent-dark-23);
+	border-color: var(--border-blue);
+}
+.button.button--secondary {
+	background-color: var(--bg-dark);
+	border-color: var(--border-1);
+}
+.g-team-pricing-feature-list .table td:nth-child(1) {
+	border-color: var(--bg-dark);
+	color: var(--grey-20);
+}
+.g-team-pricing-feature-list .heading {
+	border-color: var(--grey-20);
+}
+.g-team-pricing-feature-list .table .dash {
+	color: var(--border-25);
+}
+.g-team-pricing-try-free .title {
+	color: var(--white-2);
+}
+.g-team-pricing-question .glue-zippy-content {
+	border-color: var(--border-25);
+}
+.wR7plc {
+	color: var(--blue);
+}
+[class="jam-vertical-toolbar-button-base goog-toolbar-button goog-inline-block goog-toolbar-button-selected"] {
+	background-color: transparent !important;
+}
+[style="user-select: none; fill: rgb(60, 64, 67); color: rgb(255, 255, 255); visibility: visible; left: 69px; top: 581.5px;"] {
+	fill: var(--white-4) !important;
+	color: var(--bg-dark) !important;
+}
+.jam-button:not(.goog-button-disabled):hover {
+	background-color: var(--bg-transparent-23);
+}
+.GmCard, .boqDrivesharedialogLinkLinkpermissionLinkPermissionRow:hover .boqDrivesharedialogLinkLinkpermissionIcon, .boqDrivesharedialogLinkLinkpermissionLinkPermissionRow:focus-within .boqDrivesharedialogLinkLinkpermissionIcon {
+	background-color: var(--bg-dark);
+}
+.boqDrivesharedialogCommonTitlebarTitleBar .Heading .Title {
+	color: var(--white-3);
+}
+.appsDriveElementsMaterialFormfield_filledFieldContainer:hover, .boqDrivesharedialogPermissionslistPermissionrowListItem:hover .boqDrivesharedialogPermissionslistPermissionrowPermissionRow, .boqDrivesharedialogPermissionslistPermissionrowListItem:focus-within .boqDrivesharedialogPermissionslistPermissionrowPermissionRow, .boqDrivesharedialogLinkLinkpermissionLinkPermissionRow:hover {
+	background-color: var(--bg-dark-2);
+}
+.GmElevationOverlay, .appsDriveElementsMaterialFormfield_filledFieldContainer, .boqDrivePeopleWebBubbleBaseEl.hasPhoto {
+	background-color: var(--bg-dark-blue-2);
+}
+.appsDriveElementsMaterialScrollcontainerSeamCoverTop, .appsDriveElementsMaterialScrollcontainerSeamCoverBottom {
+	border-color: var(--bg-dark);
+}
+.boqDrivesharedialogPermissionslistPermissionrowMain .boqDrivesharedialogPermissionslistPermissionrowSecondary, .boqDrivesharedialogPermissionslistPermissionsummarySummary, .boqDrivesharedialogCommonTitlebarTitleBar .SettingsButton, .boqDrivesharedialogLinkLinkpermissionLinkPermissionSummary, .boqDrivesharedialogLinkLinkcopyUrlsBoxSpecificPeople .boqDrivesharedialogLinkLinkcopyUrlsIconContainer {
+	color: var(--grey-1);
+}
+.boqDrivesharedialogPermissionslistPermissionrowMain .boqDrivesharedialogPermissionslistPermissionrowPrimary, .boqDrivesharedialogLinkLinkpermissionVisibilityMenuTextButton.mdc-button:not(:disabled), .boqDrivesharedialogLinkLinksummaryLinkPermissionsSummary .boqDrivesharedialogLinkLinksummaryBolded {
+	color: var(--white-3);
+}
+.boqDrivePeopleWebBubbleBaseAvatar {
+	color: var(--bg-dark);
+}
+.appsDriveElementsMaterialScrollcontainerEl::after {
+	border-color: var(--border-1);
+}
+.boqDrivesharedialogLinkLinkcopyUrlsBoxSpecificPeople {
+	background-color: var(--bg-dark-2);
+	color: var(--white-3);
+}
+.boqDrivesharedialogLinkLinksummaryLinkPermissionsSummary {
+	color: var(--white-4);
+}
+.appsDriveElementsMaterialFormfield_baseAssistiveText {
+	color: var(--grey-5);
+	fill: var(--grey-5);
+}
+.boqDrivesharedialogLinkLinkpermissionIconSpecificPeople {
+	background-color: var(--bg-dark-blue-2);
+	color: var(--grey-1);
+}
+.boqDrivesharedialogCommonTitlebarTitleBar .boqDrivesharedialogCommonTitlebarIconContainer.Collapsed {
+	background-color: var(--grey-4);
 }
 }
