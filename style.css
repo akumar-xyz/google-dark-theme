@@ -1,4 +1,4 @@
-@-moz-document regexp("^(https?)://(www|ogs|translate|policies|accounts|myaccount|adssettings|posts|artsandculture|about.artsandculture|docs|contacts|calendar|meet|tasks|keep|workspace|photos|play|ads|drive|classroom|jamboard).google.*") {
+@-moz-document regexp("^(https?)://(www|ogs|translate|policies|accounts|myaccount|adssettings|posts|artsandculture|about.artsandculture|docs|contacts|calendar|meet|tasks|keep|workspace|photos|play|ads|drive|classroom|jamboard|podcasts).google.*") {
 :root {
 	--bg-dark: #202124;
 	--bg-dark-2: #212428;
@@ -24,7 +24,7 @@
 	--bg-dark-23: #353535;
 	--bg-dark-24: #494949;
 	--bg-dark-25: #222325;
-	--bg-dark-blue-1: #424851;
+	--bg-dark-blue-1: #42474f;
 	--bg-dark-blue-2: #383b40;
 	--bg-dark-blue-3: #33363c;
 	--bg-dark-blue-4: #3a3c40;
@@ -41,6 +41,7 @@
 	--bg-grey-5: #595959;
 	--bg-grey-6: #585858;
 	--bg-grey-7: #5d6064;
+	--bg-grey-8: #5e5e5e;
 	--bg-dark-yellow: #3e3c37;
 	--bg-dark-yellow-2: #332f22;
 	--bg-dark-green: #262f28;
@@ -94,6 +95,7 @@
 	--bg-transparent-25: rgba(204, 210, 215, .08);
 	--bg-transparent-26: rgba(175, 179, 185, .039);
 	--bg-transparent-27: rgba(175, 179, 185, .04);
+	--bg-transparent-28: rgba(208, 209, 212, .08);
 	--bg-transparent-dark: #202124b8;
 	--bg-transparent-dark-2: rgba(32, 33, 36, .65);
 	--bg-transparent-dark-3: rgba(53, 53, 53, .8);
@@ -119,6 +121,10 @@
 	--bg-transparent-dark-23: rgba(56, 59, 64, .35);
 	--bg-transparent-dark-24: rgba(32, 33, 36, .5);
 	--bg-transparent-dark-25: rgba(32, 33, 36, .09);
+	--bg-transparent-dark-26: rgba(94, 94, 94, .333);
+	--bg-transparent-dark-27: rgba(94, 94, 94, .4);
+	--bg-transparent-dark-28: rgba(32, 33, 36, .6);
+	--bg-transparent-dark-29: rgba(32, 33, 36, .01);
 	--bg-full-transparent: #0000;
 	--bg-dark-gradient: -webkit-gradient(linear,left top,left bottom,from(#28292a),to(#28292a));
 	--bg-dark-gradient-2: linear-gradient(#282828,#212228) #282828;
@@ -169,6 +175,7 @@
 	--bg-dark-gradient-47: linear-gradient(180deg,#202124 0%,rgba(255,255,255,0) 100%);
 	--bg-dark-gradient-48: linear-gradient(90deg,#202124 0%,rgba(255,255,255,0) 100%);
 	--bg-dark-gradient-49: linear-gradient(-90deg,#202124 0%,rgba(255,255,255,0) 100%);
+	--bg-dark-gradient-50: radial-gradient(circle farthest-side,rgba(102, 102, 102, .4),rgba(102, 102, 102, .4) 80%,rgba(153,153,153,0) 100%);
 	--bg-white-gradient-1: linear-gradient(rgba(255, 255, 255, .25),rgba(0,0,0,0));
 	--bg-white-gradient-2: linear-gradient(rgba(255, 255, 255, .38) 50%,rgba(255,255,255,0) 0%);
 	--bg-white-gradient-3: radial-gradient(circle farthest-side,rgba(255, 255, 255, .12),rgba(255, 255, 255, .12) 80%,rgba(0,0,0,0) 100%);
@@ -305,6 +312,7 @@
 	--border-59: rgba(175, 179, 185, .3);
 	--border-60: #5d5f62;
 	--border-61: #484848;
+	--border-62: #505050;
 	--border-yellow: #403a28;
 	--border-blue: #7a889f;
 	--box-shadow-1: 0 1px 6px rgba(208, 209, 212, 28%);
@@ -367,6 +375,13 @@
 	--fill-9: #555;
 	--mdc-theme-on-surface: #fff;
 	--mdc-ripple-color: #fff;
+	--mdc-theme-text-primary-on-background: var(--white-87);
+	--mdc-theme-text-secondary-on-background: var(--white-54);
+	--mdc-checkbox-unselected-hover-icon-color: var(--white-3);
+	--mdc-checkbox-unselected-icon-color: var(--grey-1);
+	--mdc-checkbox-unchecked-color: var(--grey-1);
+	--mdc-checkbox-ink-color: var(--bg-dark);
+	--mdc-theme-surface: var(--bg-dark);
 	--gm-hairlinebutton-outline-color: #4a4b4f;
 	--gm-iconbutton-disabled-ink-color: rgba(204, 210, 215, .38);
 	--gm-neutraltextbutton-ink-color--stateful: var(--white-3);
@@ -389,27 +404,15 @@
 	--gm-radio-state-color: var(--white-4);
 	--gm-radio-stroke-color--unchecked: var(--grey-1);
 	--gm-switch-thumb-color--off: var(--bg-dark);
-	--mdc-theme-text-primary-on-background: var(--white-87);
-	--mdc-checkbox-unchecked-color: var(--grey-1);
-	--mdc-checkbox-ink-color: var(--bg-dark);
-	--mdc-theme-surface: var(--bg-dark);
-	--title-color: var(--white-4);
-	--subtitle-color: rgba(255, 255, 255, .502);
-	--subhead-color: rgba(255, 255, 255, .8);
-	--background-color: var(--bg-dark);
-	--alternative-color: #888;
 	--gm-fillbutton-disabled-ink-color: rgba(204, 210, 215, .38);
 	--gm-fillbutton-disabled-container-color: rgba(204, 210, 215, .12);
 	--gm-color-caption: var(--grey-1);
 	--gm-hairline-color: var(--border-1);
 	--gm-secondary-icon-color: var(--grey-1);
 	--gm-outlinedtextfield-helper-text-color: var(--grey-1);
-	--mdc-theme-text-secondary-on-background: var(--white-54);
 	--gm-colortextbutton-disabled-ink-color: rgba(204, 210, 215, .38);
 	--gm-chip-ink-color--stateful: var(--white-3);
 	--gm-chip-container-color: var(--bg-dark-blue-2);
-	--mdc-checkbox-unselected-hover-icon-color: var(--white-3);
-	--mdc-checkbox-unselected-icon-color: var(--grey-1);
 	--gm-filledselect-fill-color: var(--bg-dark-2);
 	--gm-filledselect-label-color: var(--grey-1);
 	--gm-filledselect-icon-color: var(--grey-1);
@@ -421,6 +424,11 @@
 	--gm-theme-color-highlight: var(--bg-dark-blue-2);
 	--gm-text-color--on-theme-background: var(--white-1);
 	--gm-neutraltextbutton-disabled-ink-color: rgba(204, 210, 215, .38);
+	--title-color: var(--white-4);
+	--subtitle-color: rgba(255, 255, 255, .502);
+	--subhead-color: rgba(255, 255, 255, .8);
+	--background-color: var(--bg-dark);
+	--alternative-color: #888;
 	--icon-circle-stroke: var(--bg-dark);
     --icon-circle-x-fill: var(--bg-dark);
 }
@@ -8607,7 +8615,7 @@ a[class="KYeOtb rWAMad"][jsname="AznF2e"][aria-selected="false"][data-index="0"]
 .YXJtmc {
 	background-color: var(--bg-transparent-dark-5);
 }
-.tsp-ftg9, .tsp-fbr, .tsp-hivp {
+.tsp-ftg9, .tsp-fbr, .tsp-hivp, .tKfMXd {
 	color: var(--white-2);
 }
 .tsp-bb, .tsp-tb {
@@ -8675,7 +8683,180 @@ a .SuDEy, a:visited .SuDEy {
 .mus_tt20 {
 	color: var(--grey-27);
 }
-.ksM6Mb {
+.ksM6Mb, .jXh88, span.DPvwYc.gAoETb, .TR7phd.DPvwYc {
 	color: var(--blue);
+}
+.xjvFRe, .yFWEIe {
+	color: var(--grey-2);
+}
+.Mji2k, .OTz6ee, .TvLR0, .BpVHBf, .jMSnVc, .f4Rf5b, .WRLHVd, .yJLqZc, .J3Ov7d, .tX5qm, .c5Vdrc, .Pj6VA, .GDSAjf, .features__hero-content p {
+	color: var(--grey-1);
+}
+.J0Qtec, .wBiEg.DPvwYc, .iYUinf, .uwjJFd, .UV82ob, .Ttr5be.c7fp5b, .caxZTb {
+	border-color: var(--border-1);
+}
+.gUJ0Wc, .LrApYe, .e3ZUqe, .r7JBkc, .ZfMIwb, .OTAikb, .WmnPA:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-fmcmS-wGMbrd, .k2p4Ef, .yuTZxb, .SuNkYe, .u0Mk7d, .kMNxad, .ZTClBb, .pcNKmc, .MBPL8b, .oG0wpe, .BiEFEd {
+	color: var(--white-4);
+}
+.PRPYJc, .wv3SK, .TzqEyd, .rnO6, .xTNr6, .xkvzpc, .rmnyUd, .ldf2Je, .ZhPnbc, .eWeGpe, .YDJ1Jc:hover, .FyxyKd, .tdELcf, .Ut8Gr, .a5ZoJ, .eI5bkf {
+	color: var(--white-3);
+}
+.GdsSec {
+	background-color: var(--border-1);
+}
+.sRqVhc, .XsyHe {
+	fill: #fa7b17;
+}
+.iIDD2e {
+	fill: var(--bg-dark);
+}
+.voeS2b, .pyK9td, .p6eBid {
+	background-color: var(--bg-dark);
+	border-color: var(--border-1);
+}
+.JSLBqe, .jcGgqc {
+	color: var(--white-4);
+	border-color: var(--border-1);
+}
+.iwwOA, .L7wSy, .MdgzLb span, .fIqyif:hover span, .PZpPge, .J7uqcb {
+	color: var(--blue)
+}
+.GZPvSe .VfPpkd-uMhiad::before, .fGflG.qoCZef .TiX9ce {
+	background-color: var(--bg-dark);
+}
+.GZPvSe:enabled .VfPpkd-l6JLsf::before, .GZPvSe:enabled:hover:not(:focus):not(:active) .VfPpkd-l6JLsf::before, .GZPvSe:enabled:hover.UMrnmb-AHmuwe-L6cTce:not(:active) .VfPpkd-l6JLsf::before, .GZPvSe:enabled:focus:not(.UMrnmb-AHmuwe-L6cTce):not(:active) .VfPpkd-l6JLsf::before, .GZPvSe:enabled:active .VfPpkd-l6JLsf::before {
+	background-color: var(--border-1);
+}
+.GZPvSe:enabled .VfPpkd-l6JLsf::after, .GZPvSe:enabled:hover:not(:focus):not(:active) .VfPpkd-l6JLsf::after, .GZPvSe:enabled:hover.UMrnmb-AHmuwe-L6cTce:not(:active) .VfPpkd-l6JLsf::after, .GZPvSe:enabled:focus:not(.UMrnmb-AHmuwe-L6cTce):not(:active) .VfPpkd-l6JLsf::after, .GZPvSe:enabled:active .VfPpkd-l6JLsf::after, .N7tAl {
+	background-color: var(--bg-dark-blue-8);
+}
+.WmnPA:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) {
+	background-color: var(--bg-dark-2);
+}
+.WmnPA:hover:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-RWgCYc-ksKsZd::before {
+	border-bottom-color: var(--white-3);
+}
+.WmnPA:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-RWgCYc-ksKsZd::before {
+	border-bottom-color: var(--grey-1);
+}
+.zJw79d {
+	background-color: var(--bg-dark);
+	border-color: var(--border-4);
+}
+.xnE3f {
+	background-color: var(--bg-dark-blue-1);
+	border-color: var(--bg-dark-blue-1);
+	color: var(--blue);
+}
+.RmrYyf {
+	color: var(--bg-dark);
+}
+.gb_uc:hover {
+	background-color: var(--bg-transparent-28);
+}
+.d5Ncgc {
+	background-color: var(--bg-hover-1);
+}
+.naHzec .MLPG7 {
+	background-color: var(--bg-transparent-dark-26);
+}
+.c7fp5b>.lVYxmb {
+	background-image: var(--bg-dark-gradient-50);
+}
+.Ttr5be, .oyLoyb {
+	background-color: var(--bg-dark);
+}
+.fGflG.qoCZef .kUwJrc, .ptC3Le {
+	background-color: var(--bg-grey-8);
+}
+.fGflG.qoCZef .K598dd {
+	background-color: var(--bg-transparent-dark-27);
+}
+.FTnqqe {
+	background-color: var(--blue);
+}
+.glue-header__link-bar a {
+	color: var(--grey-1) !important;
+}
+span.glue-header__link, span.glue-header__logo-link, .drive__features-text, .drive__hero-description, .features__additional-desc {
+	color: var(--grey-1);
+}
+.drive__platform-image.drive__platform-image--868a5ae1da41303d86ad88fef0c93ff4 {
+	filter: var(--invert-3);
+}
+.drive__platform-image.drive__platform-image--868a5ae1da41303d86ad88fef0c93ff4 * {
+	filter: none;
+}
+.drive__customers, .features__additional, .features__additional-grid-features .glue-grid {
+	background-color: var(--bg-hover-1);
+}
+.drive__customers .glue-carousel__wrap, .glue-pagination__button:focus .glue-carousel__paginate-wrap:before, .glue-pagination__button:hover .glue-carousel__paginate-wrap:before {
+	background-color: var(--bg-dark);
+}
+.glue-carousel__paginate-wrap:before {
+	background-color: var(--bg-transparent-dark-28);
+}
+.glue-carousel .glue-carousel__arrow, .glue-carousel__navigation .glue-pagination-page-list .glue-pagination__button:before {
+	border-color: var(--white-3);
+}
+.glue-carousel__navigation .glue-pagination-page-list .active .glue-pagination__button:before {
+	background-color: var(--white-3);
+}
+.drive__statistics p, .glue-tile .glue-tile__description, .glue-tile__container .glue-tile__description, .pooEtb {
+	color: var(--grey-1);
+}
+.drive__statistics .progress-light-blue {
+	background-color: var(--bg-dark-blue-8);
+}
+.drive__statistics .progress-light-grey {
+	background-color: var(--bg-dark-blue-2);
+}
+.drive__statistics .progress-grey {
+	background-color: var(--grey-5);
+}
+.drive__tools-company-icon {
+	border-color: var(--bg-dark-2);
+}
+.resources .carousel-side-overlay {
+	background: linear-gradient(90deg,var(--bg-transparent-dark-29) 0,var(--bg-dark) 51%);
+}
+.XzbSje.AVUQbb.VLrnY {
+	background-color: var(--bg-dark-blue-2);
+	border-color: var(--bg-dark-blue-2);
+}
+.ak25Me {
+	border-color: var(--border-1);
+}
+.ta-gc-np-Nd {
+	background-image: var(--bg-png);
+}
+.kVdtk .NMm5M {
+	fill: var(--grey-1);
+}
+.g-Gh {
+	border-color: var(--border-17);
+	border-top-color: var(--border-62);
+}
+.glue-header.glue-header--double .glue-header__tier:after {
+	background-color: var(--border-1);
+}
+.accordion__main--active {
+	background-color: var(--bg-dark-21);
+}
+.glue-header--double .glue-header__container>.glue-header__link-bar>.glue-header__list>.glue-header--is-active>.glue-header__link:before, .glue-header--double .glue-header__container>.glue-header__link-bar>.glue-header__list>.glue-header--is-active>.glue-header__logo-link:before {
+	background-color: var(--bg-dark);
+	border-color: var(--border-1);
+}
+.glue-header--double .glue-header__container .glue-header__list--nested .glue-header__item.glue-header--is-active .glue-header__link, .glue-header--double .glue-header__container .glue-header__list--nested .glue-header__item.glue-header--is-active .glue-header__logo-link {
+	background-color: var(--bg-dark);
+}
+a.glue-button.glue-button--medium-emphasis.js-drive-btn {
+	background-color: var(--bg-dark);
+}
+.glue-inline-link:active, .glue-inline-link:focus, .glue-inline-link:hover, .glue-link:active, .glue-link:focus, .glue-link:hover {
+	background-color: var(--bg-dark-blue-2);
+}
+[src="https://kstatic.googleusercontent.com/files/f4b4fbcc6119576da7ab3f68270196009fc1b16f1927910842d793c385115593b6dd5fbe9a1e21fe64f3cbbc509c3a02c95ebc9635f76c355282482986f1fe7d"] {
+	content: url('https://upload.wikimedia.org/wikipedia/commons/d/da/Google_Drive_logo.png');
 }
 }
