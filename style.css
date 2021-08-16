@@ -1,4 +1,4 @@
-@-moz-document regexp("^(https?)://(www|ogs|translate|policies|accounts|myaccount|adssettings|posts|artsandculture|about.artsandculture|docs|contacts|calendar|meet|tasks|keep|workspace|photos|play|ads|drive|classroom|jamboard|podcasts).google.*") {
+@-moz-document url-prefix("https://mail.google.com/chat/u/"), regexp("^(https?)://(www|ogs|translate|policies|accounts|myaccount|adssettings|posts|artsandculture|about.artsandculture|docs|contacts|calendar|meet|tasks|keep|workspace|photos|play|ads|drive|classroom|jamboard|podcasts|chat).google.*") {
 :root {
 	--bg-dark: #202124;
 	--bg-dark-2: #212428;
@@ -95,7 +95,11 @@
 	--bg-transparent-25: rgba(204, 210, 215, .08);
 	--bg-transparent-26: rgba(175, 179, 185, .039);
 	--bg-transparent-27: rgba(175, 179, 185, .04);
-	--bg-transparent-28: rgba(208, 209, 212, .08);
+	--bg-transparent-28: rgba(204, 210, 215, .08);
+	--bg-transparent-29: rgba(204, 210, 215, .059);
+	--bg-transparent-30: rgba(204, 210, 215, .122);
+	--bg-transparent-31: rgba(255, 255, 255, .122);
+	--bg-transparent-32: rgba(208, 209, 212, .039);
 	--bg-transparent-dark: #202124b8;
 	--bg-transparent-dark-2: rgba(32, 33, 36, .65);
 	--bg-transparent-dark-3: rgba(53, 53, 53, .8);
@@ -176,6 +180,7 @@
 	--bg-dark-gradient-48: linear-gradient(90deg,#202124 0%,rgba(255,255,255,0) 100%);
 	--bg-dark-gradient-49: linear-gradient(-90deg,#202124 0%,rgba(255,255,255,0) 100%);
 	--bg-dark-gradient-50: radial-gradient(circle farthest-side,rgba(102, 102, 102, .4),rgba(102, 102, 102, .4) 80%,rgba(153,153,153,0) 100%);
+	--bg-dark-gradient-51: radial-gradient(circle farthest-side,rgba(102, 102, 102, .4),rgba(102, 102, 102, .4) 80%,rgba(153,153,153,0) 100%);
 	--bg-white-gradient-1: linear-gradient(rgba(255, 255, 255, .25),rgba(0,0,0,0));
 	--bg-white-gradient-2: linear-gradient(rgba(255, 255, 255, .38) 50%,rgba(255,255,255,0) 0%);
 	--bg-white-gradient-3: radial-gradient(circle farthest-side,rgba(255, 255, 255, .12),rgba(255, 255, 255, .12) 80%,rgba(0,0,0,0) 100%);
@@ -313,6 +318,7 @@
 	--border-60: #5d5f62;
 	--border-61: #484848;
 	--border-62: #505050;
+	--border-63: #5e6d6f;
 	--border-yellow: #403a28;
 	--border-blue: #7a889f;
 	--box-shadow-1: 0 1px 6px rgba(208, 209, 212, 28%);
@@ -427,10 +433,162 @@
 	--title-color: var(--white-4);
 	--subtitle-color: rgba(255, 255, 255, .502);
 	--subhead-color: rgba(255, 255, 255, .8);
+	--topbar-header-text: var(--white-3);
+	--secondary-text-color: var(--grey-1);
+	--icon-color: var(--grey-1);
 	--background-color: var(--bg-dark);
 	--alternative-color: #888;
 	--icon-circle-stroke: var(--bg-dark);
     --icon-circle-x-fill: var(--bg-dark);
+	--adopt-shell-color: var(--bg-dark);
+    --background-color: var(--bg-dark);
+    --roomatar-bg-color: var(--bg-dark);
+    --topbar-bg-color: var(--bg-dark);
+    --settings-bg-color: var(--bg-dark-2);
+    --settings-card-bg-color: var(--bg-dark);
+    --card-bg-color: var(--bg-dark);
+    --settings-footer-bg-color: var(--bg-dark);
+    --dialog-bg-color: var(--bg-dark);
+    --comandbar-is-open-bg-color: rgba(32, 33, 36, .7);
+	--primary-text-color: var(--white-3);
+	--hint-text-color: var(--grey-1);
+    --disabled-text-color: var(--border-60);
+    --header-text-color: var(--white-4);
+    --text-link-color: var(--white-4);
+    --pill-text-color: var(--grey-4);
+    --selected-state-color: var(--bg-dark-green);
+	--hover-state-color: var(--bg-transparent-32);
+    --focus-state-color: var(--bg-transparent-12);
+    --pressed-state-color: var(--white-3);
+    --avatar-bg-color: var(--bg-dark-2);
+    --avatar-picker-bg-color: var(--bg-hover-1);
+    --avatar-icon-color: var(--border-60);
+    --avatar-helper-bg-color: var(--bg-dark);
+    --message-accented-bg-color: var(--bg-dark-blue-2);
+	--dialog-elevation: 0 1px 2px 0 rgba(204, 210, 215, .30) ,0 2px 6px 2px rgba(204, 210, 215, .15);
+    --dialog-highlighted-bg-color: rgba(208, 209, 212, .078);
+    --dialog-hairline-line-color: var(--border-1);
+	--badge-background-color: var(--bg-dark-red);
+    --badge-invite-bg-color: var(--bg-dark);
+    --world-badge-color: var(--grey-5);
+    --world-badge-bg-color: var(--bg-dark);
+    --world-badge-border-color: var(--grey-5);
+	--icon-disabled-color: var(--border-60);
+    --icon-hover-color: var(--white-3);
+    --icon-send-disabled-color: var(--border-60);
+	--dark-icon-color: var(--white-3);
+	--scalable-compose-icon-color: rgb(123, 160, 179);
+    --scalable-compose-icon-color-hover: rgb(123, 160, 179);
+    --self-mention-font-color: var(--bg-dark);
+	--self-mention-bg-color: var(--bg-dark-blue-1);
+	--surface-chip-text-color: var(--grey-1);
+    --surface-compose-box-color: var(--bg-dark-2);
+    --surface-compose-font-color: var(--white-4);
+    --surface-reaction-text-color: var(--grey-1);
+	--dividers-color: var(--border-1);
+    --tertiary-hint-text-color: var(--grey-1);
+    --chip-hairline-color: var(--border-1);
+    --mute-toggle-gradient: linear-gradient(90deg,rgba(255,255,255,0),var(--bg-dark) 50%);
+    --checkmark-border-color: var(--white-2);
+    --delete-confirm-message-bg-color: var(--bg-dark-20);
+    --tab-switcher-btn-color: var(--grey-1);
+    --smart-reply-btn-bg-color: var(--bg-dark);
+    --smart-reply-line-color: var(--border-1);
+    --smart-reply-btn-active-bg-color: var(--bg-dark);
+    --spam-subtitle-bg-color: rgba(33, 35, 36, .75);
+    --suggestions-bg-color: var(--bg-dark);
+    --suggestions-border-color: var(--border-1);
+    --suggestions-row-bg-color: var(--bg-dark-16);
+    --tag-chip-bg-color: var(--bg-dark);
+    --tag-chip-color: var(--white-3);
+    --tag-chip-remove-icon-color: var(--grey-1);
+    --tag-border-style: solid 1px var(--border-1);
+    --files-container-focus-bg-color: rgba(204, 210, 215, .039)
+    --files-container-pressed-bg-color: rgba(175, 179, 185, .102);
+    --files-row-hover-bg-color: var(--bg-dark-blue-2);
+    --files-row-focus-bg-color: var(--bg-hover-1);
+    --pill-external-text-color: var(--white-3);
+    --pill-tag-bg-color: var(--bg-hover-1);
+    --bot-catalog-topbar-bg-color: var(--bg-dark);
+    --bot-card-bg-color: var(--grey-5);
+    --bot-catalog-bg-color: var(--bg-dark-2);
+    --bot-catalog-card-bg-color: var(--bg-dark);
+    --bot-catalog-card-content-bg-color: var(--bg-dark);
+    --bot-pill-bg-color: var(--bg-dark-2);
+    --message-inline-monospace-bg-color: var(--bg-dark-17);
+    --message-block-monospace-bg-color: var(--bg-dark);
+    --message-inline-line-color: var(--bg-dark-18);
+    --message-block-line-color: var(--bg-dark-22);
+    --message-monospace-text-color: #b2b2b2;
+    --wiz-paper-radio-text: var(--white-2);
+    --wiz-menu-icon-button-hover-bg-color: rgba(208, 209, 212, .078);
+    --wiz-menu-icon-button-focus-hover-bg-color: var(--bg-dark-2);
+    --wiz-menu-icon-button-focus-bg-color: rgba(208, 209, 212, .078);
+    --wiz-menu-icon-button-pressed-bg-color: rgba(208, 209, 212, .122);
+    --wiz-menu-selected-bg-color: var(--bg-dark-green);
+    --primary-line-color: var(--bg-dark-blue-2);
+    --hairline-color: var(--border-1);
+    --dialog-line-color: var(--border-1);
+    --compose-line-color: var(--border-1);
+    --option-border-color: var(--bg-grey-5);
+    --suggestions-line-color: var(--border-5);
+    --collapsed-line-divider-color: var(--border-1);
+    --input-bg-color: var(--bg-hover-1);
+    --input-line-style: solid 1px var(--border-1);
+    --input-placeholder-text-color: var(--grey-5);
+    --input-checkbox-outerbox-border-color: rgba(255, 255, 255, .54);
+    --input-checkbox-innerbox-border-color: var(--bg-dark);
+    --input-checkbox-checked-checkmark-color: var(--bg-dark);
+    --radio-unselected-color: rgba(255, 255, 255, .54);
+    --button-filled-color: var(--bg-dark);
+    --button-filled-hover-color: var(--bg-dark);
+    --button-filled-focus-color: var(--bg-dark);
+    --button-filled-focus-hover-color: var(--bg-dark);
+    --button-filled-pressed-color: var(--bg-dark);
+    --button-filled-disabled-bg-color: var(--bg-dark-2);
+    --button-hairline-label-color: var(--border-1);
+    --button-hairline-hover-bg-color: var(--bg-dark-blue-2);
+    --button-hairline-hover-border-color: var(--bg-dark-blue-1);
+    --button-tonal-bg-color: var(--bg-dark-blue-2);
+    --button-text-disabled-bg-color: var(--bg-dark);
+    --button-protected-bg-color: var(--bg-dark);
+    --button-following-bg-color: var(--bg-dark-blue-2);
+    --button-follow-bg-color: var(--bg-dark);
+    --button-follow-border-color: var(--border-1);
+    --fab-regular-enabled-color: var(--bg-dark);
+    --fab-tonal-enabled-bg-color: var(--bg-dark);
+    --chip-bg-color: var(--bg-dark-3);
+    --chip-border-color: var(--bg-dark-3);
+    --chip-img-border-color: var(--bg-dark-3);
+    --chip-img-loading-bg-color: var(--bg-dark-3);
+    --chip-subtitle-color: var(--grey-8);
+    --chip-title-bg-color: var(--bg-dark);
+    --chip-disabled-bg-color: var(--bg-dark);
+    --gifpicker-border-style: solid 1px var(--border-1);
+    --gifpicker-tagbar-color: var(--grey-1);
+    --gifpicker-tagbar-selected-bg-color: var(--bg-dark-blue-2);
+    --gifpicker-tagbar-selected-border-color: var(--bg-dark-blue-2);
+    --gifpicker-btn-open-bg-color: var(--bg-dark-blue-2);
+    --emojipicker-border-style: solid 1px var(--border-1);
+    --emojipicker-btn-open-bg-color: var(--bg-dark-blue-2);
+    --emojipicker-category-selected-bg-color: var(--bg-dark-blue-2);
+    --themed-elevation-1: 0 1px 2px 0 rgba(208, 209, 212, .30) ,0 1px 3px 1px rgba(208, 209, 212, .15);
+    --themed-elevation-2: 0 1px 2px 0 rgba(208, 209, 212, .30) ,0 2px 6px 2px rgba(208, 209, 212, .15);
+    --themed-elevation-3: 0 1px 3px 0 rgba(208, 209, 212, .30) ,0 4px 8px 3px rgba(208, 209, 212, .15);
+    --themed-elevation-4: 0 1px 3px 0 rgba(208, 209, 212, .30) ,0 4px 10px 4px rgba(208, 209, 212, .15);
+    --postbar-bg-color: rgba(33, 35, 36, .75);
+    --postbar-overlay-bg-color: var(--bg-dark);
+    --postbar-overlay-elevation: 0 1px 2px 0 rgba(208, 209, 212, .30) ,0 1px 3px 1px rgba(208, 209, 212, .15);
+    --postbar-overlay-hover-elevation: 0 1px 3px 0 rgba(208, 209, 212, .30) ,0 4px 8px 3px rgba(208, 209, 212, .15);
+    --notification-bg-color: var(--bg-dark);
+    --gsuite-integation-card-bg-color: var(--background-color);
+    --gsuite-integation-card-hover-bg-color: var(--bg-dark-16);
+    --calendar-bg-color: var(--bg-dark);
+    --calendar-color: var(--white-1);
+    --calendar-disabled-color: rgba(255, 255, 255, .38);
+    --calendar-arrow-icon: rgba(255, 255, 255, .54);
+    --calendar-prev-bg-color: var(--bg-dark-blue-2);
+	--button-hover-color: var(--bg-dark-2);
 }
 ::-webkit-scrollbar-track {
              -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
@@ -7178,7 +7336,7 @@ a.glue-button--medium-emphasis.glue-social__copy-btn, a.glue-button--medium-emph
 .a-D-B .a-D-B-WErN3d-j .a-c-d:not(.h-R-d-db):hover {
 	background-color: var(--bg-transparent-25);
 }
-.h-w, .lb-k, .lb-k-x, button, .a-qc-La, .a-D-B, .l-u-Ab-zb, .Kk7lMc-Yb-Il-j, .a-ub-oa, textarea {
+.h-w, .lb-k, .lb-k-x, .a-qc-La, .a-D-B, .l-u-Ab-zb, .Kk7lMc-Yb-Il-j, .a-ub-oa, textarea {
 	background-color: var(--bg-dark);
 }
 .ca-k .lb-k-V, .ca-k-ra-B>.h-ra-B>.h-ra:hover, .h-v-pc, .h-v-W {
@@ -8858,5 +9016,202 @@ a.glue-button.glue-button--medium-emphasis.js-drive-btn {
 }
 [src="https://kstatic.googleusercontent.com/files/f4b4fbcc6119576da7ab3f68270196009fc1b16f1927910842d793c385115593b6dd5fbe9a1e21fe64f3cbbc509c3a02c95ebc9635f76c355282482986f1fe7d"] {
 	content: url('https://upload.wikimedia.org/wikipedia/commons/d/da/Google_Drive_logo.png');
+}
+.lb-k-V {
+	background-color: var(--bg-dark);
+	color: var(--white-1);
+}
+input#\:kf\.ie, .Kk7lMc-QWPxkf-d.Yb-Il-d-rc .Yb-Il-d-c-Nd, .Kk7lMc-Wc-Tn .Kk7lMc-QWPxkf-d.Yb-Il-d-rc .Yb-Il-d-c-Nd, .DRTsIe-hovercard, a.glue-button.glue-button--medium-emphasis {
+	background-color: var(--bg-dark);
+}
+.lb-k-V-va svg {
+	fill: var(--white-1);
+}
+.Ea-oa {
+	border-color: var(--bg-dark-20);
+	color: var(--grey-8);
+}
+.Ea-oa.Ea-G {
+	color: var(--white-2);
+}
+.a-Cd-oa {
+	background-color: var(--bg-dark);
+	border-color: var(--grey-17);
+}
+.Ea-j.Ea-Lj:hover, .boqDrivesharedialogLinkWarningMessageArea, .MGxLdb, .w2MQg.YfT1Ke, .t6.zH:hover, .t6.zH {
+	background-color: var(--bg-dark-blue-2);
+}
+.a-b-Ia {
+	background-color: var(--bg-dark);
+	color: var(--white-1);
+}
+.a-b-Ia-V-D, .a-b-Ia-J, .a-b-Ia-jIkMge-J {
+	border-color: var(--border-63);
+}
+.a-b-Ia-td {
+	background-image: linear-gradient(rgba(255, 255, 255, .2),transparent);
+	-webkit-mask-box-image: -webkit-linear-gradient(left,rgba(255, 255, 255, .1),rgba(255, 255, 255, .8),rgba(255, 255, 255, .8),rgba(255, 255, 255, .1));
+}
+.a-b-Ia-x .a-b-d-W.a-b-Ia-J, .a-b-Ia-x .a-b-M-W.a-b-Ia-J, .a-b-d-Pb .a-b-Ia-J, .a-b-Ia-x .a-b-d-W.a-b-Ia-jIkMge-J, .a-b-Ia-x .a-b-M-W.a-b-Ia-jIkMge-J, .a-b-d-Pb .a-b-Ia-jIkMge-J, .a-b-Ia-Xd-c.a-b-d:hover, .a-b-Ia-Xd-c.a-b-d:active, .a-b-Ia-Xd-c.a-b-d.a-b-d-Pb {
+	background-color: var(--bg-dark-20);
+}
+.boqDrivesharedialogLinkLinkcopyUrlsBoxAnyone, .boqDrivesharedialogLinkLinkpermissionIconAnyone, .boqDrivesharedialogLinkLinkpermissionIconVaries {
+	background-color: var(--bg-dark-green);
+}
+.boqDrivesharedialogCommonWarningmessageMessageContainer, .gb_Uc.gb_Vc {
+	color: var(--white-4);
+}
+.Kk7lMc-QWPxkf-d.Yb-Il-d-rc.Yb-Il-d-W .Yb-Il-d-c-Nd, .Kk7lMc-Wc-Tn .Kk7lMc-QWPxkf-d.Yb-Il-d-rc.Yb-Il-d-W .Yb-Il-d-c-Nd, .TO.NQ, .n6 .ah9:hover, .n6 .ah9.aiu:hover, .n6 .ah9:focus, .CL.NQ, .CL:hover, .CL:focus {
+	background-color: var(--bg-dark-2);
+}
+c-wiz.Cv8Rjc {
+	background-color: var(--bg-dark) !important;
+}
+.OFhamd-LgbsSe {
+	filter: invert(0);
+}
+.ZHeE1b:hover, .sbox-highlight .ZHeE1b {
+	background-color: var(--bg-transparent-7);
+}
+.ZHeE1b {
+	color: var(--grey-13);
+}
+.ZHeE1b-LaJeF-tPcied-dkl3Ye {
+	color: var(--white-6);
+}
+.Tpv7ud-KZ0xPd-RKTzrd {
+	background-color: var(--bg-dark-16);
+}
+.WtmMlb {
+	color: var(--white-65);
+}
+.zdu1Dc, .VWwgWb, .rCVAP, .nQZ9tb {
+	color: var(--white-3);
+}
+.MHuqCc, .z3C1Uc, .aKa4Mb, .fTef0c, .dMrn8d, .xnQj2d {
+	color: var(--white-4);
+}
+.DCoWqe, .RH4hTc, .sqCxoe, .Fcw6db .StrnGf-VfPpkd-rymPhb-IhFlZd {
+	color: var(--grey-1);
+}
+.fTef0c.StrnGf-VfPpkd-rymPhb-ibnC6b::before, .fTef0c.StrnGf-VfPpkd-rymPhb-ibnC6b::after {
+	background-color: var(--grey-5);
+}
+.DJCM0d .StrnGf-VfPpkd-rymPhb-clz4Ic {
+	border-color: var(--border-1);
+}
+.KY3DLe-settings-obYJb-tJiF1e, .Xr .XR, .XR, .CL.Z8::before, .CL.aew::before {
+	filter: var(--invert-1-hue);
+}
+.KY3DLe-settings-obYJb-tJiF1e:hover {
+	filter: inherit;
+}
+.goog-menuitem-highlight, .goog-menuitem-hover, .goog-menuitem:hover {
+	color: var(--white-2);
+	border-color: var(--bg-dark-2);
+}
+.Yb:not(.abs):hover {
+	background-color: var(--bg-transparent-29)
+}
+.Yb:not(.abs):active {
+	background-color: var(--bg-transparent-30);
+}
+.Yb {
+	color: var(--grey-1);
+	border-color: var(--border-1);
+}
+.Yc {
+	color: var(--white-4);
+}
+.bAw .brC-aT5-aOt-Jw {
+	border-left-color: var(--bg-dark-2);
+}
+.brC-aT5-aOt-Jw {
+	background-color: var(--bg-dark);
+}
+.brC-bsf-aT5-aOt .aT5-aOt-I-JX-atM-Kv {
+	border-color: var(--bg-dark-blue-2);
+}
+.aT5-aOt-I-JW .aT5-aOt-I-JX-atM, .aT5-aOt-I-Kq .aT5-aOt-I-JX-atM, .brC-aMv-bta .aT5-aOt-I-KO .aT5-aOt-I-JX-atM, .brC-aMv-bta .aT5-aOt-I-JO .aT5-aOt-I-JX-atM, .ajp, .IrelEd:hover, .jSlHNc {
+	background-color: var(--bg-dark-2);
+}
+.acY, .yVD4T, .CI3Q1e .snByac, .fKFzg, .PpHmke {
+	color: var(--grey-1);
+}
+[fill="#9AA0A6"], .kI5Dq {
+	fill: var(--grey-4);
+}
+.V6.CL {
+	color: var(--white-3);
+}
+.ahB {
+	background-color: var(--border-1);
+}
+.Tm::-webkit-scrollbar-thumb {
+	background-color: var(--bg-transparent-14);
+}
+.cG0ZOc:hover .wqtP6b, .cG0ZOc:focus .wqtP6b {
+	fill: var(--white-5)
+}
+.MbhUzd {
+	background-color: var(--bg-transparent-31);
+}
+.HpAFr:hover::-webkit-scrollbar-thumb, .Yh:not(.aa4):not(.akV):hover::before, .krjOGe:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(208, 209, 212, .361);
+}
+.EsyeOd {
+	color: var(--grey-1);
+	border-color: var(--border-51);
+}
+.BBnFlf .u2sXWe::before {
+	border-color: var(--border-51);
+}
+.RYTGfd:hover, .RYTGfd:hover .IrelEd, .RYTGfd:focus, .RYTGfd:focus .IrelEd, .Z6, .ua {
+	color: var(--white-3);
+}
+.w2MQg:not(.Huddmf):hover::before {
+	border-bottom-color: var(--border-60);
+}
+.Ps8SG.EsHjHb:not(.eFoz8c) .li8wVd::after {
+	background-color: var(--border-51);
+}
+.CI3Q1e .Qthn3c {
+	fill: var(--grey-1);
+}
+[style="border-radius: 8px;border-color: rgba(218, 220, 224, 1);border-style: solid; border-width: 1px;"] {
+	border-color: var(--border-1) !important;
+}
+#docs-chrome.docs-hub-chrome {
+	border-color: var(--border-17);
+}
+.eygQ4d .Kk7lMc-ae3xF {
+	border-color: var(--border-1);
+}
+.Kk7lMc-ae3xF, input.ee-Cj-Qc-qb.d-Rb.ee-Cj-Hl-Il {
+	background-color: var(--bg-dark);
+}
+.wAZd3e.DFupkd.iWO5td, .ua.bk5 {
+	background-color: var(--bg-dark-3);
+}
+.WzwrXb.iWO5td>.NWlf3e {
+	background-image: var(--bg-dark-gradient-51);
+}
+[style="font-family:Arial;font-size:14.666666666666666px;fill:#000000;white-space:pre;"] {
+	fill: var(--white-1) !important;
+}
+#speakernotes.speakernotes-horizontal-filmstrip-mode {
+	border-color: var(--border-6);
+}
+.ee-Nd-Pf-di-u, .ee-Rl-kb-u-eb, .ee-Cj .ee-R-kb-u .ee-rj-n-Qj-Rj-me {
+	filter: var(--invert-1-hue);
+}
+[class="MCcOAc IqBfM EWZcud e2G3Fb cjGgHb d8Etdd LcUz9d"] {
+	background-color: var(--bg-dark) !important;
+}
+.t9 {
+	background-color: var(--bg-dark);
+}
+.ub {
+	border-color: var(--border-11);
 }
 }
