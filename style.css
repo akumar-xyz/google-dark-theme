@@ -1,4 +1,4 @@
-@-moz-document url-prefix("https://mail.google.com/chat/u/"), regexp("^(https?)://(www|ogs|translate|policies|accounts|myaccount|adssettings|posts|artsandculture|about.artsandculture|docs|contacts|calendar|meet|tasks|keep|workspace|photos|play|ads|drive|classroom|jamboard|podcasts|chat|families|domains|scholar).google.*") {
+@-moz-document url-prefix("https://mail.google.com/chat/u/"), regexp("^(https?)://(www|ogs|gds|translate|policies|accounts|myaccount|adssettings|posts|artsandculture|about.artsandculture|docs|contacts|calendar|meet|tasks|keep|workspace|photos|play|ads|drive|classroom|jamboard|podcasts|chat|families|domains|scholar|gsuite|duo).google.*") {
 :root {
 	--bg-dark: #202124;
 	--bg-dark-2: #212428;
@@ -135,6 +135,7 @@
 	--bg-transparent-dark-28: rgba(32, 33, 36, .6);
 	--bg-transparent-dark-29: rgba(32, 33, 36, .01);
 	--bg-transparent-dark-30: rgba(32, 33, 36, .87);
+	--bg-transparent-dark-31: rgba(32, 33, 36, .851);
 	--bg-full-transparent: #0000;
 	--bg-dark-gradient: -webkit-gradient(linear,left top,left bottom,from(#28292a),to(#28292a));
 	--bg-dark-gradient-2: linear-gradient(#282828,#212228) #282828;
@@ -260,9 +261,9 @@
 	--grey-30: #9a9ea3;
 	--grey-31: #656565;
 	--grey-32: #676767;
-	--purple: #9e3dff;
+	--purple: #cb97ff;
 	--purple-2: #cfb7ff;
-	--blue: #729de3;
+	--blue: #8ab4f8;
 	--blue-2: #84abbd;
 	--blue-dark: #525e71;
 	--red: #d93025;
@@ -273,7 +274,7 @@
 	--dark: #48474C;
 	--dark-silver: #404040;
 	--dark-blue: #5d6064;
-	--lightblue: #bdcadb;
+	--lightblue: #bdc1c6;
 	--lightblue-2: #c8dce6;
 	--lightblue-3: #b1b5b9;
 	--border-1: #4a4b4f;
@@ -10409,7 +10410,7 @@ button:disabled, button:disabled:hover, button:disabled:active {
 #gsc_oci_graph_x {
 	border-color: var(--grey-14);
 }
-.smiUbb, .smiUbb a, #swml a, .fbar p, .fbar a, .cwUqwd, .ckp3Pb, .ngPLf, .iv236, .GlPvmc, .rjmdhd, a.EbH0bb, .iOHNLb {
+.smiUbb, .smiUbb a, #swml a, .fbar p, .fbar a, .cwUqwd, .ckp3Pb, .ngPLf, .iv236, .GlPvmc, .rjmdhd, a.EbH0bb, .iOHNLb, .YkS8D .EFv1uc {
     color: var(--grey-2);
 }
 .kwbMAe {
@@ -10424,7 +10425,7 @@ button:disabled, button:disabled:hover, button:disabled:active {
 .ux4Odc, .qmv2fc.kaAt2, .U6puSd {
 	color: var(--grey-1);
 }
-.ed4kl, .MVMVEe, .EfSkZd, .yEkOpe {
+.ed4kl, .MVMVEe, .EfSkZd, .yEkOpe, .draftResponseHeader .freebirdFormviewerViewHeaderHeaderSeparator {
 	border-color: var(--border-1);
 }
 .NoRdjf:hover, .qmv2fc.kaAt2:not([aria-disabled="true"]):hover {
@@ -10464,10 +10465,10 @@ button:disabled, button:disabled:hover, button:disabled:active {
 .nz9Atf span {
     color: #ea4335 !important;
 }
-.DaQ2rc.KKjvXb .Oxnkef, .OQWBod.N2RpBe:not(.RDPZE), .PRdtG .VfPpkd-AznF2e-wEcVzc-OWXEXe-NowJzb, .ut53P .YnafU {
+.DaQ2rc.KKjvXb .Oxnkef, .OQWBod.N2RpBe:not(.RDPZE), .PRdtG .VfPpkd-AznF2e-wEcVzc-OWXEXe-NowJzb, .ut53P .YnafU, .rvBHac .VfPpkd-AznF2e-wEcVzc-OWXEXe-NowJzb, .WbUJNb:hover .VfPpkd-AznF2e-wEcVzc-OWXEXe-NowJzb, .WbUJNb.VfPpkd-ksKsZd-mWPk3d-OWXEXe-AHe6Kc-XpnDCe .VfPpkd-AznF2e-wEcVzc-OWXEXe-NowJzb, .WbUJNb:not(.VfPpkd-ksKsZd-mWPk3d):focus .VfPpkd-AznF2e-wEcVzc-OWXEXe-NowJzb, .WbUJNb:active .VfPpkd-AznF2e-wEcVzc-OWXEXe-NowJzb, .s1SShd .UnFsfe, .gbFVlb.N2RpBe .espmsb {
 	border-color: var(--blue);
 }
-.DaQ2rc.KKjvXb .Oxnkef, .cAYGed.KKjvXb .Ioup7e, .oj6B2e a, .MGxLdb, .cWQYBc .irkilc, .cWQYBc .hL2wFc, .qSb8Pe.KKjvXb, .oTqstd .ut53P .YnafU, .rfNEoc a, a.N6CPUe, span.rSz9e a:hover, .BycOVd.TNpQ1d, .BycOVd.HrNKEc .JPKgef, .RGZXee.TNpQ1d, .RGZXee .bCzwPe.YySNWc, .nrAB0c p a, .aULzUe, .iXEZD, .iXEZD:link, .iXEZD:visited, .wyNFW, .AaVjTc a:link, .sh-np__product-title, .sh-np__seller-container, #gsc_a_ta a, .gsc_a_t a, .gs_el_sm .gsc_a_t a, .gsc_a_c a, span#gsc_a_ha a, .gs_ai_name a, #gsc_prf_int a, #gsc_lwp_mndt_lnk:hover, #gsc_lwp_mndt_lnk:active, #gsc_lwp_mndt_lnk:visited, #gsc_lwp_mndt_lnk, a.gsc_oci_title_link, .gsc_oci_title_ggi a, .gsc_oci_value a {
+.DaQ2rc.KKjvXb .Oxnkef, .cAYGed.KKjvXb .Ioup7e, .oj6B2e a, .MGxLdb, .cWQYBc .irkilc, .cWQYBc .hL2wFc, .qSb8Pe.KKjvXb, .oTqstd .ut53P .YnafU, .rfNEoc a, a.N6CPUe, span.rSz9e a:hover, .BycOVd.TNpQ1d, .BycOVd.HrNKEc .JPKgef, .RGZXee.TNpQ1d, .RGZXee .bCzwPe.YySNWc, .nrAB0c p a, .aULzUe, .iXEZD, .iXEZD:link, .iXEZD:visited, .wyNFW, .AaVjTc a:link, .sh-np__product-title, .sh-np__seller-container, #gsc_a_ta a, .gsc_a_t a, .gs_el_sm .gsc_a_t a, .gsc_a_c a, span#gsc_a_ha a, .gs_ai_name a, #gsc_prf_int a, #gsc_lwp_mndt_lnk:hover, #gsc_lwp_mndt_lnk:active, #gsc_lwp_mndt_lnk:visited, #gsc_lwp_mndt_lnk, a.gsc_oci_title_link, .gsc_oci_title_ggi a, .gsc_oci_value a, .WbUJNb:hover.VfPpkd-AznF2e-OWXEXe-auswjd .VfPpkd-jY41G-V67aGc, .WbUJNb.VfPpkd-ksKsZd-mWPk3d-OWXEXe-AHe6Kc-XpnDCe.VfPpkd-AznF2e-OWXEXe-auswjd .VfPpkd-jY41G-V67aGc, .WbUJNb:not(.VfPpkd-ksKsZd-mWPk3d):focus.VfPpkd-AznF2e-OWXEXe-auswjd .VfPpkd-jY41G-V67aGc, .WbUJNb:active.VfPpkd-AznF2e-OWXEXe-auswjd .VfPpkd-jY41G-V67aGc, .WbUJNb.VfPpkd-AznF2e-OWXEXe-auswjd .VfPpkd-jY41G-V67aGc, .iCyPie, .dz0T1 .vRMGwf, .zgAlFc, .hhB0V, .tw-lliw.item-selected .language_list_item, .TII3ge, .NNFu9b, .VByer .UbRuwe, .L48Cpd .BSaJxc, .L48Cpd .XBBs5, .freebirdFormviewerViewHeaderEmailAndSaveStatusContainer a, .ahKUtf, .UhwWSb, .Hnvug, .Hnvug:not(:disabled):hover .VfPpkd-Q0XOV, .Hnvug:not(:disabled):focus .VfPpkd-Q0XOV, .Hnvug:not(:disabled):active .VfPpkd-Q0XOV, .Hnvug:not(:disabled) .VfPpkd-Q0XOV,.Hnvug:not(:disabled) .VfPpkd-nBWOSb, .YvB2ne.Hnvug:hover, .YvB2ne.Hnvug:focus, .Hnvug:not(:disabled):hover .VfPpkd-nBWOSb, .Hnvug:not(:disabled):focus .VfPpkd-nBWOSb, .Hnvug:not(:disabled):active .VfPpkd-nBWOSb, .bDA0B {
 	color: var(--blue);
 }
 .a0xMze.T8M5bd::after {
@@ -10512,7 +10513,84 @@ button:disabled, button:disabled:hover, button:disabled:active {
 #gsc_lwp_mndt_lnk:active {
 	background-color: var(--border-23);
 }
-[src="/citations/images/avatar_scholar_128.png"] {
+[src="/citations/images/avatar_scholar_128.png"], .eqVmXb svg, .b479ib svg {
 	filter: var(--invert-3);
+}
+.ndfHFb-c4YZDc-Sx9Kwc, .ec1OGc {
+	background-color: var(--bg-dark);
+}
+.ndfHFb-c4YZDc-Sx9Kwc-r4nke {
+	background-color: var(--bg-dark);
+	color: var(--white-1);
+}
+.hLFyzb, .eBVEsd, .MHORpe, .HwXKj {
+	border-color: var(--bg-dark-blue-2);
+}
+.pBzYke, .rbHGud, .CJaBB {
+	color: var(--grey-1);
+}
+.HaXdpb {
+	background-color: var(--bg-transparent-dark-10);
+}
+.Yni9Cc, .RBRh2e, .T8bt7c {
+	color: var(--white-4);
+}
+.JZ8XUe {
+	border-color: var(--bg-dark-blue-1);
+}
+.NQ8btd .UWUhmf .AortVb {
+	color: var(--grey-5);
+}
+.YSIrof {
+	color: var(--white-3);
+}
+a:visited > h3 {
+	color: var(--purple);
+}
+.tgqOk .pTi5ve {
+	color: var(--grey-2);
+}
+.YTDezd, .Nejh4b {
+	background-color: var(--blue);
+}
+.tw-lliw.item-selected .language_list_item_checkmark, .VByer .TU05kd {
+	filter: saturate(12) hue-rotate(51deg);
+}
+.draftResponseHeader .freebirdFormviewerViewHeaderHeaderFooter, .freebirdFormviewerViewHeaderSaveStatus .freebirdFormviewerViewHeaderText, .nKvHzf, .aZuGHe, .yb1Muc {
+	color: var(--grey-1);
+}
+.DRfwgc, .lBX2Eb, .freebirdFormviewerViewItemsSectionheaderDescriptionText, .LTjXyc, .CXiq6c, .xeq3cb, .CdC1if {
+	color: var(--white-3);
+}
+.ZjTiqc, .L5MEH, .eMCZPd, .Nk1QKb, .o7RrIb {
+	color: var(--white-4);
+}
+.NJ5Hjb .Bokche, .bZpQvb, .SxOqdb.NtlCKb, .SxOqdb.S2qMIf {
+	border-color: var(--border-1);
+}
+.JxwFvb, .S0VUpd, .ga51D, .s0yXtf, .QFL9pc.Zs5HF, .VCl8nc, .hdcGJc, .Hnvug {
+	background-color: var(--bg-dark);
+}
+.HWuBMc.YGyC2b {
+	background-color: var(--bg-transparent-dark-31);
+}
+.vOSR6b {
+	background-color: var(--bg-dark-17);
+}
+.fcVwEe:hover, .aZQAx:focus {
+	background-color: var(--bg-dark-2);
+}
+.sjScnf:hover {
+	background-color: var(--bg-dark-blue-2);
+}
+.fPbtVd {
+    background-color: var(--bg-dark-blue-8);
+}
+html[lang="pl"] .Lneddf:nth-of-type(2) > .TNpli:nth-of-type(1) > .d2VHjc {
+	visibility: hidden;
+}
+html[lang="pl"] .Lneddf:nth-of-type(2) > .TNpli:nth-of-type(1) > .d2VHjc:before {
+	visibility: visible;
+	content: 'Puk, puk, puk nie ten rocznik skurwysynie';
 }
 }
