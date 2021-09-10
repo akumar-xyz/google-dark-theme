@@ -1,4 +1,4 @@
-@-moz-document url-prefix("https://mail.google.com/chat/u/"), regexp("^(https?)://(www|ogs|gds|translate|policies|accounts|myaccount|adssettings|posts|artsandculture|about.artsandculture|docs|contacts|calendar|meet|tasks|keep|workspace|photos|play|ads|drive|classroom|jamboard|podcasts|chat|families|domains|scholar|gsuite|duo).google.*") {
+@-moz-document url-prefix("https://mail.google.com/chat/u/"), regexp("^(https?)://(www|ogs|gds|translate|policies|accounts|myaccount|adssettings|posts|artsandculture|about.artsandculture|docs|contacts|calendar|meet|tasks|keep|workspace|photos|play|ads|drive|classroom|jamboard|podcasts|chat|families|domains|scholar|gsuite|duo|shopping|shoppinglist).google.*") {
 :root {
 	--bg-dark: #202124;
 	--bg-dark-2: #212428;
@@ -105,6 +105,7 @@
 	--bg-transparent-31: rgba(255, 255, 255, .122);
 	--bg-transparent-32: rgba(208, 209, 212, .039);
 	--bg-transparent-32: rgba(255, 255, 255, .08);
+	--bg-transparent-33: rgba(208, 209, 212, .039);
 	--bg-transparent-dark: #202124b8;
 	--bg-transparent-dark-2: rgba(32, 33, 36, .65);
 	--bg-transparent-dark-3: rgba(53, 53, 53, .8);
@@ -2739,7 +2740,7 @@ div.Kj-JD {
 .ams::after {
 	background-color: var(--grey-5);
 }
-[class="hdtb-mitem hdtb-msel"][aria-current="page"] {
+[class="hdtb-mitem hdtb-msel"][aria-current="page"], .r0zKGf, .XZ5MVe, .LbNDAb {
 	color: var(--blue);
 }
 .Pvpvv {
@@ -2749,12 +2750,39 @@ div.Kj-JD {
 .Pvpvv {
 	color: var(--grey-14);
 }
-[class="xyGai"], span[id="Wprf1b"] {
+
+/*Hidden Geo Location*/
+	/*PL*/
+html[lang="pl"] [class="xyGai"], html[lang="pl"] span[id="Wprf1b"], html[lang="en-PL"] div[jscontroller="qcH9Lc"], html[lang="pl"] div[jscontroller="qcH9Lc"], html[lang="en-PL"] [class="CV7Lzb"], html[lang="pl"] [class="CV7Lzb"], html[lang="pl"] [class="Ca1dJe C8sJ1e"] {
 	visibility: hidden;
 }
-[class="xyGai"]:after, span[id="Wprf1b"]:before {
+html[lang="pl"] [class="xyGai"]:before, html[lang="pl"] span[id="Wprf1b"]:before, html[lang="en-PL"] div[jscontroller="qcH9Lc"]:before, html[lang="pl"] div[jscontroller="qcH9Lc"]:before, html[lang="en-PL"] [class="CV7Lzb"]:before, html[lang="pl"] [class="CV7Lzb"]:before, html[lang="pl"] [class="Ca1dJe C8sJ1e"]:before {
 	visibility: visible;
 	content: 'Pozdrawiam mame, tate, babcie i Grześka Floryde';
+}
+	/*EN*/
+html[lang="en"] [class="xyGai"], html[lang="en"] span[id="Wprf1b"], html[lang="en-US"] div[jscontroller="qcH9Lc"], html[lang="en-GB"] div[jscontroller="qcH9Lc"], html[lang="en"] div[jscontroller="qcH9Lc"], html[lang="en-US"] [class="CV7Lzb"], html[lang="en-GB"] [class="CV7Lzb"], html[lang="en"] [class="CV7Lzb"], html[lang="en"] [class="Ca1dJe C8sJ1e"], html[lang="en-US"] [class="Ca1dJe C8sJ1e"], html[lang="en-GB"] [class="Ca1dJe C8sJ1e"] {
+	visibility: hidden;
+}
+html[lang="en"] [class="xyGai"]:before, html[lang="en"] span[id="Wprf1b"]:before, html[lang="en-US"] div[jscontroller="qcH9Lc"]:before, html[lang="en-GB"] div[jscontroller="qcH9Lc"]:before, html[lang="en"] div[jscontroller="qcH9Lc"]:before, html[lang="en-US"] [class="CV7Lzb"]:beforem html[lang="en-GB"] [class="CV7Lzb"]:before, html[lang="en"] [class="CV7Lzb"]:before, html[lang="en"] [class="Ca1dJe C8sJ1e"]:before, html[lang="en-US"] [class="Ca1dJe C8sJ1e"]:before, html[lang="en-GB"] [class="Ca1dJe C8sJ1e"]:before {
+	visibility: visible;
+	content: 'This message has been censored by Thalmor';
+}
+	/*Global*/
+[class="xyGai"], span[id="Wprf1b"], div[jscontroller="qcH9Lc"], [class="CV7Lzb"], [class="Ca1dJe C8sJ1e"] {
+	visibility: hidden;
+}
+[class="xyGai"]:before, div[jscontroller="qcH9Lc"]:before, [class="CV7Lzb"]:before, [class="Ca1dJe C8sJ1e"]:before {
+	visibility: visible;
+	content: 'xd';
+}
+/*----*/
+
+[style="border-top-color:#1558d6"] {
+	border-top-color: var(--blue) !important;
+}
+[style="top:-2px;border-style:dashed dashed solid;border-width:0px 3px 3px;border-bottom-color:#1558d6"] {
+	border-bottom-color: var(--blue) !important;
 }
 .igMPle, .gt-is-itm {
 	background-color: var(--bg-dark-5);
@@ -9999,7 +10027,7 @@ input.ge-Ej-Qc-qb.d-Rb.ge-Ej-Jl-Kl {
 .price-list__card--blue {
     color: #1a73e8;
 }
-[src="/static/images/tld/overview/cloud-small.svg"], [src="/static/images/learn/cloud.svg"], [src="/static/images/learn/cloud-small.svg"], [src="/static/images/tld/overview/circles.svg"], [src="/m/assets/frontend/registrarapp/main/client/domains/manage/resources/images/manage_1x.png"], img#dimg_36, img#dimg_38 {
+[src="/static/images/tld/overview/cloud-small.svg"], [src="/static/images/learn/cloud.svg"], [src="/static/images/learn/cloud-small.svg"], [src="/static/images/tld/overview/circles.svg"], [src="/m/assets/frontend/registrarapp/main/client/domains/manage/resources/images/manage_1x.png"] {
 	filter: var(--invert-3);
 }
 .options__toggles__toggle--active {
@@ -10468,7 +10496,7 @@ button:disabled, button:disabled:hover, button:disabled:active {
 .DaQ2rc.KKjvXb .Oxnkef, .OQWBod.N2RpBe:not(.RDPZE), .PRdtG .VfPpkd-AznF2e-wEcVzc-OWXEXe-NowJzb, .ut53P .YnafU, .rvBHac .VfPpkd-AznF2e-wEcVzc-OWXEXe-NowJzb, .WbUJNb:hover .VfPpkd-AznF2e-wEcVzc-OWXEXe-NowJzb, .WbUJNb.VfPpkd-ksKsZd-mWPk3d-OWXEXe-AHe6Kc-XpnDCe .VfPpkd-AznF2e-wEcVzc-OWXEXe-NowJzb, .WbUJNb:not(.VfPpkd-ksKsZd-mWPk3d):focus .VfPpkd-AznF2e-wEcVzc-OWXEXe-NowJzb, .WbUJNb:active .VfPpkd-AznF2e-wEcVzc-OWXEXe-NowJzb, .s1SShd .UnFsfe, .gbFVlb.N2RpBe .espmsb {
 	border-color: var(--blue);
 }
-.DaQ2rc.KKjvXb .Oxnkef, .cAYGed.KKjvXb .Ioup7e, .oj6B2e a, .MGxLdb, .cWQYBc .irkilc, .cWQYBc .hL2wFc, .qSb8Pe.KKjvXb, .oTqstd .ut53P .YnafU, .rfNEoc a, a.N6CPUe, span.rSz9e a:hover, .BycOVd.TNpQ1d, .BycOVd.HrNKEc .JPKgef, .RGZXee.TNpQ1d, .RGZXee .bCzwPe.YySNWc, .nrAB0c p a, .aULzUe, .iXEZD, .iXEZD:link, .iXEZD:visited, .wyNFW, .AaVjTc a:link, .sh-np__product-title, .sh-np__seller-container, #gsc_a_ta a, .gsc_a_t a, .gs_el_sm .gsc_a_t a, .gsc_a_c a, span#gsc_a_ha a, .gs_ai_name a, #gsc_prf_int a, #gsc_lwp_mndt_lnk:hover, #gsc_lwp_mndt_lnk:active, #gsc_lwp_mndt_lnk:visited, #gsc_lwp_mndt_lnk, a.gsc_oci_title_link, .gsc_oci_title_ggi a, .gsc_oci_value a, .WbUJNb:hover.VfPpkd-AznF2e-OWXEXe-auswjd .VfPpkd-jY41G-V67aGc, .WbUJNb.VfPpkd-ksKsZd-mWPk3d-OWXEXe-AHe6Kc-XpnDCe.VfPpkd-AznF2e-OWXEXe-auswjd .VfPpkd-jY41G-V67aGc, .WbUJNb:not(.VfPpkd-ksKsZd-mWPk3d):focus.VfPpkd-AznF2e-OWXEXe-auswjd .VfPpkd-jY41G-V67aGc, .WbUJNb:active.VfPpkd-AznF2e-OWXEXe-auswjd .VfPpkd-jY41G-V67aGc, .WbUJNb.VfPpkd-AznF2e-OWXEXe-auswjd .VfPpkd-jY41G-V67aGc, .iCyPie, .dz0T1 .vRMGwf, .zgAlFc, .hhB0V, .tw-lliw.item-selected .language_list_item, .TII3ge, .NNFu9b, .VByer .UbRuwe, .L48Cpd .BSaJxc, .L48Cpd .XBBs5, .freebirdFormviewerViewHeaderEmailAndSaveStatusContainer a, .ahKUtf, .UhwWSb, .Hnvug, .Hnvug:not(:disabled):hover .VfPpkd-Q0XOV, .Hnvug:not(:disabled):focus .VfPpkd-Q0XOV, .Hnvug:not(:disabled):active .VfPpkd-Q0XOV, .Hnvug:not(:disabled) .VfPpkd-Q0XOV,.Hnvug:not(:disabled) .VfPpkd-nBWOSb, .YvB2ne.Hnvug:hover, .YvB2ne.Hnvug:focus, .Hnvug:not(:disabled):hover .VfPpkd-nBWOSb, .Hnvug:not(:disabled):focus .VfPpkd-nBWOSb, .Hnvug:not(:disabled):active .VfPpkd-nBWOSb, .bDA0B {
+.DaQ2rc.KKjvXb .Oxnkef, .cAYGed.KKjvXb .Ioup7e, .oj6B2e a, .MGxLdb, .cWQYBc .irkilc, .cWQYBc .hL2wFc, .qSb8Pe.KKjvXb, .oTqstd .ut53P .YnafU, .rfNEoc a, a.N6CPUe, span.rSz9e a:hover, .BycOVd.TNpQ1d, .BycOVd.HrNKEc .JPKgef, .RGZXee.TNpQ1d, .RGZXee .bCzwPe.YySNWc, .nrAB0c p a, .aULzUe, .iXEZD, .iXEZD:link, .iXEZD:visited, .wyNFW, .AaVjTc a:link, .sh-np__product-title, .sh-np__seller-container, #gsc_a_ta a, .gsc_a_t a, .gs_el_sm .gsc_a_t a, .gsc_a_c a, span#gsc_a_ha a, .gs_ai_name a, #gsc_prf_int a, #gsc_lwp_mndt_lnk:hover, #gsc_lwp_mndt_lnk:active, #gsc_lwp_mndt_lnk:visited, #gsc_lwp_mndt_lnk, a.gsc_oci_title_link, .gsc_oci_title_ggi a, .gsc_oci_value a, .WbUJNb:hover.VfPpkd-AznF2e-OWXEXe-auswjd .VfPpkd-jY41G-V67aGc, .WbUJNb.VfPpkd-ksKsZd-mWPk3d-OWXEXe-AHe6Kc-XpnDCe.VfPpkd-AznF2e-OWXEXe-auswjd .VfPpkd-jY41G-V67aGc, .WbUJNb:not(.VfPpkd-ksKsZd-mWPk3d):focus.VfPpkd-AznF2e-OWXEXe-auswjd .VfPpkd-jY41G-V67aGc, .WbUJNb:active.VfPpkd-AznF2e-OWXEXe-auswjd .VfPpkd-jY41G-V67aGc, .WbUJNb.VfPpkd-AznF2e-OWXEXe-auswjd .VfPpkd-jY41G-V67aGc, .iCyPie, .dz0T1 .vRMGwf, .zgAlFc, .hhB0V, .tw-lliw.item-selected .language_list_item, .TII3ge, .NNFu9b, .VByer .UbRuwe, .L48Cpd .BSaJxc, .L48Cpd .XBBs5, .freebirdFormviewerViewHeaderEmailAndSaveStatusContainer a, .ahKUtf, .UhwWSb, .Hnvug, .Hnvug:not(:disabled):hover .VfPpkd-Q0XOV, .Hnvug:not(:disabled):focus .VfPpkd-Q0XOV, .Hnvug:not(:disabled):active .VfPpkd-Q0XOV, .Hnvug:not(:disabled) .VfPpkd-Q0XOV,.Hnvug:not(:disabled) .VfPpkd-nBWOSb, .YvB2ne.Hnvug:hover, .YvB2ne.Hnvug:focus, .Hnvug:not(:disabled):hover .VfPpkd-nBWOSb, .Hnvug:not(:disabled):focus .VfPpkd-nBWOSb, .Hnvug:not(:disabled):active .VfPpkd-nBWOSb, .bDA0B, .JCHpcb:hover, a:hover .JheGif, .sbico, a:hover .I1HL6b, a:visited:hover .I1HL6b, span._-hh, span._-hh:active, span._-hh:hover, span._-hh:link, span._-hh:visited, div._-hh, div._-hh:active, div._-hh:hover, div._-hh:link, div._-hh:visited {
 	color: var(--blue);
 }
 .a0xMze.T8M5bd::after {
@@ -10541,13 +10569,13 @@ button:disabled, button:disabled:hover, button:disabled:active {
 .NQ8btd .UWUhmf .AortVb {
 	color: var(--grey-5);
 }
-.YSIrof {
+.YSIrof, .I1HL6b {
 	color: var(--white-3);
 }
 a:visited > h3 {
 	color: var(--purple);
 }
-.tgqOk .pTi5ve {
+.tgqOk .pTi5ve, .l821if, ._-hj, ._-hj:visited, a._-hj, a._-hj:visited {
 	color: var(--grey-2);
 }
 .YTDezd, .Nejh4b {
@@ -10556,19 +10584,19 @@ a:visited > h3 {
 .tw-lliw.item-selected .language_list_item_checkmark, .VByer .TU05kd {
 	filter: saturate(12) hue-rotate(51deg);
 }
-.draftResponseHeader .freebirdFormviewerViewHeaderHeaderFooter, .freebirdFormviewerViewHeaderSaveStatus .freebirdFormviewerViewHeaderText, .nKvHzf, .aZuGHe, .yb1Muc {
+.draftResponseHeader .freebirdFormviewerViewHeaderHeaderFooter, .freebirdFormviewerViewHeaderSaveStatus .freebirdFormviewerViewHeaderText, .nKvHzf, .aZuGHe, .yb1Muc, .h1KVGc .TI51zd, .hrm4Zd .TI51zd {
 	color: var(--grey-1);
 }
-.DRfwgc, .lBX2Eb, .freebirdFormviewerViewItemsSectionheaderDescriptionText, .LTjXyc, .CXiq6c, .xeq3cb, .CdC1if {
+.DRfwgc, .lBX2Eb, .freebirdFormviewerViewItemsSectionheaderDescriptionText, .LTjXyc, .CXiq6c, .xeq3cb, .CdC1if, .ZRg0lb, .oYpGSe .QzyoSb, .ENxOwf, .sh-t__title-pdp, ._-he {
 	color: var(--white-3);
 }
-.ZjTiqc, .L5MEH, .eMCZPd, .Nk1QKb, .o7RrIb {
+.ZjTiqc, .L5MEH, .eMCZPd, .Nk1QKb, .o7RrIb, .XxEVPc .pPQgvf, .e1fR0c, .e1fR0c:hover, .dfB0uf, .Yt6rvf {
 	color: var(--white-4);
 }
 .NJ5Hjb .Bokche, .bZpQvb, .SxOqdb.NtlCKb, .SxOqdb.S2qMIf {
 	border-color: var(--border-1);
 }
-.JxwFvb, .S0VUpd, .ga51D, .s0yXtf, .QFL9pc.Zs5HF, .VCl8nc, .hdcGJc, .Hnvug {
+.JxwFvb, .S0VUpd, .ga51D, .s0yXtf, .QFL9pc.Zs5HF, .VCl8nc, .hdcGJc, .Hnvug, .p9lFnc, ._- {
 	background-color: var(--bg-dark);
 }
 .HWuBMc.YGyC2b {
@@ -10592,5 +10620,265 @@ html[lang="pl"] .Lneddf:nth-of-type(2) > .TNpli:nth-of-type(1) > .d2VHjc {
 html[lang="pl"] .Lneddf:nth-of-type(2) > .TNpli:nth-of-type(1) > .d2VHjc:before {
 	visibility: visible;
 	content: 'Puk, puk, puk nie ten rocznik skurwysynie';
+}
+.CO1lLb {
+	color: var(--white-54);
+}
+.t9GbDc {
+	background-color: var(--bg-dark-green);
+}
+.c379T {
+	color: var(--white-87);
+}
+a.X5OiLe:visited, .usJj9c a:visited, .wDYxhc a:visited {
+	color: var(--purple);
+}
+._-mS {
+	color: var(--grey-8);
+}
+._-mr, ._-mG {
+	border-color: var(--border-1);
+}
+._-mo, ._-nq, .oDySvb::before {
+	background-color: var(--bg-dark);
+}
+#res ._-jL, ._-jL, ._-bw, .yUz2C, .kzJn9c, a.aE5Gic, a.aE5Gic:hover a.aE5Gic:link a.aE5Gic:visited {
+	coloR: var(--grey-1);
+}
+._-mM, ._-mN {
+	color: var(--grey-2);
+}
+._-n0, .Zd9MXe, .aZK3gc, .egZxgf, .gjI9Ve, .o2r8Rc, ._-hf {
+	color: var(--white-3);
+}
+.HfSJKb, .llSfyd, .nodTRd, .rdyZCf, .NhSyUd {
+	color: var(--white-4);
+}
+._-ct, ._-gJ, .sh-fp__container._-gC {
+	border-color: var(--border-6);
+}
+#res a._-nC, a._-nC, ._-mR ._-mL, ._-nS:link, ._-nS:visited, a.LBbJwb, a.LBbJwb:link, a.LBbJwb:visited, a.LBbJwb:link:hover, .CaGdPb, .CaGdPb:link, .CaGdPb:visited, .tEJZ0b {
+	color: var(--blue);
+}
+._-cv {
+	filter: var(--invert-1-hue);
+}
+.QdZIX {
+	border-color: var(--border-4);
+}
+.n11rXc {
+	background-color: var(--bg-dark-yellow-2);
+}
+.rQEFy {
+	border-color: var(--blue);
+}
+.IMaNzc {
+	background-color: var(--bg-dark-blue-2);
+}
+[style="background-color:#fff;color:#4285f4"], [style="color:rgba(26,115,232,1);font-size:24px;"] {
+	color: var(--blue) !important;
+}
+.rdRPF {
+	background-color: var(--bg-dark);
+	border-color: var(--border-1);
+}
+.jmaXG, .S7WPVd:not(:last-child)::after, .Fyqssd, .yPIi2b {
+	color: var(--white-54);
+}
+[style="color:rgba(95,99,104,1);"] {
+	color: var(--grey-1) !important;
+}
+.Awadud {
+	color: var(--grey-5);
+	fill: var(--grey-5);
+}
+html[lang="pl"] .zL4vWe.FAZYFf.hknice .EO32Jf::after {
+	content: 'Wypierdalaj XD';
+	color: var(--grey-1);
+	font-size: 0.75rem;
+	position: relative;
+	top: 2rem;
+	right: 8.5rem;
+}
+.r7gAOb {
+	color: var(--white-87);
+}
+.z86TMb {
+	background-color: var(--bg-dark);
+	border-color: var(--bg-dark-blue-2);
+}
+.vCj2Hc.zEqjYe {
+	background-color: var(--bg-dark-3);
+}
+.fYz4Vc {
+	background-color: var(--bg-dark);
+	border-color: var(--bg-dark-blue-2);
+}
+.XvCKec {
+	color: var(--grey-8);
+}
+.PRRO3b {
+	filter: var(--invert-1-hue);
+}
+.Ni5kEc, .sh-rso__header {
+	color: var(--white-5);
+}
+.JfxeVe, .ExmP5d, .mPFVXd, .sh-rso__content, .sh-rso__header, .sh-rso__modal, .sh-rso__overlay-inner, .vF00ne, .RgWChf, .EkTWBc, .gp0lg {
+	background-color: var(--bg-dark);
+}
+.azTb0d, .iu5UVe, .zE5Aq, .R0Ky3e {
+	color: var(--grey-1);
+}
+[style="color:rgba(218,220,224,1);font-size:14px;"], [style="color: rgb(218, 220, 224); font-size: 14px;"] {
+	color: var(--border-1) !important;
+}
+.lFzSRc, .ZMRJC {
+	color: var(--blue);
+	fill: var(--blue);
+}
+.rUXef .mg0Txf:not(.YnaK6c)~.mg0Txf {
+	border-color: var(--bg-dark-blue-2);
+}
+[style="color:rgba(60,64,67,1);"] {
+	color: var(--white-4) !important;
+}
+.lxC5uf {
+	box-shadow: 0 0 0 8px var(--bg-dark);
+}
+[style=" background-color:rgba(230,244,234,1); color:rgba(24,128,56,1)"] {
+	background-color: var(--bg-dark-green) !important;
+	color: var(--green) !important;
+}
+.YoSiqc, [style="background-image:url(/images/nav_logo321.webp);background-repeat:no-repeat;background-position:-107px -99px;height:12px;width:12px;display:inline-block"], .sh-rso__close, .yv87Rc, .L3lcWc, .ly0Ckb, [src="https://fonts.gstatic.com/s/i/googlematerialicons/expand_more/v13/gm_grey-24dp/2x/gm_expand_more_gm_grey_24dp.png"], ._-jN, ._-cD {
+	filter: var(--invert-1-hue);
+}
+.ubWGIe .jKCC1e, .mly7zb, .sh-rol__reviews-cont, .z6XoBf, .sh-fp__container.xt8sXe {
+	border-color: var(--border-6);
+}
+.AMxILd, .uYNZm, .eS0a2, .H98nB, .g8GHw li, .g1lvWe, .P3O8Ne, .F4JFFf, .Ekm0eb.AsTrLc, .Ekm0eb.sh-ma-menu__selected-value, .qYlANb {
+	color: var(--white-3);
+}
+#sg-product__pdp-container a.internal-link, #sg-product__pdp-container a.internal-link:hover, #sg-product__pdp-container .internal-link a, #sg-product__pdp-container .internal-link a:hover, .rOdmxf, .FYiaub, .EJbZzc, .EJbZzc:hover, .EJbZzc:visited, .Kl9jM, a.sh-mv__link, a.sh-mv__link:hover, a.sh-mv__link:visited, span.ehdnYc, span.ehdnYc:active, span.ehdnYc:hover, span.ehdnYc:link, span.ehdnYc:visited, div.ehdnYc, div.ehdnYc:active, div.ehdnYc:hover, div.ehdnYc:link, div.ehdnYc:visited, .x1zPJe a, .x1zPJe a:link, .x1zPJe a:hover, .x1zPJe a:visited, .x1zPJe a:active, .x1zPJe span, .vqqGxe a, .vqqGxe a:active, .vqqGxe a:hover, .vqqGxe a:link, .vqqGxe a:visited, .cNMlI, .u550Qe a, #res a._-nK, a._-nK, ._-n0:link, ._-n0:visited {
+	color: var(--blue);
+}
+.pKmMtb, .T435Cf {
+	border-color: var(--blue);
+}
+.BXlZy {
+	background-color: var(--blue);
+	border-color: var(--blue);
+}
+.VB1Zmd {
+	background-color: var(--bg-dark-2);
+}
+.qIEPib, .svTb8c div, .nMkOOb, .nMkOOb:visited, a.nMkOOb, a.nMkOOb:visited, .sPPcBf, .ipBhab {
+	color: var(--grey-2);
+}
+.sh-rso__header, .VxXD7b::before {
+	border-color: var(--border-51);
+}
+.rwZNDd, .YTkbnd, .YTkbnd:visited, .YTkbnd:link, a.sh-osd__sort, a.sh-osd__sort:link, a.sh-osd__sort:visited {
+	color: var(--white-2);
+}
+.sh-dc__next:hover, .sh-dc__prev:hover, .sh-dc__next:hover {
+	filter: var(--invert-1-hue);
+	background-color: #d0d1d4;
+}
+.C8sJ1e, .C8sJ1e a, .C8sJ1e a:visited, .ilLMIc, .ORIPPe, .xzHLbe {
+	color: var(--grey-1);
+}
+.C8sJ1e .fZGcm {
+	background-color: var(--grey-2);
+}
+.jfk-bubble-arrowdown .jfk-bubble-arrowimplbefore, .jfk-bubble-arrowup .jfk-bubble-arrowimplbefore {
+	border-color: var(--grey-17) transparent;
+}
+a.sh-t__title-pdp {
+	color: var(--white-1);
+}
+.qSArmd {
+	color: var(--grey-14);
+}
+.lBRvsb, .vm91i {
+	border-color: var(--border-6);
+}
+.c18cu {
+	color: var(--grey-9);
+	border-color: var(--border-6);
+}
+.AnDf0c {
+	color: var(--grey-24);
+}
+.MYVG1c, .Ekm0eb.sh-ma-menu__dropdown, .Ekm0eb.sh-ma-menu__items {
+	background-color: var(--bg-dark);
+	border-color: var(--border-1);
+}
+[style="color:rgba(95,99,104,1);font-size:16px;"] {
+	color: var(--grey-1) !important;
+}
+.O2eOMd {
+	background-color: var(--bg-transparent-33);
+}
+[style="color:rgba(26,115,232,1)"], [style="color:rgba(26,115,232,1);font-size:16px;"] {
+	color: var(--blue) !important;
+}
+shopping-list.shoppingList.ng-tns-c111-3.ng-star-inserted {
+	border-top-color: var(--bg-dark);
+}
+[style="color:#3c4043;"] {
+	color: var(--white-4) !important;
+}
+.Ekm0eb.xQyaHf, .Ekm0eb.sh-ma-menu__selected {
+	background-color: var(--bg-dark);
+	color: var(--white-3);
+}
+.Ekm0eb.xQyaHf:hover {
+	background-color: var(--bg-dark-blue-2);
+	color: var(--blue);
+}
+._-mz {
+	border-color: var(--border-1);
+}
+._-mw, ._-ny {
+	background-color: var(--bg-dark);
+}
+#res ._-jT, ._-jT {
+	color: var(--grey-1);
+}
+._-cB {
+	border-color: var(--border-6);
+}
+
+
+/*Replacing Different Logos to .png at Google Search*/
+[src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNIa5jTptTSIWCf-1mW4mg90pEyZR5Yqu78g50Qhc&s"]/*Eurogamer.pl*/ {
+	content: url('https://images.eurogamer.net/2018/eg12/EG-Logo-pl.png');
+	height: auto;
+	position: absolute;
+}
+[src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvqVpVL_gA6t2JyU2VRAYCaN26LUFEp89zL8QMol8&s"]/*GRYOnline.pl*/ {
+	content: url('https://d2xhqqdaxyaju6.cloudfront.net/file/logo-s/3793/87/s-1200-x.png');
+	filter: invert(1) hue-rotate(180deg) saturate(15);
+	height: auto;
+	position: absolute;
+}
+[src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2ROXaaWdqD0e3XH_6Kc25xYxdc3ACU9l1ThagUfA&s"]/*PCWorld*/ {
+	content: url('https://upload.wikimedia.org/wikipedia/commons/8/8c/PCWorld_logo_red_2019.png');
+	height: auto;
+	position: absolute;
+}
+[src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGMAAAAQCAMAAAA1UzHIAAAAY1BMVEX///8AesgAe8n1+v3g7fcAhMwAeMjA2O4AgMsAdscAfsoAgsvp8vnU5fMljM+31ewAcsZ1rtxlptmZwOSNuuHJ3vBdotc5lNKDtt+y0esZiM6py+iix+ZHmNNSntZ8st4AbMS1zbOVAAACVElEQVQ4jbVU2ZakIAxNwiKLoIiKW5X9/185wbJ6uudhnro5xxOCSW6WCwB1HcMwzGm69tDe8kdXV2rUhfyzrapsfh7iOK/IXoXTyt/BmBIsE4QPGmFN/o0hrsXitb/0l70I7e0p5b15/RJv8cX7dioAZ4awzAWScuMLo+3RWhtF37PF2C+h6rSw96ytLTX4tFmNS43w0H1ttsI+XEqz9qh1P0oWlhJAyPAMfQtBwmi8dzcGKmbBKRDZOeMYaBtmozuIFJcHUQuTxWdyfWZb7c3MZtGbxIpyTUdxnp+7RDXPHnfIEuaGTdORlFcKw42xXXXTGwMfXA+NHXLZkDi5SPtNwUynR1ExPEJ2FQPT1UuMADvbVo0bPBAXoRQb3Bge0c5/MSjmvOF6clbVeRPWg8jHkQNsKId6HM2JXdwGbDrH3v3BZkeOlC8MCMUpb5TypN8Y6vEoy5deeW3ME9IbA6yB9kM7uwZWGuKMIwVSLqeKsbH3KklZ57lw7pUQ0ng3JOdTO37rFSDxeGfKgUrwvF9r+a9eOSZKZ6xI7Gs8Sogok8G21vHZK7nRdM38tGTcOMDSj/D4nHkpcYbZ+fPprJx4Hpk4pULb+Zq5pjh4Jhb5UspmzooRdIGKQRufHXUee62QucuZDCD2I3RM4RvDGuc4JlNVW98xizi+sx0PDq1+1BsyRa25lt0yFaHTBBtT16ww902nHZFm7nIzlOXuhqFBlg10/EX4956Lz5v2eXBfRmj/+fOftZ+iYbfA97L80lvCVZcrqsjl195EXuu3tz38cPQ/gXIjIZiscTQAAAAASUVORK5CYII="]/*Eurogamer*/ {
+	content: url('https://iconape.com/wp-content/files/ky/245916/svg/245916.svg');
+	height: auto;
+	max-height: 16px;
+	position: absolute;
+}
+[src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAQCAMAAACcJ/lcAAAAt1BMVEX///8AAADtGVnsAE3wGVrd3d3sAEZTVFRgYGF2d3e6urrsAEhZWVn609rrAEPMzc3l5eXsAFHT09PExMSurq739/eQLEmXl5js7OygoKBBQkIZGhtNTk73sb/wYoPtI13vPmzzhZ384OXye5X4xc7vS3L+8PJ/DzPydI/6Gl8qAxAlAw4dAArfF1T1lamMjY1oITdWHzCBgoIPEBEsLS6wLFGaLE01NjZpamrIJlQiIyPWIlb4vcker4XjAAAB2ElEQVQ4jaWTa3eiQAyGk4FRwAvXEUfoqi21rrstrdJ6qf//d20StJ9KT892PsgBkue8eYIAfG5+zdVieQs/OiPXiZVSce/uJ5RqTAz30VXKuf9/ysohyu8HnDNnyU/6nuf54UdB1s+/gVnHQtn8Yc54RU9QTnYtyNH/mqB1BGZAEz0gbjZ/H8nPk2C22QwRIMnzRDBJGgGE9KNza9KUI9aZAZMmurb0UMOIZnInk8nz8wvpie8Fk4JGND6H8gmzrdEDgzjN26AmkouOcEeXhhOdWc3r20Qoyl0IxuoD7jLEukYMLfpTyhbgkLp9S42wxz3lLfieK6inEszr2wuruWL4WI/1WDwQBkoMPQxyPADnDHliKDDDAmCGAS+K3RyPR85CbtaCafZlRu9JDGVgTIbDHcIWaWc0XIAn4P6cB+oLBhbc//4+Z4oaVBc3dHwcclHNGCOWLBaGVCENEwBFShl3wVQ97m8xMtMVE118ysJJdyKwgt2QEJJLyghTthhYsx0lmLH8rZombb8H2vpMg21qgFbHdIg0CRqoibKF6FQCHC7VsO6JFxU7o85PzEdmWcu2sKPmvBg4zsBZrjoptPFIxjyVtMPOstvq3J2EMYmWMQkyCz55/w+c1SKIerVHnwAAAABJRU5ErkJggg=="]/*Polygon*/ {
+	content: url('https://www.nicepng.com/png/full/122-1220110_clipart-png-transparent-stock-polygon-logo-white-png.png');
+	height: auto;
+	bottom: 112px;
+	width: auto;
+	max-width: 70px;
+	position: absolute;
 }
 }
