@@ -107,6 +107,9 @@
 	--bg-transparent-32: rgba(208, 209, 212, .039);
 	--bg-transparent-32: rgba(255, 255, 255, .08);
 	--bg-transparent-33: rgba(208, 209, 212, .039);
+	--bg-transparent-34: rgba(204, 210, 215, .06);
+	--bg-transparent-35: rgba(204, 210, 215, .04);
+	--bg-transparent-36: rgba(255, 255, 255, .38);
 	--bg-transparent-dark: #202124b8;
 	--bg-transparent-dark-2: rgba(32, 33, 36, .65);
 	--bg-transparent-dark-3: rgba(53, 53, 53, .8);
@@ -12171,7 +12174,7 @@ picker-tree .row:hover {
 .photo-tout__content .h-c-grid, .photo-tout__background .h-c-grid, [ng-controller="AnimationsController as animationsCtrl"], .adsense-section-quote .quote-block, [class="glue-flexbox glue-app-ready ng-scope"] main, .h-c-page.adsense-solution-hero .hero-box, .secondary-hero__text-box {
 	background-color: var(--bg-dark);
 }
-.cookie-bar-container #cookieBar .cookieBarButtons .cookieBarMoreButton {
+.cookie-bar-container #cookieBar .cookieBarButtons .cookieBarMoreButton, .NQV3m {
 	color: var(--blue);
 }
 .adsense-section.section-gray, .adsense-section-get-started, .section-gray {
@@ -12962,6 +12965,315 @@ a.cookieBarButton.cookieBarMoreButton {
 }
 td#docs-material-colorpalette-cell-309 > [style="background-color: rgb(255, 255, 255);"], td#docs-material-colorpalette-cell-209 > [style="background-color: rgb(255, 255, 255);"], td#docs-material-colorpalette-cell-381 > [style], td#docs-material-colorpalette-cell-281 > [style] {
 	background-color: var(--white-1) !important;
+}
+.pR49Ae span {
+	background: none;
+	border-bottom: 3px dotted #f00;
+	top: -0.5em;
+	position: relative;
+	color: transparent;
+}
+.pR49Ae.gsfi {
+	color: transparent;
+}
+.I87fLc.XzOhkf {
+	background-color: var(--bg-dark);
+	border-color: var(--border-1);
+}
+.nYkDR, .LV4pme, .VhOj3e, .docs-material-hsv-color-picker-text, .docs-sidebar-toggle-tabs .jfk-button.docs-sidebar-toggle-tab-inactive {
+	color: var(--grey-1);
+}
+.kgnlhe.FwR7Pc, .MtFg0.FwR7Pc {
+	background-color: var(--bg-dark-2);
+	color: var(--white-1);
+}
+.eIKIse, .jCVEDd .G2nOM, .mvqA2c, .ODAbH, .myVd4c .TYVfy, .myVd4c .TcXXXb, .e7YJ3 {
+	color: var(--blue);
+}
+.ksE5nf.fXx9Lc {
+	background-color: var(--border-1);
+}
+.ksE5nf.EiZ8Dd {
+	background-color: var(--blue);
+}
+.L780X {
+	background-color: var(--bg-dark);
+	color: var(--grey-1);
+}
+.L780X::after {
+	background-color: var(--bg-dark);
+	box-shadow: -2px 2px 2px 0 rgba(82, 82, 82, .4) !important;
+}
+.rnt3Ze[style="background-color: rgb(255, 255, 255);"], td[style="background-color: rgb(255, 255, 255);"], .docs-material-color-swatch-element.docs-material-color-swatch-color.docs-material-color-swatch-border[style="background-color: rgb(255, 255, 255);"] {
+	background: #fff !important;
+}
+.rnt3Ze[style="background-color: rgb(245, 245, 245);"], td [style="background-color: rgb(245, 245, 245);"], .docs-material-color-swatch-element.docs-material-color-swatch-color.docs-material-color-swatch-border[style="background-color: rgb(245, 245, 245);"] {
+	background-color: #f5f5f5 !important;
+}
+.rnt3Ze[style="background-color: rgb(250, 250, 250);"], td [style="background-color: rgb(250, 250, 250);"], .docs-material-color-swatch-element.docs-material-color-swatch-color.docs-material-color-swatch-border[style="background-color: rgb(250, 250, 250);"] {
+	background-color: #fafafa !important;
+}
+.rnt3Ze[style="background-color: rgb(240, 246, 253);"], td [style="background-color: rgb(240, 246, 253);"], .docs-material-color-swatch-element.docs-material-color-swatch-color.docs-material-color-swatch-border[style="background-color: rgb(240, 246, 253);"] {
+	background-color: #f0f6fd !important;
+}
+.rnt3Ze[style="background-color: rgb(26, 115, 232);"], td [style="background-color: rgb(26, 115, 232);"], .docs-material-color-swatch-element.docs-material-color-swatch-color.docs-material-color-swatch-border[style="background-color: rgb(26, 115, 232);"] {
+	background-color: rgb(26, 115, 232) !important;
+}
+.docs-material-hsv-color-picker-input {
+	border-color: var(--border-1);
+	color: var(--white-4);
+	background-color: var(--bg-dark);
+}
+.docs-material-color-picker-saturation-value-background, .docs-material-color-picker-dragger {
+	border-color: var(--bg-dark);
+}
+.waffle-sidebar-title {
+	background-color: var(--bg-dark);
+	border-color: var(--border-1);
+	color: var(--white-3);
+}
+.docs-sidebar-toggle-tabs, .waffle-sidebar-content, .docs-charts-editor-charttype-menu {
+	background-color: var(--bg-dark);
+}
+.docs-sidebar-toggle-tabs .jfk-button.docs-sidebar-toggle-tab-inactive:hover, .waffle-sidebar-container .goog-flat-menu-button-caption, .docs-material-gm-labeled-select-caption, .waffle-charteditor-data-constraint-name {
+	color: var(--white-3);
+}
+.waffle-conditionalformat-edit-pill-section-header, .docs-gm .docs-link-insertlinkbubble-suggestionholder {
+	color: var(--white-4);
+}
+.waffle-range-selection-container {
+	background-color: var(--bg-dark);
+	border-color: var(--border-1);
+	color: var(--white-4);
+}
+.waffle-conditionalformat-edit-pill-section-label {
+	color: var(--border-53);
+}
+.waffle-conditionalformat-condition-type-select .goog-flat-menu-button, .waffle-conditionalformat-condition-date-select .goog-flat-menu-button {
+	background-color: var(--bg-dark);
+	border-color: var(--border-1) !important;
+}
+.waffle-sidebar-container .jfk-select .goog-flat-menu-button-dropdown, .docs-material-gm-labeled-select-dropdown-icon, .waffle-types-text-icon:after, .docs-gm .waffle-gm-sidebar .docs-charts-editor-overflow-menu-button-icon, .waffle-charteditor-chip-delete-button, .waffle-filterbox-input-icon {
+	filter: var(--invert-1-hue);
+}
+.waffle-conditionalformat-custom-toolbar {
+	background-color: var(--bg-dark);
+}
+.waffle-conditionalformat-add-another-rule-button, .docs-link-urlinput-url-container, .waffle-filtermenu, .waffle-db-filter-by-value-container, .waffle-filterbox-boolean-condition-picker {
+	background-color: var(--bg-dark);
+}
+.waffle-sidebar-container .jfk-button-standard {
+	background-color: var(--bg-dark);
+	border-color: var(--border-1) !important;
+}
+.waffle-sidebar-container .jfk-button-standard.jfk-button-hover {
+	background-color: var(--bg-hover-1);
+	border-color: var(--bg-dark-green) !important;
+}
+.waffle-conditionalformat-edit-pill-button-bar, .docs-gm .docs-link-urlinput-url-container, .waffle-charteditor-pickerchip .docs-charts-editor-chip-content, .waffle-sidebar-container .goog-flat-menu-button, .docs-material-gm-labeled-select-outer-box {
+	border-color: var(--border-1);
+}
+.docs-gm .docs-link-insertlinkbubble-url-label, .docs-gm .docs-link-insertlinkbubble-text-label {
+	background-color: var(--bg-dark);
+	box-shadow: 5px 0 0 var(--bg-dark), -5px 0 0 var(--bg-dark);
+	color: var(--grey-1);
+}
+.docs-link-insertlinkbubble-suggestionholder {
+	background-color: var(--bg-dark);
+	border-color: var(--border-6);
+}
+.docs-link-infilelinksuggestiongroup-cb:hover, .docs-link-infilelinksuggestiongroup-cb-keyboardfocus {
+	background-color: var(--bg-dark-3);
+}
+.docs-link-linksuggestiongroup, .waffle-dbsource-column-filtered-menu .goog-menu-filter {
+	border-color: var(--border-6);
+}
+.docs-link-linksuggestion:hover, .docs-link-linksuggestion:focus {
+	background-color: var(--bg-dark-2);
+}
+.docs-gm .modal-dialog .goog-buttonset-action[disabled], .docs-gm .modal-dialog .jfk-button-action.jfk-button-disabled, .docs-gm .docs-material-bubble .jfk-button-action.jfk-button-disabled {
+	background-color: var(--bg-dark-2);
+	color: var(--white-4);
+}
+.docs-gm .docs-link-urlinput-url, .docs-charts-editor-control-label, .docs-material-gm-labeled-select-label, .waffle-unified-formula-help-instructions-container {
+	color: var(--grey-1);
+}
+.docs-gm .docs-link-insertlinkbubble ::selection {
+    background: var(--bg-dark-blue-1);
+}
+.docs-charts-editor-charttype-select-icon svg {
+	fill: var(--white-1);
+}
+.docs-material-gm-labeled-select-focused .docs-material-gm-labeled-select-outer-box {
+    background-color: var(--bg-transparent-34);
+    border-color: var(--border-1);
+}
+.docs-material-gm-labeled-select-hover .docs-material-gm-labeled-select-outer-box {
+    background-color: var(--bg-transparent-35);
+    border-color: var(--border-1);
+}
+.docs-charts-editor-palette-label, .waffle-material-selectioninput .waffle-range-selection-container {
+	color: var(--white-87);
+}
+.docs-charts-editor-charttype-option {
+	border-color: var(--border-52);
+}
+.docs-charts-editor-charttype-option:hover {
+	border-color: var(--border-4);
+}
+.goog-palette-cell-selected .docs-charts-editor-charttype-option {
+    box-shadow: 0 0 0 4px var(--bg-dark-blue-7);
+}
+.waffle-material-selectioninput .waffle-range-selection-container:after {
+	background-color: var(--bg-transparent-4);
+}
+.waffle-material-selectioninput:hover .waffle-range-selection-container:after {
+	background-color: var(--bg-transparent-36);
+}
+.docs-charts-editor-chip-content {
+	background-color: var(--bg-dark-2);
+}
+.waffle-dbsource-column-filtered-menu input {
+	color: var(--white-87);
+	background-color: var(--bg-dark);
+}
+.waffle-charteditor-data-constraint-chip {
+	color: var(--white-9);
+}
+.waffle-charteditor-pickerchip .docs-charts-editor-chip-label {
+	color: var(--grey-5);
+}
+.waffle-function-category-row {
+	background-color: var(--bg-dark);
+	color: var(--white-6);
+}
+.waffle-function-category-row-description {
+	color: var(--grey-9);
+}
+.waffle-function-category-row:hover, .waffle-unified-formula-help-wrapper-v2ui .waffle-unified-formula-help-title-section-bottom-placeholder .waffle-unified-formula-help-title-container, #t-text-rotation-palette .goog-palette-table, .docs-gm.docos-xeditor .docos-streamdocoview {
+	border-color: var(--border-1);
+}
+.waffle-unified-formula-help-title-container {
+	background-color: var(--bg-dark);
+	color: var(--grey-5);
+}
+.waffle-unified-formula-help-wrapper-v2ui .waffle-unified-formula-help-argument-help-container {
+	background-color: var(--bg-dark-green);
+}
+.waffle-unified-formula-help-argument-help-container .waffle-arguments-help-title {
+	background-color: var(--bg-dark-green);
+	color: var(--white-4);
+}
+.waffle-unified-formula-help-wrapper {
+	background-color: var(--bg-dark);
+	color: var(--white-2);
+}
+.waffle-unified-formula-help-wrapper-v2ui .waffle-unified-formula-help-close-button, .waffle-arguments-help-section-active .waffle-arguments-help-parameter-content, .formulas-arguments-help-info-title .waffle-arguments-help-parameter-content, .docos-streampane-zero-state-content-add-comment, .lRsTH-Tswv1b-text, .lRsTH-Tswv1b-text .widget-pane-link {
+	color: var(--white-4);
+}
+.waffle-filterbox-container, .docs-gm.docos-xeditor .docos-streamdocoview-authorname-timestamp .docos-streamdocoview-author {
+	color: var(--white-3);
+}
+.waffle-unified-formula-help-wrapper-v2ui .waffle-arguments-help-body {
+	background-color: var(--bg-dark);
+	border-color: var(--border-6);
+}
+.formulas-arguments-help-info-title .waffle-arguments-help-section-title, .waffle-arguments-help-section-inactive .waffle-arguments-help-parameter-content, .waffle-arguments-help-section.waffle-arguments-help-section-inactive .waffle-arguments-help-section-title, .docos-streampane-zero-state-footer-edu, .docos-streampane-zero-state-footer-edu-explained, .docos-input-contenteditable:empty:before {
+	color: var(--grey-5);
+}
+.waffle-unified-formula-help-wrapper hr {
+	background-color: var(--border-1);
+}
+.waffle-unified-formula-help-wrapper .waffle-arguments-help-formula {
+	color: var(--green);
+}
+.waffle-filterbox-menu .goog-menu-filter input {
+	background-color: var(--bg-dark);
+	border-color: var(--border-1) !important;
+}
+.goog-link-button, .waffle-filterbox-action-link, .waffle-filterbox-dash, .docos-streampane-zero-state-footer a {
+	color: var(--blue);
+}
+#docs-meet-in-editors-entrypointbutton.goog-flat-menu-button .goog-flat-menu-button-dropdown {
+    border-color: var(--blue) transparent;
+}
+.docs-docos-activity-sidebar-header {
+	background-color: var(--bg-dark);
+	border-color: var(--border-1);
+	color: var(--white-3);
+}
+.docs-gm.docos-xeditor .docos-gm-notification-icon-path, .docs-gm.docos-xeditor .docos-new-comment-icon-path, .docs-gm .docs-docos-activity-sidebar .docos-gm-notification-icon-path, .docs-gm .docs-docos-activity-sidebar .docos-new-comment-icon-path, .docs-gm .docos-filter-settings .docs-material-menu-button-flat-default-dropdown-icon {
+	fill: var(--grey-1);
+}
+.docs-gm.docos-xeditor .docos-new-comment-button.jfk-button-hover, .docs-gm .docs-docos-activity-sidebar .docos-new-comment-button.jfk-button-hover, .docs-gm.docos-xeditor .docos-notification-settings .goog-flat-menu-button.goog-flat-menu-button-hover, .docs-gm .docs-docos-activity-sidebar .docos-notification-settings .goog-flat-menu-button.goog-flat-menu-button-hover, .lRsTH-Tswv1b-Tydcue:hover, .section-info .NIyLF-haAclf:hover, .keynav-mode .section-info-action-button:focus, .keynav-mode .section-info:focus {
+	background-color: var(--bg-dark-2);
+}
+.docs-gm .docos-filter-settings .docs-material-menu-button-flat-default {
+	color: var(--grey-1);
+	border-color: var(--border-1);
+	background-color: var(--bg-dark-1);
+}
+.docs-gm .docos-filter-settings .docs-material-menu-button-flat-default-focused .docs-material-menu-button-flat-default-dropdown-icon, .docs-gm .docos-filter-settings .docs-material-menu-button-flat-default-active .docs-material-menu-button-flat-default-dropdown-icon, .docs-gm .docos-filter-settings .docs-material-menu-button-flat-default-hover .docs-material-menu-button-flat-default-dropdown-icon {
+	fill: var(--white-3);
+}
+.docos-streampane-zero-state, .docs-docos-activity-sidebar, .docs-gm.docos-xeditor .docos-input-typing>.docos-input-textarea, .docs-gm .docs-docos-activity-sidebar .docos-input-typing>.docos-input-textarea {
+	background-color: var(--bg-dark);
+}
+.docos-xeditor .docos-streamdocoview:hover .docos-streamdocoview-header-container {
+	background-color: var(--bg-dark-yellow-2);
+}
+.docos-xeditor .docos-streamdocoview-header-container {
+	background-color: var(--bg-dark-2);
+}
+.docs-gm.docos-xeditor .docos-streamdocoview-authorname-timestamp .docos-streamdocoview-timestamp {
+	color: var(--grey-1);
+}
+.docos-streamdocoview-body, .docos-streamreplyview-body {
+	color: var(--white-6);
+}
+.docs-gm .docos-streamdocoview-input-pane .docos-input-textarea {
+	color: var(--white-4);
+	border-color: var(--border-1);
+	background-color: var(--bg-dark);
+}
+.docs-gm.docos-xeditor .docos-streamdocoview:hover {
+	border-color: var(--bg-dark-yellow-2);
+}
+.docos-xeditor .docos-streamdocoview.docos-docoview-active .docos-streamdocoview-header-container {
+	color: var(--bg-dark);
+}
+.docos-navigation-bar {
+	border-color: var(--border-1);
+	background-color: var(--bg-dark);
+}
+.docos-xeditor .docos-streamdocoview.docos-docoview-active .docos-streamdocoview-header-container {
+    background-color: #fdd663;
+}
+.jiAh7-bottom-pane, .jiAh7-bottom-pane-AHe6Kc {
+	background-color: var(--bg-dark);
+}
+[src="//www.gstatic.com/images/icons/material/system_gm/1x/arrow_back_black_24dp.png"] {
+	filter: var(--invert-1-hue);
+}
+.BgrMEd-aSvl1d, .BgrMEd-text, .HHrUdb-v3pZbf:hover, body:not(.keynav-mode-off) .HHrUdb-v3pZbf:focus, .HHrUdb-v3pZbf, .PrVWEc {
+	color: var(--blue);
+}
+.Xcmxjb.FwR7Pc {
+	background-color: var(--bg-dark-blue-1);
+	color: var(--bg-dark-blue-1);
+}
+.companion-collapser-button.app-switcher-button-checked .app-switcher-button-icon-background, .companion-theme-light .companion-collapser-button.app-switcher-button-checked .app-switcher-button-icon-background {
+	background-color: var(--bg-dark);
+}
+.companion-collapser-button.app-switcher-button-checked.app-switcher-button-hover .app-switcher-button-icon-background, .companion-theme-light .companion-collapser-button.app-switcher-button-checked.app-switcher-button-hover .app-switcher-button-icon-background {
+	background-color: var(--bg-dark-2);
+}
+div#fontSizeSelect {
+	background-color: transparent !important;
+	color: var(--white-6);
+}
+#docs-toolbar-mode-switcher.edit-mode {
+	color: var(--blue);
 }
 
 
