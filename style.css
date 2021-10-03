@@ -15250,4 +15250,11 @@ a.featured-perspective__link.uni-click-tracker:focus {
 	bottom: 97px;
 	left: -4px;
 }
+	
+	/* Fix radio button and checkbox colours in Calendar dialogs */
+[role="dialog"] label,
+[role="dialog"] label * {
+    color: inherit;
+}
+}
 }
