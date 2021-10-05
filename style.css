@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Dark Theme
 @namespace      github.com/blyad2137/google-dark-theme
-@version        3.0.5
+@version        3.0.6
 @description    `Ultimate Dark Theme for Google`
 @author         blyad (https://github.com/blyad2137)
 @license        CC-BY-SA 4.0
@@ -15209,6 +15209,36 @@ a.featured-perspective__link.uni-click-tracker:focus {
 	.bYEzqc {
 		background-color: var(--bg-transparent-dark-11);
 	}
+	.V7msuc {
+		color: var(--white-2);
+	}
+	.xlEVZd, .FX4yOc {
+		border-color: var(--border-6);
+	}
+	.vyjsdc {
+		color: var(--white-87);
+	}
+	.XBxdRc {
+    	box-shadow: 0 0 0 1px var(--border-1);
+	}
+	.p5AXld {
+    	color: var(--blue) !important;
+	}
+	.p5AXld:visited {
+		color: var(--purple) !important;
+	}
+	.Eq0J8 {
+		color: var(--white-4) !important;
+	}
+	.GRkHZd, .JWaTvb {
+		color: var(--grey-2) !important;
+	}
+	.usJj9c .zz3gNc {
+		color: var(--lightblue);
+	}
+	.rOVRL {
+    	color: var(--blue) !important;
+	}
 	
 	
 
@@ -15250,11 +15280,9 @@ a.featured-perspective__link.uni-click-tracker:focus {
 	bottom: 97px;
 	left: -4px;
 }
-	
 	/* Fix radio button and checkbox colours in Calendar dialogs */
 [role="dialog"] label,
 [role="dialog"] label * {
     color: inherit;
-}
 }
 }
