@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Dark Theme
 @namespace      github.com/blyad2137/google-dark-theme
-@version        3.0.6
+@version        3.0.7
 @description    `Ultimate Dark Theme for Google`
 @author         blyad (https://github.com/blyad2137)
 @license        CC-BY-SA 4.0
@@ -14344,7 +14344,7 @@ table {
 	background-image: -webkit-linear-gradient(top, var(--devsite-button-primary-background), var(--devsite-button-primary-background-active));
 	color: var(--bg-dark);	
 }
-[src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAABVlBMVEVChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfTpT98bAAAAcXRSTlMAAjl6rtTt+nk4Horl5IgdFpv5mBRd7lkFnQQKuGHZtfNy9ZyvK9smzljv7BP2lnMb2odk4gHoCfI2Tad4yGarMYA10hEV6+pP6TRlZ6aqdwto4YkG34Z19LF7+Br3LbIkM5PeKPC7VS+UswMMrWo6HJh0w+MAAAHlSURBVHhe3dBrU9NAAIXhE2iTchNIaltTlYpQVCoqUAuKVtraekcqoFi8gYqCt/3/N890MjvZzSb9zvvtzOyT2SzOZNbQcCptO46dTmVGrIFgdGxchJo4N5kIpqYdoeV62XhwPicM2XmYK1wQMXm+CRQvimiXLvfHTNHwfdP5Evwrs33hQ++qMDQHYL4smBf5X2EotwCWvSbYde09bxjuM8fzfVHmWqwoYFqoQWn+JsVSGIw6iQC3CNzbITAmkoF/h2IZMmt8AMAKwWpVziGhdVcHtTWKdTmH9fP3oHefYEOuFNeDAMDcQ4K6XGmuR5uJoEHQlMvmamEzCTwmaMvlcFmgiAcFAlcBBYBCrfNEAl8BNlcFBvE05kpprmcwiZifTnE9hxQm8EJ51gzXS0hhAq84tuQa4VqrSWEAr0scDQmsCc4VBJnANke3Ctkb7nIhHuzscuxBhkmH4m0w3olws/sLwHuO3gFCeQQfPqLfJ6GW+/zF5ThEuKxNcTQFhq/fNPG9y9FpQSkvWDMQ+yUR6RhanmC7P4IVAT+h588I1svsGMHJKSIVKdjR9q8oOKnBkO8FD/n7z1/tPqcwl18UhjrHiK2y5Oqgd9hCUv+WV8Ogu3eAQVnrG/Vm23XbzfpWo4qz2H/PsWmExFfJAQAAAABJRU5ErkJggg=="], .GaSlwc-uhFGfc-WsjYwc-T3iPGc-icon, [src="//maps.gstatic.com/tactile/omnibox/directions-2x-20150909.png"], [src="//maps.gstatic.com/tactile/icons/pane-info/search_inventory-x1.png"], [src="https://storage.googleapis.com/mannequin/blobs/8bf38e8b-561a-4ec6-be2b-683e5d9ff79b.svg"], [wombat-template].wombat_special_offers .back-to-top span::after, [src="https://storage.googleapis.com/mannequin/blobs/353b33c1-2035-4092-a301-ca467d71ccf8.svg"], [src="https://www.gstatic.com/images/icons/material/system_gm/2x/new_releases_googblue_24dp.png"], [src="https://www.gstatic.com/images/icons/material/system/2x/public_googblue_24dp.png"] {
+[src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAABVlBMVEVChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfTpT98bAAAAcXRSTlMAAjl6rtTt+nk4Horl5IgdFpv5mBRd7lkFnQQKuGHZtfNy9ZyvK9smzljv7BP2lnMb2odk4gHoCfI2Tad4yGarMYA10hEV6+pP6TRlZ6aqdwto4YkG34Z19LF7+Br3LbIkM5PeKPC7VS+UswMMrWo6HJh0w+MAAAHlSURBVHhe3dBrU9NAAIXhE2iTchNIaltTlYpQVCoqUAuKVtraekcqoFi8gYqCt/3/N890MjvZzSb9zvvtzOyT2SzOZNbQcCptO46dTmVGrIFgdGxchJo4N5kIpqYdoeV62XhwPicM2XmYK1wQMXm+CRQvimiXLvfHTNHwfdP5Evwrs33hQ++qMDQHYL4smBf5X2EotwCWvSbYde09bxjuM8fzfVHmWqwoYFqoQWn+JsVSGIw6iQC3CNzbITAmkoF/h2IZMmt8AMAKwWpVziGhdVcHtTWKdTmH9fP3oHefYEOuFNeDAMDcQ4K6XGmuR5uJoEHQlMvmamEzCTwmaMvlcFmgiAcFAlcBBYBCrfNEAl8BNlcFBvE05kpprmcwiZifTnE9hxQm8EJ51gzXS0hhAq84tuQa4VqrSWEAr0scDQmsCc4VBJnANke3Ctkb7nIhHuzscuxBhkmH4m0w3olws/sLwHuO3gFCeQQfPqLfJ6GW+/zF5ThEuKxNcTQFhq/fNPG9y9FpQSkvWDMQ+yUR6RhanmC7P4IVAT+h588I1svsGMHJKSIVKdjR9q8oOKnBkO8FD/n7z1/tPqcwl18UhjrHiK2y5Oqgd9hCUv+WV8Ogu3eAQVnrG/Vm23XbzfpWo4qz2H/PsWmExFfJAQAAAABJRU5ErkJggg=="], .GaSlwc-uhFGfc-WsjYwc-T3iPGc-icon, [src="//maps.gstatic.com/tactile/omnibox/directions-2x-20150909.png"], [src="//maps.gstatic.com/tactile/icons/pane-info/search_inventory-x1.png"], [src="https://storage.googleapis.com/mannequin/blobs/8bf38e8b-561a-4ec6-be2b-683e5d9ff79b.svg"], [wombat-template].wombat_special_offers .back-to-top span::after, [src="https://storage.googleapis.com/mannequin/blobs/353b33c1-2035-4092-a301-ca467d71ccf8.svg"], [src="https://www.gstatic.com/images/icons/material/system_gm/2x/new_releases_googblue_24dp.png"], [src="https://www.gstatic.com/images/icons/material/system/2x/public_googblue_24dp.png"], #main-controls .show_options:after, #main-controls .hide_options:after {
 	filter: saturate(4) hue-rotate(-11deg)
 }
 .header__nav-item--active:hover a {
@@ -15179,7 +15179,7 @@ a.featured-perspective__link.uni-click-tracker:focus {
 	.QkSmnd, .HXB9T, .XKrAfb, .SsxEk, .sdDWIf, .mvDple {
 		color: var(--white-3);
 	}
-	.mOMnfc, .edw3vc {
+	.mOMnfc, .edw3vc, .FLP8od:hover, .EVV2Xc {
 		color: var(--blue);
 	}
 	.XJAEhd, .TdP2cd, .VuM4ve {
@@ -15197,7 +15197,7 @@ a.featured-perspective__link.uni-click-tracker:focus {
 	.xPnGFc .nMBhmd {
 		background-color: var(--bg-dark-2);
 	}
-	.nMBhmd {
+	.nMBhmd, .JFeuTc {
 		color: var(--white-4);
 	}
 	.zF5Ln {
@@ -15221,10 +15221,10 @@ a.featured-perspective__link.uni-click-tracker:focus {
 	.XBxdRc {
     	box-shadow: 0 0 0 1px var(--border-1);
 	}
-	.p5AXld {
+	.p5AXld, .rOVRL, .gt-is-act {
     	color: var(--blue) !important;
 	}
-	.p5AXld:visited {
+	.YkS8D a:visited, a:visited .p5AXld, .wrBvFf a:visited, .f22z0e div a:visited {
 		color: var(--purple) !important;
 	}
 	.Eq0J8 {
@@ -15236,10 +15236,83 @@ a.featured-perspective__link.uni-click-tracker:focus {
 	.usJj9c .zz3gNc {
 		color: var(--lightblue);
 	}
-	.rOVRL {
-    	color: var(--blue) !important;
+	.tw-bilingual-marked {
+		border-left-color: var(--blue);
 	}
-	
+	.ELfqBe:hover, .ELfqBe:focus {
+		background-color: var(--bg-dark-blue-2)
+	}
+	.t4wgMc {
+		background-color: var(--bg-dark);
+	}
+	.gb_C[aria-expanded=true] .gb_Pe, .gb_C[aria-expanded=true] .gb_Qe {
+		fill: var(--grey-1);
+	}
+	#gb-main {
+		background-color: var(--bg-dark-2) !important;
+	}
+	#create-alert-div .query_div, #create-alert-div .query_div input, #main-controls .section, .section, #main-controls #create-alert-options {
+		background-color: var(--bg-dark);
+	}
+	#create-alert-div .search_icon, #create-alert-div .close_icon, .user_settings_trigger, #manage-alerts-div .edit_button, #manage-alerts-div .delete_button, .card .create_button, .card .alert_created, .switch.off, .switch.on {
+		filter: var(--invert-1-hue);
+	}
+	#main-controls .simple_options_text, #manage-alerts-div .query_div span, .card .query {
+		color: var(--white-7);
+	}
+	#main-controls .hide_options, .show_options, .alert_button, .butter_bar_button, body .modal-dialog-buttons button {
+		color: var(--blue);
+	}
+	#create-alert-options table {
+		color: var(--grey-19);
+	}
+	.my_alerts .num_alerts {
+		color: var(--white-54);
+	}
+	.jfk-button-action {
+		background-color: var(--blue);
+		background-image: -webkit-linear-gradient(top,var(--devsite-button-primary-background), var(--devsite-button-primary-background-hover));
+		color: var(--bg-dark);
+		border-color: var(--blue);
+	}
+	.jfk-button-action.jfk-button-hover {
+		background-color: var(--devsite-button-primary-background-hover);
+		background-image: -webkit-linear-gradient(top,var(--devsite-button-primary-background-hover), var(--devsite-button-primary-background-active));
+		border-color: var(--devsite-button-primary-background-hover);
+	}
+	.jfk-button-action.jfk-button-focus {
+		background-color: var(--devsite-button-primary-background-active);
+		background-image: -webkit-linear-gradient(top,var(--devsite-button-primary-background-active), var(--devsite-button-primary-background-active));
+		border-color: var(--devsite-button-primary-background-active);
+	}
+	#manage-alerts-div li, .card:first-child, .card, .horizontal_layout .card, .user_settings_control:not(:last-child) {
+		border-color: var(--border-6);
+	}
+	.jfk-button-action.jfk-button-disabled {
+		background-color: var(--devsite-button-primary-background-hover);
+	}
+	.card.created {
+		background-color: var(--bg-dark-29);
+	}
+	.jfk-butterBar {
+		background-color: var(--bg-dark-yellow-2);
+		border-color: var(--border-yellow);
+		color: var(--white-1);
+	}
+	.user_settings_content .explanation, .user_settings_content .label_column {
+		color: var(--white-1);
+	}
+	body .modal-dialog-buttons button:hover {
+		background-color: var(--bg-hover-8);
+		color: var(--blue);
+	}
+	#gb-main .footer {
+		background-color: var(--bg-dark);
+		border-color: var(--border-6);
+	}
+	#preview_loading_div {
+		background-color: var(--bg-transparent-dark-11);
+	}
 	
 
 /*Replacing Different Logos to .png at Google Search*/
