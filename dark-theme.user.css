@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Dark Theme
 @namespace      github.com/blyad2137/google-dark-theme
-@version        3.0.8
+@version        3.0.9
 @description    `Ultimate Dark Theme for Google`
 @author         blyad (https://github.com/blyad2137)
 @license        CC-BY-SA 4.0
@@ -27,7 +27,7 @@
 
 ==/UserStyle== */
 
-@-moz-document url-prefix("https://mail.google.com/chat/u/"), regexp("^(https?)://(www|ogs|gds|translate|policies|accounts|myaccount|adssettings|posts|artsandculture|about.artsandculture|docs|contacts|calendar|meet|tasks|keep|workspace|photos|play|ads|drive|classroom|jamboard|podcasts|chat|families|domains|scholar|gsuite|duo|shopping|shoppinglist|marketingplatform|measurementpartners|admanager|admob|about|www.blog|blog|assistant|developers|store|one|tokenized.play|analytics|tagmanager).google.*") {
+@-moz-document url-prefix("https://mail.google.com/chat/u/"), regexp("^(https?)://(www|ogs|gds|translate|policies|accounts|myaccount|adssettings|posts|artsandculture|about.artsandculture|docs|contacts|calendar|meet|tasks|keep|workspace|photos|play|ads|drive|classroom|jamboard|podcasts|chat|families|domains|scholar|gsuite|duo|shopping|shoppinglist|marketingplatform|measurementpartners|admanager|admob|about|www.blog|blog|assistant|developers|store|one|tokenized.play|analytics|tagmanager|optimize).google.*") {
 :root {
 	--custom_logo: /*[[custom_logo]]*/;
 	--bg-dark: #202124;
@@ -259,6 +259,7 @@
 	
 	--white-1: #fff;
 	--white-1-06: rgba(255, 255, 255, .06);
+	--white-1-20: rgba(255, 255, 255, .2);
 	--white-2: #ddd;
 	--white-3: #d0d1d4;
 	--white-3-38: rgba(208, 209, 212, .38);
@@ -313,7 +314,8 @@
 	--grey-2: #9aa0a6;
 	--grey-3: #adb0b5;
 	--grey-4: #6a6f73;
-	--grey-5: #70767b;
+	--grey-4-32: rgba(106, 111, 115, .32);
+	--grey-5: #969ba1;
 	--grey-6: #85858a;
 	--grey-7: #aaa;
 	--grey-8: #858585;
@@ -917,6 +919,14 @@
     --color-alice-blue: var(--bg-dark-29);
     --color-fitbit: #19797e;
 	--template-bg-color: var(--bg-dark);
+	
+	/*Google Surveys*/
+	--light-theme-background-color: var(--bg-dark);
+    --light-theme-base-color: var(--white-1);
+    --light-theme-secondary-color: var(--grey-19);
+    --light-theme-disabled-color: var(--border-64);
+    --light-theme-divider-color: var(--bg-dark-30);
+	--primary-background-color: var(--bg-dark-3);
 }
 
 
@@ -14397,7 +14407,8 @@ table {
 	background-image: -webkit-linear-gradient(top, var(--devsite-button-primary-background), var(--devsite-button-primary-background-active));
 	color: var(--bg-dark);	
 }
-[src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAABVlBMVEVChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfTpT98bAAAAcXRSTlMAAjl6rtTt+nk4Horl5IgdFpv5mBRd7lkFnQQKuGHZtfNy9ZyvK9smzljv7BP2lnMb2odk4gHoCfI2Tad4yGarMYA10hEV6+pP6TRlZ6aqdwto4YkG34Z19LF7+Br3LbIkM5PeKPC7VS+UswMMrWo6HJh0w+MAAAHlSURBVHhe3dBrU9NAAIXhE2iTchNIaltTlYpQVCoqUAuKVtraekcqoFi8gYqCt/3/N890MjvZzSb9zvvtzOyT2SzOZNbQcCptO46dTmVGrIFgdGxchJo4N5kIpqYdoeV62XhwPicM2XmYK1wQMXm+CRQvimiXLvfHTNHwfdP5Evwrs33hQ++qMDQHYL4smBf5X2EotwCWvSbYde09bxjuM8fzfVHmWqwoYFqoQWn+JsVSGIw6iQC3CNzbITAmkoF/h2IZMmt8AMAKwWpVziGhdVcHtTWKdTmH9fP3oHefYEOuFNeDAMDcQ4K6XGmuR5uJoEHQlMvmamEzCTwmaMvlcFmgiAcFAlcBBYBCrfNEAl8BNlcFBvE05kpprmcwiZifTnE9hxQm8EJ51gzXS0hhAq84tuQa4VqrSWEAr0scDQmsCc4VBJnANke3Ctkb7nIhHuzscuxBhkmH4m0w3olws/sLwHuO3gFCeQQfPqLfJ6GW+/zF5ThEuKxNcTQFhq/fNPG9y9FpQSkvWDMQ+yUR6RhanmC7P4IVAT+h588I1svsGMHJKSIVKdjR9q8oOKnBkO8FD/n7z1/tPqcwl18UhjrHiK2y5Oqgd9hCUv+WV8Ogu3eAQVnrG/Vm23XbzfpWo4qz2H/PsWmExFfJAQAAAABJRU5ErkJggg=="], .GaSlwc-uhFGfc-WsjYwc-T3iPGc-icon, [src="//maps.gstatic.com/tactile/omnibox/directions-2x-20150909.png"], [src="//maps.gstatic.com/tactile/icons/pane-info/search_inventory-x1.png"], [src="https://storage.googleapis.com/mannequin/blobs/8bf38e8b-561a-4ec6-be2b-683e5d9ff79b.svg"], [wombat-template].wombat_special_offers .back-to-top span::after, [src="https://storage.googleapis.com/mannequin/blobs/353b33c1-2035-4092-a301-ca467d71ccf8.svg"], [src="https://www.gstatic.com/images/icons/material/system_gm/2x/new_releases_googblue_24dp.png"], [src="https://www.gstatic.com/images/icons/material/system/2x/public_googblue_24dp.png"], #main-controls .show_options:after, #main-controls .hide_options:after, [src="https://ssl.gstatic.com/analytics/analytics-frontend.indexpage_20211013.05_p0/index/static/admin/trackinginfo/ic_auto_awesome_googblue_24dp.svg"], .mat-card.tagging-instructions .instructions-icon, [src="https://ssl.gstatic.com/analytics/analytics-frontend.indexpage_20211017.19_p0/index/static/admin/trackinginfo/ic_auto_awesome_googblue_24dp.svg"], [src="https://ssl.gstatic.com/analytics/analytics-frontend.indexpage_20211018.13_p0/index/static/admin/trackinginfo/ic_auto_awesome_googblue_24dp.svg"], .gafe mat-card.mat-card.admin-card.admin-message-card:before, .nhb85d .sbcb_a:focus:before, .nhb85d .sbcb_a:hover:before, .An0lHf-searchbox:not(.searchbox-empty) .nhb85d-BIqFsb:focus:before, .An0lHf-searchbox:not(.searchbox-empty) .nhb85d-BIqFsb:hover:before, .searchbox-active .nhb85d-BIqFsb:before, [src="https://www.gstatic.com/images/travel/icon/ic_state_blue.svg"] {
+	/*Blue Invert*/
+[src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAABVlBMVEVChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfTpT98bAAAAcXRSTlMAAjl6rtTt+nk4Horl5IgdFpv5mBRd7lkFnQQKuGHZtfNy9ZyvK9smzljv7BP2lnMb2odk4gHoCfI2Tad4yGarMYA10hEV6+pP6TRlZ6aqdwto4YkG34Z19LF7+Br3LbIkM5PeKPC7VS+UswMMrWo6HJh0w+MAAAHlSURBVHhe3dBrU9NAAIXhE2iTchNIaltTlYpQVCoqUAuKVtraekcqoFi8gYqCt/3/N890MjvZzSb9zvvtzOyT2SzOZNbQcCptO46dTmVGrIFgdGxchJo4N5kIpqYdoeV62XhwPicM2XmYK1wQMXm+CRQvimiXLvfHTNHwfdP5Evwrs33hQ++qMDQHYL4smBf5X2EotwCWvSbYde09bxjuM8fzfVHmWqwoYFqoQWn+JsVSGIw6iQC3CNzbITAmkoF/h2IZMmt8AMAKwWpVziGhdVcHtTWKdTmH9fP3oHefYEOuFNeDAMDcQ4K6XGmuR5uJoEHQlMvmamEzCTwmaMvlcFmgiAcFAlcBBYBCrfNEAl8BNlcFBvE05kpprmcwiZifTnE9hxQm8EJ51gzXS0hhAq84tuQa4VqrSWEAr0scDQmsCc4VBJnANke3Ctkb7nIhHuzscuxBhkmH4m0w3olws/sLwHuO3gFCeQQfPqLfJ6GW+/zF5ThEuKxNcTQFhq/fNPG9y9FpQSkvWDMQ+yUR6RhanmC7P4IVAT+h588I1svsGMHJKSIVKdjR9q8oOKnBkO8FD/n7z1/tPqcwl18UhjrHiK2y5Oqgd9hCUv+WV8Ogu3eAQVnrG/Vm23XbzfpWo4qz2H/PsWmExFfJAQAAAABJRU5ErkJggg=="], .GaSlwc-uhFGfc-WsjYwc-T3iPGc-icon, [src="//maps.gstatic.com/tactile/omnibox/directions-2x-20150909.png"], [src="//maps.gstatic.com/tactile/icons/pane-info/search_inventory-x1.png"], [src="https://storage.googleapis.com/mannequin/blobs/8bf38e8b-561a-4ec6-be2b-683e5d9ff79b.svg"], [wombat-template].wombat_special_offers .back-to-top span::after, [src="https://storage.googleapis.com/mannequin/blobs/353b33c1-2035-4092-a301-ca467d71ccf8.svg"], [src="https://www.gstatic.com/images/icons/material/system_gm/2x/new_releases_googblue_24dp.png"], [src="https://www.gstatic.com/images/icons/material/system/2x/public_googblue_24dp.png"], #main-controls .show_options:after, #main-controls .hide_options:after, [src="https://ssl.gstatic.com/analytics/analytics-frontend.indexpage_20211013.05_p0/index/static/admin/trackinginfo/ic_auto_awesome_googblue_24dp.svg"], .mat-card.tagging-instructions .instructions-icon, [src="https://ssl.gstatic.com/analytics/analytics-frontend.indexpage_20211017.19_p0/index/static/admin/trackinginfo/ic_auto_awesome_googblue_24dp.svg"], [src="https://ssl.gstatic.com/analytics/analytics-frontend.indexpage_20211018.13_p0/index/static/admin/trackinginfo/ic_auto_awesome_googblue_24dp.svg"], .gafe mat-card.mat-card.admin-card.admin-message-card:before, .nhb85d .sbcb_a:focus:before, .nhb85d .sbcb_a:hover:before, .An0lHf-searchbox:not(.searchbox-empty) .nhb85d-BIqFsb:focus:before, .An0lHf-searchbox:not(.searchbox-empty) .nhb85d-BIqFsb:hover:before, .searchbox-active .nhb85d-BIqFsb:before, [src="https://www.gstatic.com/images/travel/icon/ic_state_blue.svg"], .C_HEADER_TAB_SELECTED .C_HEADER_HOME_IMAGE {
 	filter: saturate(4) hue-rotate(-11deg)
 }
 .header__nav-item--active:hover a {
@@ -18174,8 +18185,8 @@ a.featured-perspective__link.uni-click-tracker:focus {
     	background-image: -ms-linear-gradient(top,var(--bg-dark-16),var(--bg-dark-2));
     	background-image: -o-linear-gradient(top,var(--bg-dark-16),var(--bg-dark-2));
     	background-image: linear-gradient(top,var(--bg-dark-16),var(--bg-dark-2));
-		color: var(--white-7);
 		border-color: var(--border-23);
+		color: var(--white-7);
 	}
 	.C_POST_DESCRIPTION {
 		color: var(--white-2);
@@ -19524,10 +19535,10 @@ a.featured-perspective__link.uni-click-tracker:focus {
 	.AbPV3 {
 		color: var(--white-3);
 	}
-	[src="/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"], [src="/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png"], [src="/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"], .F1hUFe[href="/?&bih=1052&biw=2133&hl=en"] {
+	[src="/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"], [src="/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png"], [src="/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"], a.F1hUFe.jbTlie[href] {
 		/*[[google_logo]]*/
 	}
-	.F1hUFe[href="/?&bih=1052&biw=2133&hl=en"] {
+	a.F1hUFe.jbTlie[href] {
 		height: auto;
 		max-width: 90px;
 		width: auto;
@@ -20525,10 +20536,10 @@ a.featured-perspective__link.uni-click-tracker:focus {
 	.leaderboard.focus .first-panel .user-info .location-row .location-text, .top-dimension-card .top-dimension-content .title md-icon, .top-dimension-card .top-dimension-content .title .text, .leaderboard .leaderboard-panel-container>div.snapshot-panel md-card .snapshot-text {
 		color: var(--white-4);
 	}
-	.leaderboard .leaderboard-panel-container>div .panel-caption {
+	.leaderboard .leaderboard-panel-container>div .panel-caption, .BL1djf {
 		color: var(--grey-1);
 	}
-	.leaderboard.focus .first-panel .user-info .location-row .location-icon {
+	.leaderboard.focus .first-panel .user-info .location-row .location-icon, .C_SUBMITPOST_LINK {
 		color: var(--blue);
 	}
 	.leaderboard .leaderboard-panel-container>div.first-panel md-card .traverse-row .traverse .md-button[disabled] md-icon {
@@ -20538,6 +20549,864 @@ a.featured-perspective__link.uni-click-tracker:focus {
 		background-color: var(--bg-dark);
 		border-color: var(--border-1);
 		color: var(--blue);
+	}
+	.JJYS0b:hover .VfPpkd-AznF2e-wEcVzc-OWXEXe-NowJzb, .JJYS0b.VfPpkd-ksKsZd-mWPk3d-OWXEXe-AHe6Kc-XpnDCe .VfPpkd-AznF2e-wEcVzc-OWXEXe-NowJzb, .JJYS0b:not(.VfPpkd-ksKsZd-mWPk3d):focus .VfPpkd-AznF2e-wEcVzc-OWXEXe-NowJzb, .JJYS0b:active .VfPpkd-AznF2e-wEcVzc-OWXEXe-NowJzb {
+		border-color: var(--blue);
+		opacity: .87;
+	}
+	.C_HEADER {
+		background-color: var(--bg-dark-16);
+		border-color: var(--border-6);
+	}
+	.C_HEADER_TAB_CONTAINER a, .C_HEADER_TAB_CONTAINER a:visited, .C_HEADER_TAB_CONTAINER span {
+		border-top-color: var(--bg-dark-16);
+		border-bottom-color: var(--bg-dark-16);
+		color: var(--grey-9);
+	}
+	.C_HEADER_TAB_CONTAINER .C_HEADER_TAB_SELECTED a {
+		color: var(--blue);
+		border-bottom-color: var(--blue);
+	}
+	.C_HEADER_SEARCH_BOX[type="text"] {
+		border-color: var(--bg-dark-24);
+		background-color: var(--bg-dark);
+	}
+	.C_HEADER_SEARCH_IMAGE, .C_HEADER_SETTINGS_IMAGE, .C_HEADER_HOME_IMAGE, .kd-closebutton, .C_MULTIVALUE_SELECT_BOX_VALUE_REMOVE {
+		filter: var(--invert-1-hue);
+	}
+	.kd-button-action:hover {
+    	border-color: #b0281a;
+    	border-bottom-color: #af301f;
+    	background-color: #c53727;
+    	background-image: -webkit-gradient(linear,left top,left bottom,from(#dd4b39),to(#c53727));
+    	background-image: -webkit-linear-gradient(top,#dd4b39,#c53727);
+    	background-image: -moz-linear-gradient(top,#dd4b39,#c53727);
+    	background-image: -ms-linear-gradient(top,#dd4b39,#c53727);
+    	background-image: -o-linear-gradient(top,#dd4b39,#c53727);
+    	background-image: linear-gradient(top,#dd4b39,#c53727);
+	}
+	.kd-button-action {
+    	color: #fff;
+    	background-color: #d14836;
+    	background-image: -webkit-gradient(linear,left top,left bottom,from(#dd4b39),to(#d14836));
+    	background-image: -webkit-linear-gradient(top,#dd4b39,#d14836);
+    	background-image: -moz-linear-gradient(top,#dd4b39,#d14836);
+    	background-image: -ms-linear-gradient(top,#dd4b39,#d14836);
+    	background-image: -o-linear-gradient(top,#dd4b39,#d14836);
+    	background-image: linear-gradient(top,#dd4b39,#d14836);
+	}
+	.P_LANDING_TOP, .P_LANDING_TOP_POSTS, .C_RECOMMENDATIONS, .C_TOP_POSTS, .C_TOP_POSTS_ITEM_RIGHT_BORDER, .C_TOP_POSTS_ITEM_TOP_LINE, .C_FOOTER_WARNING, .pageFooter, .kd-content-sidebar {
+		border-color: var(--bg-dark-13);
+	}
+	.C_MOST_POPULAR_TITLE, .C_RECOMMENDATIONS_TITLE, .C_TOP_POSTS_ITEM_TITLE, .C_TOP_POSTS_ITEM_TITLE:visited {
+		color: var(--white-2);
+	}
+	.C_MOST_POPULAR_POST, .C_TOP_CONTRIBUTORS_AUTHOR, .C_TOP_CONTRIBUTORS_AUTHOR:visited, .C_RECOMMENDATIONS_ITEM_TITLE, .C_RECOMMENDATIONS_ITEM_TITLE:visited, .C_TOP_POSTS_ITEM_NAME, .C_TOP_POSTS_ITEM_NAME:visited {
+		color: var(--blue);
+	}
+	.C_MOST_POPULAR_AUTHOR_CONTAINER, .C_MOST_POPULAR_AUTHOR_CONTAINER .C_TOP_CONTRIBUTORS_AUTHOR, .C_MOST_POPULAR_DETAILS, .C_TOP_CONTRIBUTORS_DETAILS, .C_RECOMMENDATIONS_ITEM_AUTHOR, .C_RECOMMENDATIONS_ITEM_AUTHOR:visited, .C_TOP_POSTS_ITEM_AUTHOR, .C_TOP_POSTS_ITEM_AUTHOR:visited {
+		color: var(--grey-14);
+	}
+	.C_MOST_POPULAR_IMPORT, .C_TOP_CONTRIBUTORS_IMPORT, .A_LOADING_BAR_INDETERMINATE {
+		filter: var(--invert-3);
+	}
+	.A_LOADING_BAR_CONTAINER, .C_SUBMITPOST_CONTAINER, .C_SUBMITPOST_DISPLAY_NAME [type="text"], .C_SUBMITPOST_TITLE input[type="text"], .C_SUBMITPOST_SOLUTION_LINK input[type="text"], input.C_USER_SETTINGS_EMAIL, input.ID-displayName.C_USER_SETTINGS_DISPLAY_NAME {
+		background-color: var(--bg-dark);
+	}
+	.kd-content-sidebar ul>li>a:hover {
+		background-color: var(--bg-dark-3);
+	}
+	.kd-content-sidebar li a {
+		color: var(--white-6);
+	}
+	.kd-slider:hover:before {
+		background-color: var(--border-13);
+	}
+	.kd-slider:before {
+		background-color: var(--border-6);
+	}
+	.C_SUBMITPOST_HEADER {
+		background-color: var(--bg-dark-2);
+		border-color: var(--border-8);
+	}
+	.M_FORM_EXAMPLE_TEXT {
+		color: var(--grey-9);
+	}
+	.C_MULTIVALUE_SELECT_BOX {
+		border-color: var(--bg-dark-24);
+		border-top-color: var(--border-8);
+		color: var(--white-6);
+		background-color: var(--bg-dark);
+	}
+	.C_MULTIVALUE_SELECT_BOX:hover {
+		border-color: var(--bg-dark-24);
+		border-top-color: var(--bg-grey-2);
+	}
+	.C_SUBMITPOST_DESCRIPTION textarea {
+		border-color: var(--bg-dark-24);
+	}
+	.kd-button-submit {
+    	border-color: var(--border-blue);
+    	background-color: var(--devsite-button-primary-background-hover);
+    	background-image: -webkit-gradient(linear,left top,left bottom,from(var(--blue)),to(var(--blue)));
+    	background-image: -webkit-linear-gradient(top,var(--devsite-button-primary-background-hover),var(--blue));
+    	background-image: -moz-linear-gradient(top,var(--devsite-button-primary-background-hover),var(--blue));
+    	background-image: -ms-linear-gradient(top,var(--devsite-button-primary-background-hover),var(--blue));
+    	background-image: -o-linear-gradient(top,var(--devsite-button-primary-background-hover),var(--blue));
+    	background-image: linear-gradient(top,var(--devsite-button-primary-background-hover),var(--blue));
+		color: var(--bg-dark);
+	}
+	.kd-button-submit:hover {
+    	border-color: var(--border-blue);
+    	background-color: var(--devsite-button-primary-background-active);
+    	background-image: -webkit-gradient(linear,left top,left bottom,from(var(--blue)),to(var(--devsite-button-primary-background-active)));
+    	background-image: -webkit-linear-gradient(top,var(--blue),var(--devsite-button-primary-background-active));
+    	background-image: -moz-linear-gradient(top,var(--blue),var(--devsite-button-primary-background-active));
+    	background-image: -ms-linear-gradient(top,var(--blue),var(--devsite-button-primary-background-active));
+    	background-image: -o-linear-gradient(top,var(--blue),var(--devsite-button-primary-background-active));
+    	background-image: linear-gradient(top,var(--blue),var(--devsite-button-primary-background-active));
+		color: var(--bg-dark);
+	}
+	.C_MULTIVALUE_SELECT_BOX_DROPDOWN {
+		background-color: var(--bg-dark);
+		border-color: var(--blue);
+	}
+	div.C_MULTIVALUE_SELECT_BOX_DROPDOWN_BACKLIGHT, .C_MULTIVALUE_SELECT_BOX_DROPDOWN_ITEM:hover {
+		background-color: var(--blue);
+		color: var(--bg-dark);
+	}
+	.C_MULTIVALUE_SELECT_BOX_VALUE {
+    	background-color: var(--border-6);
+    	background-image: linear-gradient(top,var(--bg-dark-29) 20%,var(--bg-dark-17) 50%,var(--bg-dark-blue-2) 52%,var(--bg-dark-3) 100%);
+    	background-image: -moz-linear-gradient(top,var(--bg-dark-29) 20%,var(--bg-dark-17) 50%,var(--bg-dark-blue-2) 52%,var(--bg-dark-3) 100%);
+    	background-image: -webkit-gradient(linear,0% 0%,0% 100%,color-stop(20%,var(--bg-dark-29)),color-stop(50%,var(--bg-dark-17)),color-stop(52%,var(--bg-dark-blue-2)),color-stop(100%,var(--bg-dark-3)));
+    	background-image: -webkit-linear-gradient(top,var(--bg-dark-29) 20%,var(--bg-dark-17) 50%,var(--bg-dark-blue-2) 52%,var(--bg-dark-3) 100%);
+    	border-color: var(--grey-17);
+    	box-shadow: 0 0 2px var(--bg-dark) inset, 0 1px 0 rgb(0 0 0 / 5%);
+    	color: var(--white-6);
+    	-webkit-box-shadow: 0 0 2px var(--bg-dark) inset, 0 1px 0 rgb(0 0 0 / 5%);
+	}
+	input[type=text].C_USER_SETTINGS_EMAIL {
+		background-color: var(--bg-dark-blue-2);
+	}
+	.kd-button-submit.disabled, .kd-button-submit.disabled:hover, .kd-button-submit.disabled:active {
+		border-color: var(--border-blue);
+		background-color: var(--blue);
+		color: var(--bg-dark);
+	}
+	.kd-button.disabled, .kd-button.disabled:hover, .kd-button.disabled:active {
+		color: var(--grey-21);
+		border-color: var(--border-32);
+	}
+	.kd-button:visited {
+		color: var(--white-9);
+	}
+	.C_HEADER_LOGO:visited span {
+		color: var(--grey-14);
+	}
+	.SXZglb-layer {
+		background-color: var(--bg-dark);
+		color: var(--white-5);
+	}
+	.SXZglb-layer-ornU0b {
+		border-color: var(--bg-dark-13);
+	}
+	.gHHdVb-on .gHHdVb-LgbsSe-V67aGc, .gHHdVb-LgbsSe:hover:not(.gHHdVb-disabled) .gHHdVb-LgbsSe-V67aGc, .page-footer>a:hover, .md-button.md-gtm-theme.md-accent, .gtm-ng-dialog-template .gtm-ng-dialog-footer .btn {
+		color: var(--blue);
+	}
+	.gHHdVb-on .gHHdVb-LgbsSe-icon, .gHHdVb-LgbsSe:hover:not(.gHHdVb-disabled):not(.gHHdVb-on) .gHHdVb-LgbsSe-icon {
+		border-color: var(--blue);
+	}
+	.P9Jffb-FJlHk-aIWppb-lvvS4b {
+		background-color: var(--bg-dark);
+	}
+	.P9Jffb-FJlHk-aIWppb-HSrbLb, .gtm-page-header.home>span {
+		color: var(--white-87);
+	}
+	.P9Jffb-FJlHk-aIWppb-TIHSC, .ODSEW-ShBeI-QClCJf-QYOpke-VdSJob, .gtm-page-header.home>i, .empty-placeholder ng-transclude>div, .page-footer>a, .page-footer, md-nav-bar.md-gtm-theme .md-button._md-nav-button.md-unselected {
+		color: var(--white-54);
+	}
+	.ODSEW-ShBeI-QClCJf-QYOpke {
+		border-color: var(--bg-dark-3);
+	}
+	.PyxFHf-WsjYwc {
+		border-color: var(--border-1);
+	}
+	.empty-placeholder .image {
+		background-color: var(--border-1);
+		color: var(--bg-dark);
+	}
+	.btn.btn-create, .btn.btn--create {
+		background-color: #0000;
+		color: var(--blue);
+		position: relative;
+	}
+	.btn.btn-create::before, .btn.btn--create::before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		margin: 0;
+		background-color: var(--blue);
+		opacity: .1;
+		border-radius: 4px;
+	}
+	md-nav-bar .md-nav-bar.md-nav-bar {
+		background-color: var(--bg-dark);
+	}
+	md-nav-bar.md-gtm-theme .md-nav-bar {
+		border-color: var(--border-11);
+	}
+	.card {
+		background-color: var(--bg-dark);
+		box-shadow: 0 0 0 1px var(--border-1);
+		color: var(--white-4);
+	}
+	.card:hover {
+		color: var(--white-4);
+	}
+	ctui-menu-filter input[type=number], gtm-menu-filter input[type=number], gtm-veditor-section input[type=number], .blg-form-input input[type=number], .blg-form-input--nopadding input[type=number], .gtm-schedule-editor__row input[type=number], .vt-editor__form-row input[type=number], ctui-menu-filter input[type=text], gtm-menu-filter input[type=text], gtm-veditor-section input[type=text], .blg-form-input input[type=text], .blg-form-input--nopadding input[type=text], .gtm-schedule-editor__row input[type=text], .vt-editor__form-row input[type=text], ctui-menu-filter input[type=url], gtm-menu-filter input[type=url], gtm-veditor-section input[type=url], .blg-form-input input[type=url], .blg-form-input--nopadding input[type=url], .gtm-schedule-editor__row input[type=url], .vt-editor__form-row input[type=url], ctui-menu-filter select, gtm-menu-filter select, gtm-veditor-section select, .blg-form-input select, .blg-form-input--nopadding select, .gtm-schedule-editor__row select, .vt-editor__form-row select, .blg-form-input--nopadding input[type=number], .blg-form-input--nopadding input[type=text], .blg-form-input--nopadding input[type=url], .blg-form-input--nopadding select, .context-picker__row, .context-picker__row:last-child {
+		border-color: var(--border-1);
+	}
+	.blg-form-input input:not([type=submit]), .blg-form-input select, .blg-form-input .gtm-form-input, .blg-form-input--nopadding input:not([type=submit]), .blg-form-input--nopadding select, .blg-form-input--nopadding .gtm-form-input {
+		background-color: var(--bg-dark);
+		border-color: var(--border-1);
+		color: var(--white-87);
+	}
+	ctui-menu-filter input[type=number]:focus, gtm-menu-filter input[type=number]:focus, gtm-veditor-section input[type=number]:focus, .blg-form-input input[type=number]:focus, .blg-form-input--nopadding input[type=number]:focus, .gtm-schedule-editor__row input[type=number]:focus, .vt-editor__form-row input[type=number]:focus, ctui-menu-filter input[type=text]:focus, gtm-menu-filter input[type=text]:focus, gtm-veditor-section input[type=text]:focus, .blg-form-input input[type=text]:focus, .blg-form-input--nopadding input[type=text]:focus, .gtm-schedule-editor__row input[type=text]:focus, .vt-editor__form-row input[type=text]:focus, ctui-menu-filter input[type=url]:focus, gtm-menu-filter input[type=url]:focus, gtm-veditor-section input[type=url]:focus, .blg-form-input input[type=url]:focus, .blg-form-input--nopadding input[type=url]:focus, .gtm-schedule-editor__row input[type=url]:focus, .vt-editor__form-row input[type=url]:focus, ctui-menu-filter select:focus, gtm-menu-filter select:focus, gtm-veditor-section select:focus, .blg-form-input select:focus, .blg-form-input--nopadding select:focus, .gtm-schedule-editor__row select:focus, .vt-editor__form-row select:focus, .blg-form-input--nopadding input[type=number]:focus, .blg-form-input--nopadding input[type=text]:focus, .blg-form-input--nopadding input[type=url]:focus, .blg-form-input--nopadding select:focus {
+		border-color: var(--blue);
+	}
+	.context-picker__row--selected, .context-picker__row:hover, .context-picker__row:focus {
+		background-color: var(--bg-dark-blue-2);
+	}
+	.gtm-md-icon--small.icon--matting, .gtm-md-icon--small.icon-matting, .gtm-md-icon-small.icon--matting, .icon--matting.gtm-vteditor-text-icon-small, .icon--matting.gtm-vteditor-table-icon-small, .icon--matting.gtm-vteditor-select-icon-small, .icon--matting.gtm-vteditor-radio-icon-small, .icon--matting.gtm-vteditor-param-table-icon-small, .icon--matting.gtm-vteditor-hidden-icon-small, .icon--matting.gtm-vteditor-group-icon-small, .icon--matting.gtm-view-column-icon-small, .icon--matting.gtm-variable-utils-icon-small, .icon--matting.gtm-variable-page-icon-small, .icon--matting.gtm-variable-other-icon-small, .icon--matting.gtm-variable-device-icon-small, .icon--matting.gtm-variable-elements-icon-small, .icon--matting.gtm-variable-nav-icon-small, .icon--matting.gtm-add-variable-icon-small, .icon--matting.gtm-add-container-icon-small, .icon--matting.gtm-container-temp-icon-small, .icon--matting.gtm-variable-container-icon-small, .icon--matting.gtm-variable-temp-icon-small, .icon--matting.gtm-variable-builtin-icon-small, .icon--matting.gtm-variable-app-icon-small, .icon--matting.gtm-activity-icon-small, .icon--matting.gtm-trigger-video-icon-small, .icon--matting.gtm-trigger-timer-icon-small, .icon--matting.gtm-trigger-scroll-icon-small, .icon--matting.gtm-trigger-pageview-ready-icon-small, .icon--matting.gtm-trigger-pageview-loaded-icon-small, .icon--matting.gtm-trigger-pageview-icon-small, .icon--matting.gtm-trigger-visibility-icon-small, .icon--matting.gtm-trigger-js-error-icon-small, .icon--matting.gtm-trigger-init-icon-small, .icon--matting.gtm-trigger-history-icon-small, .icon--matting.gtm-trigger-form-icon-small, .icon--matting.gtm-trigger-custom-event-icon-small, .icon--matting.gtm-trigger-click-link-icon-small, .icon--matting.gtm-trigger-click-icon-small, .icon--matting.gtm-trigger-temp-icon-small, .icon--matting.gtm-tag-temp-icon-small, .icon--matting.gtm-zones-icon-small, .icon--matting.gtm-warning-icon-small, .icon--matting.gtm-world-icon-small, .icon--matting.gtm-user-management-icon-small, .icon--matting.gtm-unfold-more-icon-small, .icon--matting.gtm-unfold-less-icon-small, .icon--matting.gtm-translate-icon-small, .icon--matting.gtm-timeline-icon-small, .icon--matting.gtm-storage-icon-small, .icon--matting.gtm-settings-icon-small, .icon--matting.gtm-sequence-icon-small, .icon--matting.gtm-trigger-consent-init-icon-small, .icon--matting.gtm-security-icon-small, .icon--matting.gtm-search-icon-small, .icon--matting.gtm-remove-plain-icon-small, .icon--matting.gtm-remove-outline-icon-small, .icon--matting.gtm-remove-icon-small, .icon--matting.gtm-refresh-icon-small, .icon--matting.gtm-query-builder-icon-small, .icon--matting.gtm-permission-icon-small, .icon--matting.gtm-open-in-new-icon-small, .icon--matting.gtm-not-interested-icon-small, .icon--matting.gtm-next-icon-small, .icon--matting.gtm-md-tag-icon-small, .icon--matting.gtm-vteditor-label-icon-small, .icon--matting.gtm-more-vert-icon-small, .icon--matting.gtm-stoplight-icon-small, .icon--matting.gtm-lock-outline-icon-small, .icon--matting.gtm-launch-icon-small, .icon--matting.gtm-ios-icon-small, .icon--matting.gtm-info-outline-icon-small, .icon--matting.gtm-info-icon-small, .icon--matting.gtm-indeterminate-check-box-icon-small, .icon--matting.gtm-import-icon-small, .icon--matting.gtm-image-icon-small, .icon--matting.gtm-http-icon-small, .icon--matting.gtm-history-icon-small, .icon--matting.gtm-highlight-off-icon-small, .icon--matting.gtm-help-icon-small, .icon--matting.gtm-google-icon-small, .icon--matting.gtm-globe-icon-small, .icon--matting.gtm-forward-icon-small, .icon--matting.gtm-format-indent-increase-icon-small, .icon--matting.gtm-folder-open-icon-small, .icon--matting.gtm-folder-icon-small, .icon--matting.gtm-filter-none-icon-small, .icon--matting.gtm-filter-center-focus-icon-small, .icon--matting.gtm-file-input-icon-small, .icon--matting.gtm-feedback-icon-small, .icon--matting.gtm-extension-icon-small, .icon--matting.gtm-export-icon-small, .icon--matting.gtm-error-icon-small, .icon--matting.gtm-empty-icon-small, .icon--matting.gtm-email-icon-small, .icon--matting.gtm-edit-icon-small, .icon--matting.gtm-delete-icon-small, .icon--matting.gtm-content-copy-icon-small, .icon--matting.gtm-container-settings-icon-small, .icon--matting.gtm-comment-icon-small, .icon--matting.gtm-contacts-icon-small, .icon--matting.gtm-code-icon-small, .icon--matting.gtm-close-icon-small, .icon--matting.gtm-clients-icon-small, .icon--matting.gtm-check-icon-small, .icon--matting.gtm-check-circle-outline-icon-small, .icon--matting.gtm-check-circle-icon-small, .icon--matting.gtm-check-box-outline-blank-icon-small, .icon--matting.gtm-check-box-icon-small, .icon--matting.gtm-vteditor-checkbox-icon-small, .icon--matting.gtm-built-in-icon-small, .icon--matting.gtm-build-icon-small, .icon--matting.gtm-border-color-icon-small, .icon--matting.gtm-block-icon-small, .icon--matting.gtm-back-icon-small, .icon--matting.gtm-assistant-icon-small, .icon--matting.gtm-arrow-upward-icon-small, .icon--matting.gtm-arrow-up-icon-small, .icon--matting.gtm-arrow-right-icon-small, .icon--matting.gtm-arrow-left-icon-small, .icon--matting.gtm-arrow-downward-icon-small, .icon--matting.gtm-arrow-down-icon-small, .icon--matting.gtm-arrow-right-triangle-icon-small, .icon--matting.gtm-arrow-drop-down-icon-small, .icon--matting.gtm-approval-queue-icon-small, .icon--matting.gtm-android-icon-small, .icon--matting.gtm-amp-icon-small, .icon--matting.gtm-add-icon-small, .icon--matting.gtm-account-settings-icon-small, .icon--matting.gtm-access-time-icon-small, .gtm-md-icon-small.icon-matting, .icon-matting.gtm-vteditor-text-icon-small, .icon-matting.gtm-vteditor-table-icon-small, .icon-matting.gtm-vteditor-select-icon-small, .icon-matting.gtm-vteditor-radio-icon-small, .icon-matting.gtm-vteditor-param-table-icon-small, .icon-matting.gtm-vteditor-hidden-icon-small, .icon-matting.gtm-vteditor-group-icon-small, .icon-matting.gtm-view-column-icon-small, .icon-matting.gtm-variable-utils-icon-small, .icon-matting.gtm-variable-page-icon-small, .icon-matting.gtm-variable-other-icon-small, .icon-matting.gtm-variable-device-icon-small, .icon-matting.gtm-variable-elements-icon-small, .icon-matting.gtm-variable-nav-icon-small, .icon-matting.gtm-add-variable-icon-small, .icon-matting.gtm-add-container-icon-small, .icon-matting.gtm-container-temp-icon-small, .icon-matting.gtm-variable-container-icon-small, .icon-matting.gtm-variable-temp-icon-small, .icon-matting.gtm-variable-builtin-icon-small, .icon-matting.gtm-variable-app-icon-small, .icon-matting.gtm-activity-icon-small, .icon-matting.gtm-trigger-video-icon-small, .icon-matting.gtm-trigger-timer-icon-small, .icon-matting.gtm-trigger-scroll-icon-small, .icon-matting.gtm-trigger-pageview-ready-icon-small, .icon-matting.gtm-trigger-pageview-loaded-icon-small, .icon-matting.gtm-trigger-pageview-icon-small, .icon-matting.gtm-trigger-visibility-icon-small, .icon-matting.gtm-trigger-js-error-icon-small, .icon-matting.gtm-trigger-init-icon-small, .icon-matting.gtm-trigger-history-icon-small, .icon-matting.gtm-trigger-form-icon-small, .icon-matting.gtm-trigger-custom-event-icon-small, .icon-matting.gtm-trigger-click-link-icon-small, .icon-matting.gtm-trigger-click-icon-small, .icon-matting.gtm-trigger-temp-icon-small, .icon-matting.gtm-tag-temp-icon-small, .icon-matting.gtm-zones-icon-small, .icon-matting.gtm-warning-icon-small, .icon-matting.gtm-world-icon-small, .icon-matting.gtm-user-management-icon-small, .icon-matting.gtm-unfold-more-icon-small, .icon-matting.gtm-unfold-less-icon-small, .icon-matting.gtm-translate-icon-small, .icon-matting.gtm-timeline-icon-small, .icon-matting.gtm-storage-icon-small, .icon-matting.gtm-settings-icon-small, .icon-matting.gtm-sequence-icon-small, .icon-matting.gtm-trigger-consent-init-icon-small, .icon-matting.gtm-security-icon-small, .icon-matting.gtm-search-icon-small, .icon-matting.gtm-remove-plain-icon-small, .icon-matting.gtm-remove-outline-icon-small, .icon-matting.gtm-remove-icon-small, .icon-matting.gtm-refresh-icon-small, .icon-matting.gtm-query-builder-icon-small, .icon-matting.gtm-permission-icon-small, .icon-matting.gtm-open-in-new-icon-small, .icon-matting.gtm-not-interested-icon-small, .icon-matting.gtm-next-icon-small, .icon-matting.gtm-md-tag-icon-small, .icon-matting.gtm-vteditor-label-icon-small, .icon-matting.gtm-more-vert-icon-small, .icon-matting.gtm-stoplight-icon-small, .icon-matting.gtm-lock-outline-icon-small, .icon-matting.gtm-launch-icon-small, .icon-matting.gtm-ios-icon-small, .icon-matting.gtm-info-outline-icon-small, .icon-matting.gtm-info-icon-small, .icon-matting.gtm-indeterminate-check-box-icon-small, .icon-matting.gtm-import-icon-small, .icon-matting.gtm-image-icon-small, .icon-matting.gtm-http-icon-small, .icon-matting.gtm-history-icon-small, .icon-matting.gtm-highlight-off-icon-small, .icon-matting.gtm-help-icon-small, .icon-matting.gtm-google-icon-small, .icon-matting.gtm-globe-icon-small, .icon-matting.gtm-forward-icon-small, .icon-matting.gtm-format-indent-increase-icon-small, .icon-matting.gtm-folder-open-icon-small, .icon-matting.gtm-folder-icon-small, .icon-matting.gtm-filter-none-icon-small, .icon-matting.gtm-filter-center-focus-icon-small, .icon-matting.gtm-file-input-icon-small, .icon-matting.gtm-feedback-icon-small, .icon-matting.gtm-extension-icon-small, .icon-matting.gtm-export-icon-small, .icon-matting.gtm-error-icon-small, .icon-matting.gtm-empty-icon-small, .icon-matting.gtm-email-icon-small, .icon-matting.gtm-edit-icon-small, .icon-matting.gtm-delete-icon-small, .icon-matting.gtm-content-copy-icon-small, .icon-matting.gtm-container-settings-icon-small, .icon-matting.gtm-comment-icon-small, .icon-matting.gtm-contacts-icon-small, .icon-matting.gtm-code-icon-small, .icon-matting.gtm-close-icon-small, .icon-matting.gtm-clients-icon-small, .icon-matting.gtm-check-icon-small, .icon-matting.gtm-check-circle-outline-icon-small, .icon-matting.gtm-check-circle-icon-small, .icon-matting.gtm-check-box-outline-blank-icon-small, .icon-matting.gtm-check-box-icon-small, .icon-matting.gtm-vteditor-checkbox-icon-small, .icon-matting.gtm-built-in-icon-small, .icon-matting.gtm-build-icon-small, .icon-matting.gtm-border-color-icon-small, .icon-matting.gtm-block-icon-small, .icon-matting.gtm-back-icon-small, .icon-matting.gtm-assistant-icon-small, .icon-matting.gtm-arrow-upward-icon-small, .icon-matting.gtm-arrow-up-icon-small, .icon-matting.gtm-arrow-right-icon-small, .icon-matting.gtm-arrow-left-icon-small, .icon-matting.gtm-arrow-downward-icon-small, .icon-matting.gtm-arrow-down-icon-small, .icon-matting.gtm-arrow-right-triangle-icon-small, .icon-matting.gtm-arrow-drop-down-icon-small, .icon-matting.gtm-approval-queue-icon-small, .icon-matting.gtm-android-icon-small, .icon-matting.gtm-amp-icon-small, .icon-matting.gtm-add-icon-small, .icon-matting.gtm-account-settings-icon-small, .icon-matting.gtm-access-time-icon-small, .icon--small.icon--matting, .icon-small.icon--matting, .icon--small.icon-matting, .icon-small.icon-matting {
+		background-color: var(--white-54);
+		color: var(--bg-dark);
+	}
+	.context-picker__row::before {
+		color: var(--blue);
+	}
+	.icon--small.icon--matting.icon-matting--blue, .icon-small.icon--matting.icon-matting--blue, .icon--small.icon-matting.icon-matting--blue, .icon-small.icon-matting.icon-matting--blue, .gtm-md-icon--small.icon--matting.icon-matting--blue, .gtm-md-icon--small.icon-matting.icon-matting--blue, .gtm-md-icon-small.icon--matting.icon-matting--blue, .icon--matting.icon-matting--blue.gtm-vteditor-text-icon-small, .icon--matting.icon-matting--blue.gtm-vteditor-table-icon-small, .icon--matting.icon-matting--blue.gtm-vteditor-select-icon-small, .icon--matting.icon-matting--blue.gtm-vteditor-radio-icon-small, .icon--matting.icon-matting--blue.gtm-vteditor-param-table-icon-small, .icon--matting.icon-matting--blue.gtm-vteditor-hidden-icon-small, .icon--matting.icon-matting--blue.gtm-vteditor-group-icon-small, .icon--matting.icon-matting--blue.gtm-view-column-icon-small, .icon--matting.icon-matting--blue.gtm-variable-utils-icon-small, .icon--matting.icon-matting--blue.gtm-variable-page-icon-small, .icon--matting.icon-matting--blue.gtm-variable-other-icon-small, .icon--matting.icon-matting--blue.gtm-variable-device-icon-small, .icon--matting.icon-matting--blue.gtm-variable-elements-icon-small, .icon--matting.icon-matting--blue.gtm-variable-nav-icon-small, .icon--matting.icon-matting--blue.gtm-add-variable-icon-small, .icon--matting.icon-matting--blue.gtm-add-container-icon-small, .icon--matting.icon-matting--blue.gtm-container-temp-icon-small, .icon--matting.icon-matting--blue.gtm-variable-container-icon-small, .icon--matting.icon-matting--blue.gtm-variable-temp-icon-small, .icon--matting.icon-matting--blue.gtm-variable-builtin-icon-small, .icon--matting.icon-matting--blue.gtm-variable-app-icon-small, .icon--matting.icon-matting--blue.gtm-activity-icon-small, .icon--matting.icon-matting--blue.gtm-trigger-video-icon-small, .icon--matting.icon-matting--blue.gtm-trigger-timer-icon-small, .icon--matting.icon-matting--blue.gtm-trigger-scroll-icon-small, .icon--matting.icon-matting--blue.gtm-trigger-pageview-ready-icon-small, .icon--matting.icon-matting--blue.gtm-trigger-pageview-loaded-icon-small, .icon--matting.icon-matting--blue.gtm-trigger-pageview-icon-small, .icon--matting.icon-matting--blue.gtm-trigger-visibility-icon-small, .icon--matting.icon-matting--blue.gtm-trigger-js-error-icon-small, .icon--matting.icon-matting--blue.gtm-trigger-init-icon-small, .icon--matting.icon-matting--blue.gtm-trigger-history-icon-small, .icon--matting.icon-matting--blue.gtm-trigger-form-icon-small, .icon--matting.icon-matting--blue.gtm-trigger-custom-event-icon-small, .icon--matting.icon-matting--blue.gtm-trigger-click-link-icon-small, .icon--matting.icon-matting--blue.gtm-trigger-click-icon-small, .icon--matting.icon-matting--blue.gtm-trigger-temp-icon-small, .icon--matting.icon-matting--blue.gtm-tag-temp-icon-small, .icon--matting.icon-matting--blue.gtm-zones-icon-small, .icon--matting.icon-matting--blue.gtm-warning-icon-small, .icon--matting.icon-matting--blue.gtm-world-icon-small, .icon--matting.icon-matting--blue.gtm-user-management-icon-small, .icon--matting.icon-matting--blue.gtm-unfold-more-icon-small, .icon--matting.icon-matting--blue.gtm-unfold-less-icon-small, .icon--matting.icon-matting--blue.gtm-translate-icon-small, .icon--matting.icon-matting--blue.gtm-timeline-icon-small, .icon--matting.icon-matting--blue.gtm-storage-icon-small, .icon--matting.icon-matting--blue.gtm-settings-icon-small, .icon--matting.icon-matting--blue.gtm-sequence-icon-small, .icon--matting.icon-matting--blue.gtm-trigger-consent-init-icon-small, .icon--matting.icon-matting--blue.gtm-security-icon-small, .icon--matting.icon-matting--blue.gtm-search-icon-small, .icon--matting.icon-matting--blue.gtm-remove-plain-icon-small, .icon--matting.icon-matting--blue.gtm-remove-outline-icon-small, .icon--matting.icon-matting--blue.gtm-remove-icon-small, .icon--matting.icon-matting--blue.gtm-refresh-icon-small, .icon--matting.icon-matting--blue.gtm-query-builder-icon-small, .icon--matting.icon-matting--blue.gtm-permission-icon-small, .icon--matting.icon-matting--blue.gtm-open-in-new-icon-small, .icon--matting.icon-matting--blue.gtm-not-interested-icon-small, .icon--matting.icon-matting--blue.gtm-next-icon-small, .icon--matting.icon-matting--blue.gtm-md-tag-icon-small, .icon--matting.icon-matting--blue.gtm-vteditor-label-icon-small, .icon--matting.icon-matting--blue.gtm-more-vert-icon-small, .icon--matting.icon-matting--blue.gtm-stoplight-icon-small, .icon--matting.icon-matting--blue.gtm-lock-outline-icon-small, .icon--matting.icon-matting--blue.gtm-launch-icon-small, .icon--matting.icon-matting--blue.gtm-ios-icon-small, .icon--matting.icon-matting--blue.gtm-info-outline-icon-small, .icon--matting.icon-matting--blue.gtm-info-icon-small, .icon--matting.icon-matting--blue.gtm-indeterminate-check-box-icon-small, .icon--matting.icon-matting--blue.gtm-import-icon-small, .icon--matting.icon-matting--blue.gtm-image-icon-small, .icon--matting.icon-matting--blue.gtm-http-icon-small, .icon--matting.icon-matting--blue.gtm-history-icon-small, .icon--matting.icon-matting--blue.gtm-highlight-off-icon-small, .icon--matting.icon-matting--blue.gtm-help-icon-small, .icon--matting.icon-matting--blue.gtm-google-icon-small, .icon--matting.icon-matting--blue.gtm-globe-icon-small, .icon--matting.icon-matting--blue.gtm-forward-icon-small, .icon--matting.icon-matting--blue.gtm-format-indent-increase-icon-small, .icon--matting.icon-matting--blue.gtm-folder-open-icon-small, .icon--matting.icon-matting--blue.gtm-folder-icon-small, .icon--matting.icon-matting--blue.gtm-filter-none-icon-small, .icon--matting.icon-matting--blue.gtm-filter-center-focus-icon-small, .icon--matting.icon-matting--blue.gtm-file-input-icon-small, .icon--matting.icon-matting--blue.gtm-feedback-icon-small, .icon--matting.icon-matting--blue.gtm-extension-icon-small, .icon--matting.icon-matting--blue.gtm-export-icon-small, .icon--matting.icon-matting--blue.gtm-error-icon-small, .icon--matting.icon-matting--blue.gtm-empty-icon-small, .icon--matting.icon-matting--blue.gtm-email-icon-small, .icon--matting.icon-matting--blue.gtm-edit-icon-small, .icon--matting.icon-matting--blue.gtm-delete-icon-small, .icon--matting.icon-matting--blue.gtm-content-copy-icon-small, .icon--matting.icon-matting--blue.gtm-container-settings-icon-small, .icon--matting.icon-matting--blue.gtm-comment-icon-small, .icon--matting.icon-matting--blue.gtm-contacts-icon-small, .icon--matting.icon-matting--blue.gtm-code-icon-small, .icon--matting.icon-matting--blue.gtm-close-icon-small, .icon--matting.icon-matting--blue.gtm-clients-icon-small, .icon--matting.icon-matting--blue.gtm-check-icon-small, .icon--matting.icon-matting--blue.gtm-check-circle-outline-icon-small, .icon--matting.icon-matting--blue.gtm-check-circle-icon-small, .icon--matting.icon-matting--blue.gtm-check-box-outline-blank-icon-small, .icon--matting.icon-matting--blue.gtm-check-box-icon-small, .icon--matting.icon-matting--blue.gtm-vteditor-checkbox-icon-small, .icon--matting.icon-matting--blue.gtm-built-in-icon-small, .icon--matting.icon-matting--blue.gtm-build-icon-small, .icon--matting.icon-matting--blue.gtm-border-color-icon-small, .icon--matting.icon-matting--blue.gtm-block-icon-small, .icon--matting.icon-matting--blue.gtm-back-icon-small, .icon--matting.icon-matting--blue.gtm-assistant-icon-small, .icon--matting.icon-matting--blue.gtm-arrow-upward-icon-small, .icon--matting.icon-matting--blue.gtm-arrow-up-icon-small, .icon--matting.icon-matting--blue.gtm-arrow-right-icon-small, .icon--matting.icon-matting--blue.gtm-arrow-left-icon-small, .icon--matting.icon-matting--blue.gtm-arrow-downward-icon-small, .icon--matting.icon-matting--blue.gtm-arrow-down-icon-small, .icon--matting.icon-matting--blue.gtm-arrow-right-triangle-icon-small, .icon--matting.icon-matting--blue.gtm-arrow-drop-down-icon-small, .icon--matting.icon-matting--blue.gtm-approval-queue-icon-small, .icon--matting.icon-matting--blue.gtm-android-icon-small, .icon--matting.icon-matting--blue.gtm-amp-icon-small, .icon--matting.icon-matting--blue.gtm-add-icon-small, .icon--matting.icon-matting--blue.gtm-account-settings-icon-small, .icon--matting.icon-matting--blue.gtm-access-time-icon-small, .gtm-md-icon-small.icon-matting.icon-matting--blue, .icon-matting.icon-matting--blue.gtm-vteditor-text-icon-small, .icon-matting.icon-matting--blue.gtm-vteditor-table-icon-small, .icon-matting.icon-matting--blue.gtm-vteditor-select-icon-small, .icon-matting.icon-matting--blue.gtm-vteditor-radio-icon-small, .icon-matting.icon-matting--blue.gtm-vteditor-param-table-icon-small, .icon-matting.icon-matting--blue.gtm-vteditor-hidden-icon-small, .icon-matting.icon-matting--blue.gtm-vteditor-group-icon-small, .icon-matting.icon-matting--blue.gtm-view-column-icon-small, .icon-matting.icon-matting--blue.gtm-variable-utils-icon-small, .icon-matting.icon-matting--blue.gtm-variable-page-icon-small, .icon-matting.icon-matting--blue.gtm-variable-other-icon-small, .icon-matting.icon-matting--blue.gtm-variable-device-icon-small, .icon-matting.icon-matting--blue.gtm-variable-elements-icon-small, .icon-matting.icon-matting--blue.gtm-variable-nav-icon-small, .icon-matting.icon-matting--blue.gtm-add-variable-icon-small, .icon-matting.icon-matting--blue.gtm-add-container-icon-small, .icon-matting.icon-matting--blue.gtm-container-temp-icon-small, .icon-matting.icon-matting--blue.gtm-variable-container-icon-small, .icon-matting.icon-matting--blue.gtm-variable-temp-icon-small, .icon-matting.icon-matting--blue.gtm-variable-builtin-icon-small, .icon-matting.icon-matting--blue.gtm-variable-app-icon-small, .icon-matting.icon-matting--blue.gtm-activity-icon-small, .icon-matting.icon-matting--blue.gtm-trigger-video-icon-small, .icon-matting.icon-matting--blue.gtm-trigger-timer-icon-small, .icon-matting.icon-matting--blue.gtm-trigger-scroll-icon-small, .icon-matting.icon-matting--blue.gtm-trigger-pageview-ready-icon-small, .icon-matting.icon-matting--blue.gtm-trigger-pageview-loaded-icon-small, .icon-matting.icon-matting--blue.gtm-trigger-pageview-icon-small, .icon-matting.icon-matting--blue.gtm-trigger-visibility-icon-small, .icon-matting.icon-matting--blue.gtm-trigger-js-error-icon-small, .icon-matting.icon-matting--blue.gtm-trigger-init-icon-small, .icon-matting.icon-matting--blue.gtm-trigger-history-icon-small, .icon-matting.icon-matting--blue.gtm-trigger-form-icon-small, .icon-matting.icon-matting--blue.gtm-trigger-custom-event-icon-small, .icon-matting.icon-matting--blue.gtm-trigger-click-link-icon-small, .icon-matting.icon-matting--blue.gtm-trigger-click-icon-small, .icon-matting.icon-matting--blue.gtm-trigger-temp-icon-small, .icon-matting.icon-matting--blue.gtm-tag-temp-icon-small, .icon-matting.icon-matting--blue.gtm-zones-icon-small, .icon-matting.icon-matting--blue.gtm-warning-icon-small, .icon-matting.icon-matting--blue.gtm-world-icon-small, .icon-matting.icon-matting--blue.gtm-user-management-icon-small, .icon-matting.icon-matting--blue.gtm-unfold-more-icon-small, .icon-matting.icon-matting--blue.gtm-unfold-less-icon-small, .icon-matting.icon-matting--blue.gtm-translate-icon-small, .icon-matting.icon-matting--blue.gtm-timeline-icon-small, .icon-matting.icon-matting--blue.gtm-storage-icon-small, .icon-matting.icon-matting--blue.gtm-settings-icon-small, .icon-matting.icon-matting--blue.gtm-sequence-icon-small, .icon-matting.icon-matting--blue.gtm-trigger-consent-init-icon-small, .icon-matting.icon-matting--blue.gtm-security-icon-small, .icon-matting.icon-matting--blue.gtm-search-icon-small, .icon-matting.icon-matting--blue.gtm-remove-plain-icon-small, .icon-matting.icon-matting--blue.gtm-remove-outline-icon-small, .icon-matting.icon-matting--blue.gtm-remove-icon-small, .icon-matting.icon-matting--blue.gtm-refresh-icon-small, .icon-matting.icon-matting--blue.gtm-query-builder-icon-small, .icon-matting.icon-matting--blue.gtm-permission-icon-small, .icon-matting.icon-matting--blue.gtm-open-in-new-icon-small, .icon-matting.icon-matting--blue.gtm-not-interested-icon-small, .icon-matting.icon-matting--blue.gtm-next-icon-small, .icon-matting.icon-matting--blue.gtm-md-tag-icon-small, .icon-matting.icon-matting--blue.gtm-vteditor-label-icon-small, .icon-matting.icon-matting--blue.gtm-more-vert-icon-small, .icon-matting.icon-matting--blue.gtm-stoplight-icon-small, .icon-matting.icon-matting--blue.gtm-lock-outline-icon-small, .icon-matting.icon-matting--blue.gtm-launch-icon-small, .icon-matting.icon-matting--blue.gtm-ios-icon-small, .icon-matting.icon-matting--blue.gtm-info-outline-icon-small, .icon-matting.icon-matting--blue.gtm-info-icon-small, .icon-matting.icon-matting--blue.gtm-indeterminate-check-box-icon-small, .icon-matting.icon-matting--blue.gtm-import-icon-small, .icon-matting.icon-matting--blue.gtm-image-icon-small, .icon-matting.icon-matting--blue.gtm-http-icon-small, .icon-matting.icon-matting--blue.gtm-history-icon-small, .icon-matting.icon-matting--blue.gtm-highlight-off-icon-small, .icon-matting.icon-matting--blue.gtm-help-icon-small, .icon-matting.icon-matting--blue.gtm-google-icon-small, .icon-matting.icon-matting--blue.gtm-globe-icon-small, .icon-matting.icon-matting--blue.gtm-forward-icon-small, .icon-matting.icon-matting--blue.gtm-format-indent-increase-icon-small, .icon-matting.icon-matting--blue.gtm-folder-open-icon-small, .icon-matting.icon-matting--blue.gtm-folder-icon-small, .icon-matting.icon-matting--blue.gtm-filter-none-icon-small, .icon-matting.icon-matting--blue.gtm-filter-center-focus-icon-small, .icon-matting.icon-matting--blue.gtm-file-input-icon-small, .icon-matting.icon-matting--blue.gtm-feedback-icon-small, .icon-matting.icon-matting--blue.gtm-extension-icon-small, .icon-matting.icon-matting--blue.gtm-export-icon-small, .icon-matting.icon-matting--blue.gtm-error-icon-small, .icon-matting.icon-matting--blue.gtm-empty-icon-small, .icon-matting.icon-matting--blue.gtm-email-icon-small, .icon-matting.icon-matting--blue.gtm-edit-icon-small, .icon-matting.icon-matting--blue.gtm-delete-icon-small, .icon-matting.icon-matting--blue.gtm-content-copy-icon-small, .icon-matting.icon-matting--blue.gtm-container-settings-icon-small, .icon-matting.icon-matting--blue.gtm-comment-icon-small, .icon-matting.icon-matting--blue.gtm-contacts-icon-small, .icon-matting.icon-matting--blue.gtm-code-icon-small, .icon-matting.icon-matting--blue.gtm-close-icon-small, .icon-matting.icon-matting--blue.gtm-clients-icon-small, .icon-matting.icon-matting--blue.gtm-check-icon-small, .icon-matting.icon-matting--blue.gtm-check-circle-outline-icon-small, .icon-matting.icon-matting--blue.gtm-check-circle-icon-small, .icon-matting.icon-matting--blue.gtm-check-box-outline-blank-icon-small, .icon-matting.icon-matting--blue.gtm-check-box-icon-small, .icon-matting.icon-matting--blue.gtm-vteditor-checkbox-icon-small, .icon-matting.icon-matting--blue.gtm-built-in-icon-small, .icon-matting.icon-matting--blue.gtm-build-icon-small, .icon-matting.icon-matting--blue.gtm-border-color-icon-small, .icon-matting.icon-matting--blue.gtm-block-icon-small, .icon-matting.icon-matting--blue.gtm-back-icon-small, .icon-matting.icon-matting--blue.gtm-assistant-icon-small, .icon-matting.icon-matting--blue.gtm-arrow-upward-icon-small, .icon-matting.icon-matting--blue.gtm-arrow-up-icon-small, .icon-matting.icon-matting--blue.gtm-arrow-right-icon-small, .icon-matting.icon-matting--blue.gtm-arrow-left-icon-small, .icon-matting.icon-matting--blue.gtm-arrow-downward-icon-small, .icon-matting.icon-matting--blue.gtm-arrow-down-icon-small, .icon-matting.icon-matting--blue.gtm-arrow-right-triangle-icon-small, .icon-matting.icon-matting--blue.gtm-arrow-drop-down-icon-small, .icon-matting.icon-matting--blue.gtm-approval-queue-icon-small, .icon-matting.icon-matting--blue.gtm-android-icon-small, .icon-matting.icon-matting--blue.gtm-amp-icon-small, .icon-matting.icon-matting--blue.gtm-add-icon-small, .icon-matting.icon-matting--blue.gtm-account-settings-icon-small, .icon-matting.icon-matting--blue.gtm-access-time-icon-small {
+		background-color: var(--blue);
+	}
+	.btn.btn-action.disabled, .btn.btn-action:disabled {
+		background-color: var(--bg-transparent-2) !important;
+		color: var(--white-38) !important;
+	}
+	.btn.btn-action:hover {
+		background-color: var(--devsite-button-primary-background-hover);
+		background-image: none;
+	}
+	.btn.btn-action {
+		background-color: var(--blue);
+		color: var(--bg-dark);
+	}
+	.btn.btn-flat--grey, .gtm-snippet__copy, table.gtm-table th, .gtm-table-component table th, .blg-title-with-parent>div:first-child, .admin-link .admin-icon-setting, .admin-container gtm-um-admin-btn>a .admin-icon-setting {
+		color: var(--white-54);
+	}
+	.gtm-ng-dialog-template .gtm-ng-dialog-content.gtm-setup-instruction__content, table.gtm-table th .sortable.active-sort, .gtm-table-component table th .sortable.active-sort, table.gtm-table th .sortable.active-sort:after, .gtm-table-component table th .sortable.active-sort:after {
+		color: var(--white-87);
+	}
+	.gtm-snippet__copy:hover, .admin-column_create.gtm-add-icon {
+		color: var(--blue);
+	}
+	.gtm-sheet .sheet-content.sheet-white, .gtm-sheet .sheet-content--white, .gtm-ng-dialog-modal {
+		background-color: var(--bg-dark);
+	}
+	.gtm-sheet .sheet-footer, .suite.suite-up-accounts-page-footer, .suite .suite-up-accounts-page-footer {
+		background-color: var(--bg-dark);
+		border-color: var(--border-1);
+	}
+	.gtm-ng-dialog-template .gtm-ng-dialog-content.gtm-setup-instruction__content textarea {
+		background-color: var(--bg-hover-1);
+		border-color: var(--border-1);
+	}
+	.gtm-ng-dialog-template .gtm-ng-dialog-content.gtm-setup-instruction__content textarea:focus {
+		border-color: var(--blue);
+	}
+	.gtm-ng-dialog-template .gtm-ng-dialog-footer .btn, .btn.btn-raised {
+		position: relative;
+	}
+	.gtm-ng-dialog-template .gtm-ng-dialog-footer .btn:hover, .btn.btn-raised:hover {
+		background-color: #0000;
+	}
+	.gtm-ng-dialog-template .gtm-ng-dialog-footer .btn:hover::before, .btn.btn-raised:hover::before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		margin: 0;
+		background-color: var(--blue);
+		opacity: .06;
+		border-radius: 4px;
+	}
+	.gtm-page-header-status-messages {
+		color: var(--grey-1);
+	}
+	.suite a {
+		color: var(--white-3);
+	}
+	.suite.suite-up-accounts-page-footer-content, .suite .suite-up-accounts-page-footer-content {
+		color: inherit;
+	}
+	.gtm-account-list .account.card, table.gtm-table td, .gtm-table-component table td, table.gtm-table th, .gtm-table-component table th, .admin-column.admin-column--container {
+		border-color: var(--border-1);
+	}
+	.gtm-md-icon.icon-button, .icon-button.gtm-vteditor-text-icon, .icon-button.gtm-vteditor-table-icon, .icon-button.gtm-vteditor-select-icon, .icon-button.gtm-vteditor-radio-icon, .icon-button.gtm-vteditor-param-table-icon, .icon-button.gtm-vteditor-hidden-icon, .icon-button.gtm-vteditor-group-icon, .icon-button.gtm-view-column-icon, .icon-button.gtm-variable-utils-icon, .icon-button.gtm-variable-page-icon, .icon-button.gtm-variable-other-icon, .icon-button.gtm-variable-device-icon, .icon-button.gtm-variable-elements-icon, .icon-button.gtm-variable-nav-icon, .icon-button.gtm-add-variable-icon, .icon-button.gtm-add-container-icon, .icon-button.gtm-container-temp-icon, .icon-button.gtm-variable-container-icon, .icon-button.gtm-variable-temp-icon, .icon-button.gtm-variable-builtin-icon, .icon-button.gtm-variable-app-icon, .icon-button.gtm-activity-icon, .icon-button.gtm-trigger-video-icon, .icon-button.gtm-trigger-timer-icon, .icon-button.gtm-trigger-scroll-icon, .icon-button.gtm-trigger-pageview-ready-icon, .icon-button.gtm-trigger-pageview-loaded-icon, .icon-button.gtm-trigger-pageview-icon, .icon-button.gtm-trigger-visibility-icon, .icon-button.gtm-trigger-js-error-icon, .icon-button.gtm-trigger-init-icon, .icon-button.gtm-trigger-history-icon, .icon-button.gtm-trigger-form-icon, .icon-button.gtm-trigger-custom-event-icon, .icon-button.gtm-trigger-click-link-icon, .icon-button.gtm-trigger-click-icon, .icon-button.gtm-trigger-temp-icon, .icon-button.gtm-tag-temp-icon, .icon-button.gtm-zones-icon, .icon-button.gtm-warning-icon, .icon-button.gtm-world-icon, .icon-button.gtm-user-management-icon, .icon-button.gtm-unfold-more-icon, .icon-button.gtm-unfold-less-icon, .icon-button.gtm-translate-icon, .icon-button.gtm-timeline-icon, .icon-button.gtm-storage-icon, .icon-button.gtm-settings-icon, .icon-button.gtm-sequence-icon, .icon-button.gtm-trigger-consent-init-icon, .icon-button.gtm-security-icon, .icon-button.gtm-search-icon, .icon-button.gtm-remove-plain-icon, .icon-button.gtm-remove-outline-icon, .icon-button.gtm-remove-icon, .icon-button.gtm-refresh-icon, .icon-button.gtm-query-builder-icon, .icon-button.gtm-permission-icon, .icon-button.gtm-open-in-new-icon, .icon-button.gtm-not-interested-icon, .icon-button.gtm-next-icon, .icon-button.gtm-md-tag-icon, .icon-button.gtm-vteditor-label-icon, .icon-button.gtm-more-vert-icon, .icon-button.gtm-stoplight-icon, .icon-button.gtm-lock-outline-icon, .icon-button.gtm-launch-icon, .icon-button.gtm-ios-icon, .icon-button.gtm-info-outline-icon, .icon-button.gtm-info-icon, .icon-button.gtm-indeterminate-check-box-icon, .icon-button.gtm-import-icon, .icon-button.gtm-image-icon, .icon-button.gtm-http-icon, .icon-button.gtm-history-icon, .icon-button.gtm-highlight-off-icon, .icon-button.gtm-help-icon, .icon-button.gtm-google-icon, .icon-button.gtm-globe-icon, .icon-button.gtm-forward-icon, .icon-button.gtm-format-indent-increase-icon, .icon-button.gtm-folder-open-icon, .icon-button.gtm-folder-icon, .icon-button.gtm-filter-none-icon, .icon-button.gtm-filter-center-focus-icon, .icon-button.gtm-file-input-icon, .icon-button.gtm-feedback-icon, .icon-button.gtm-extension-icon, .icon-button.gtm-export-icon, .icon-button.gtm-error-icon, .icon-button.gtm-empty-icon, .icon-button.gtm-email-icon, .icon-button.gtm-edit-icon, .icon-button.gtm-delete-icon, .icon-button.gtm-content-copy-icon, .icon-button.gtm-container-settings-icon, .icon-button.gtm-comment-icon, .icon-button.gtm-contacts-icon, .icon-button.gtm-code-icon, .icon-button.gtm-close-icon, .icon-button.gtm-clients-icon, .icon-button.gtm-check-icon, .icon-button.gtm-check-circle-outline-icon, .icon-button.gtm-check-circle-icon, .icon-button.gtm-check-box-outline-blank-icon, .icon-button.gtm-check-box-icon, .icon-button.gtm-vteditor-checkbox-icon, .icon-button.gtm-built-in-icon, .icon-button.gtm-build-icon, .icon-button.gtm-border-color-icon, .icon-button.gtm-block-icon, .icon-button.gtm-back-icon, .icon-button.gtm-assistant-icon, .icon-button.gtm-arrow-upward-icon, .icon-button.gtm-arrow-up-icon, .icon-button.gtm-arrow-right-icon, .icon-button.gtm-arrow-left-icon, .icon-button.gtm-arrow-downward-icon, .icon-button.gtm-arrow-down-icon, .icon-button.gtm-arrow-right-triangle-icon, .icon-button.gtm-arrow-drop-down-icon, .icon-button.gtm-approval-queue-icon, .icon-button.gtm-android-icon, .icon-button.gtm-amp-icon, .icon-button.gtm-add-icon, .icon-button.gtm-account-settings-icon, .icon-button.gtm-access-time-icon, gtm-menu-filter i, .admin-back-icon, .gtm-sheet .gtm-sheet-header__actions i, ctui-bubble-icon-menu>i, gtm-menu-filter.enabled i {
+		color: var(--white-1);
+	}
+	.gtm-cloaked:before {
+		background-color: var(--bg-dark);
+		box-shadow: 0 0 0 1px var(--border-1);
+	}
+	.admin-link:hover, .admin-container gtm-um-admin-btn>a:hover {
+		color: var(--white-87);
+		background-color: var(--bg-hover-1);
+	}
+	.admin-link, .admin-container gtm-um-admin-btn>a {
+		color: var(--white-87);
+		border-color: var(--border-1);
+	}
+	.admin-link:hover::before, .admin-container gtm-um-admin-btn>a:hover::before, .blg-caption, .gtm-ng-dialog-template .gtm-ng-dialog-content, .gtm-picker__header>div, .gtm-picker .gtm-picker__header, .blg-card--slat::before {
+		color: var(--white-54);
+	}
+	.admin-back-icon:hover, .blg-radio-group md-radio-button, .blg-radio-group--nopadding md-radio-button, .blg-radio-row md-radio-button, .gtm-picker__header>div .sortable.active-sort, .gtm-picker__header>div .sortable.active-sort:after {
+		color: var(--white-87)
+	}
+	.admin-icon-container, .gtm-veditor .gtm-veditor-section, .gtm-veditor .gtm-veditor-section-last, .gtm-sheet .sheet-sub-header.sheet-white, .gtm-sheet .sheet-sub-header--white {
+		background-color: var(--bg-dark);
+	}
+	gtm-container-form .gtm-container-form__section-header, .contenteditable, .gtm-veditor .gtm-veditor-section-active .gtm-veditor-title, .gtm-veditor .veditor__section--edit .gtm-veditor-title, ctui-menu-filter textarea, gtm-menu-filter textarea, gtm-veditor-section textarea, .blg-form-input textarea, .blg-form-input--nopadding textarea, .gtm-schedule-editor__row textarea, .vt-editor__form-row textarea, .blg-form-input--nopadding textarea, .gtm-picker__header>div, .gtm-picker__row>div, .environments-card, .suite.suite-gaia-container .suite-gaia-header, .suite.suite-gaia-container .suite-gaia-item:not(.suite-gaia-panel-logout), .mdx-table-filter .mdx-row {
+		border-color: var(--border-1);
+	}
+	.gtm-snippet__textarea {
+		background-color: var(--bg-dark);
+		border-color: var(--border-1);
+	}
+	.gtm-snippet__textarea:focus, ctui-menu-filter textarea:focus, gtm-menu-filter textarea:focus, gtm-veditor-section textarea:focus, .blg-form-input textarea:focus, .blg-form-input--nopadding textarea:focus, .gtm-schedule-editor__row textarea:focus, .vt-editor__form-row textarea:focus, .blg-form-input--nopadding textarea:focus {
+		border-color: var(--blue);
+	}
+	md-radio-button.md-gtm-theme .md-off {
+		border-color: var(--white-54);
+	}
+	md-radio-button.md-gtm-theme .md-on {
+		background-color: var(--blue);
+		opacity: .87;
+	}
+	md-radio-button.md-gtm-theme.md-checked .md-off {
+		border-color: var(--blue);
+		opacity: .87;
+	}
+	.btn.btn-raised {
+		background-color: var(--bg-dark);
+		color: var(--blue);
+		box-shadow: 0 1px 3px 0 rgba(255, 255, 255, .2), 0 1px 1px 0 rgba(255, 255, 255, .14), 0 2px 1px -1px rgba(255, 255, 255, .12);
+	}
+	.gtm-veditor .gtm-veditor-section.gtm-read-only .gtm-veditor-section-overlay, .gtm-veditor .gtm-veditor-section-first.gtm-read-only .gtm-veditor-section-overlay, .gtm-veditor .gtm-veditor-section-last.gtm-read-only .gtm-veditor-section-overlay {
+    	box-shadow: 0 0 0 1px var(--border-1);
+	}
+	.gtm-ng-dialog-template .gtm-ng-dialog-footer .btn.disabled, .gtm-ng-dialog-template .gtm-ng-dialog-footer .btn:disabled {
+		color: var(--white-38) !important;
+	}
+	.gtm-ng-dialog-template .gtm-ng-dialog-footer .btn.disabled:hover::before, .gtm-ng-dialog-template .gtm-ng-dialog-footer .btn:disabled:hover::before {
+		background-color: #0000 !important;
+	}
+	.gtm-picker .gtm-picker__header:hover, .gtm-picker .gtm-picker__row:hover {
+		background-color: var(--bg-dark-2);
+	}
+	input:not([type=submit]), select, .gtm-form-input, .suite.suite-gaia-container {
+		background-color: var(--bg-dark);
+	}
+	.gtm-cloaked.gtm-cloak-grey:before {
+		background-color: var(--bg-dark-2) !important;
+		box-shadow: 0 0 0 4px var(--bg-dark-2) !important;
+	}
+	.export__check-col i.gtm-check-box-icon, .btn.btn-flat, .gtm-sheet .gtm-sheet-header__actions i.gtm-add-icon, .mat-button.mat-primary, .mat-icon-button.mat-primary, .mat-stroked-button.mat-primary {
+		color: var(--blue);
+	}
+	.gtm-picker .gtm-picker__draft-count {
+		background-color: var(--bg-dark);
+		color: var(--white-54);
+	}
+	.empty-placeholder ng-transclude>div .link--action:hover, table.gtm-table td .fill-cell:hover, .gtm-table-component table td .fill-cell:hover, table.gtm-table th .fill-cell:hover, .gtm-table-component table th .fill-cell:hover {
+		color: var(--blue);
+		opacity: .87;
+	}
+	.ctui-bubble div:hover, .ctui-bubble a:hover, .ctui-bubble div:focus, .ctui-bubble a:focus, .ctui-bubble ul li:hover, .ctui-bubble ul gtm-um-admin-btn:hover, .ctui-bubble ul li:focus, .ctui-bubble ul gtm-um-admin-btn:focus {
+		background-color: var(--bg-transparent-7);
+	}
+	.ctui-bubble div, .ctui-bubble a {
+		color: var(--white-4);
+	}
+	.suite.suite-gaia-container * {
+		color: var(--white-3);
+	}
+	.gms-header button.md-button.gms-chip-button.gms-back-arrow-icon:hover {
+		background-color: var(--border-1);
+	}
+	md-nav-bar.md-gtm-theme md-nav-ink-bar {
+		color: var(--blue);
+		background-color: var(--blue);
+	}
+	.suite.suite-gaia-container .suite-gaia-item:hover {
+		background-color: var(--bg-hover-1);
+	}
+	.mdx-table-filter .mdx-apply-bar, .mdx-table-filter .mdx-mat {
+		background-color: var(--bg-dark-blue-2);
+	}
+	.mat-flat-button.mat-primary.mat-button-disabled, .mat-flat-button.mat-accent.mat-button-disabled, .mat-flat-button.mat-warn.mat-button-disabled, .mat-flat-button.mat-button-disabled.mat-button-disabled, .mat-raised-button.mat-primary.mat-button-disabled, .mat-raised-button.mat-accent.mat-button-disabled, .mat-raised-button.mat-warn.mat-button-disabled, .mat-raised-button.mat-button-disabled.mat-button-disabled, .mat-fab.mat-primary.mat-button-disabled, .mat-fab.mat-accent.mat-button-disabled, .mat-fab.mat-warn.mat-button-disabled, .mat-fab.mat-button-disabled.mat-button-disabled, .mat-mini-fab.mat-primary.mat-button-disabled, .mat-mini-fab.mat-accent.mat-button-disabled, .mat-mini-fab.mat-warn.mat-button-disabled, .mat-mini-fab.mat-button-disabled.mat-button-disabled {
+		color: var(--white-26);
+	}
+	.mdx-table-filter .mdx-controls {
+		background-color: var(--border-1);
+	}
+	.filter-icon-enabled-indicator {
+		background-color: var(--blue) !important;
+		border-color: var(--bg-dark-2) !important;
+	}
+	.mdx-table-filter .mdx-mat {
+		box-shadow: inset 0 1px 1px -1px rgba(255, 255, 255, .26), inset 0 -1px 1px -1px rgba(255, 255, 255, .26), inset 0 2px 2px -2px rgba(255, 255, 255, .2), inset 0 -2px 2px -2px rgba(255, 255, 255, .2), inset 0 5px 5px -5px rgba(255, 255, 255, .16), inset 0 -5px 5px -5px rgba(255, 255, 255, .16);
+	}
+	.mat-flat-button.mat-primary.mat-button-disabled, .mat-flat-button.mat-accent.mat-button-disabled, .mat-flat-button.mat-warn.mat-button-disabled, .mat-flat-button.mat-button-disabled.mat-button-disabled, .mat-raised-button.mat-primary.mat-button-disabled, .mat-raised-button.mat-accent.mat-button-disabled, .mat-raised-button.mat-warn.mat-button-disabled, .mat-raised-button.mat-button-disabled.mat-button-disabled, .mat-fab.mat-primary.mat-button-disabled, .mat-fab.mat-accent.mat-button-disabled, .mat-fab.mat-warn.mat-button-disabled, .mat-fab.mat-button-disabled.mat-button-disabled, .mat-mini-fab.mat-primary.mat-button-disabled, .mat-mini-fab.mat-accent.mat-button-disabled, .mat-mini-fab.mat-warn.mat-button-disabled, .mat-mini-fab.mat-button-disabled.mat-button-disabled {
+		background-color: var(--border-11);
+	}
+	.suite .suite-lockup-brand, .suite .suite-lockup-google-logo {
+		color: var(--grey-1);
+	}
+	.suite, .suite input, .dd-menu__nav-item__desc {
+		color: var(--white-3);
+	}
+	.h-c-button.h-c-button--primary:visited {
+		background-color: var(--devsite-button-primary-background-active);
+		color: var(--bg-dark);
+	}
+	.gmp-formfield__radio label::before, md-radio-button.md-optimize-theme .md-off, md-checkbox.md-optimize-theme:not([disabled]).md-primary:not(.md-checked) .md-icon {
+		border-color: var(--white-54);
+	}
+	.gmp-formfield__radio label::after {
+		background-color: var(--blue);
+	}
+	.gmp-formfield__radio__input:checked+label::before {
+		border-color: var(--blue);
+	}
+	.butterbar-top, .learn-more-btn:focus {
+		background-color: var(--bg-dark-blue-2);
+	}
+	.learn-more-btn, .dd-menu__nav-item__link:hover .dd-menu__nav-item__title, .opt-welcome-content h2, .opt-welcome-marketing md-icon.opt-marketing-bullet-icon, .opt-account-tos a, md-select-menu.md-optimize-theme md-content md-option[selected], .md-button.md-optimize-theme.md-primary, .md-button.md-optimize-theme.md-primary:not([disabled]) md-icon {
+		color: var(--blue);
+	}
+	.learn-more-btn:visited {
+		color: var(--purple);
+	}
+	.h-c-header--product-initiative .dd-menu {
+		border-color: var(--border-1);
+	}
+	.h-c-header--product-initiative .dd-menu, .opt-gm2 md-input-container label, .opt-gm2 md-input-container .opt-hovercard-tooltip-icon, .opt-gm2 md-input-container .opt-hovercard-tooltip-icon::after {
+		background-color: var(--bg-dark);
+	}
+	.dd-menu__nav-item__link:hover {
+		background-color: var(--bg-hover-1);
+		color: var(--blue);
+	}
+	.dd-menu__nav-item__title {
+		color: var(--white-13);
+	}
+	.dd-menu__section--hero {
+		background-color: var(--blue);
+		color: var(--bg-dark);
+	}
+	.dd-menu__banner__text {
+		color: inherit;
+	}
+	.h-c-button.h-c-button--primary.h-c-button--reversed:focus, .h-c-button.h-c-button--primary.h-c-button--reversed:hover {
+		background-color: var(--bg-dark);
+		color: var(--white-3);
+		border-color: var(--bg-dark);
+	}
+	.h-c-button.h-c-button--primary.h-c-button--reversed {
+		border-color: var(--bg-dark);
+		color: var(--bg-dark);
+	}
+	md-content.md-optimize-theme, md-dialog.md-optimize-theme {
+		background-color: var(--bg-dark);
+		color: var(--white-87);
+	}
+	.opt-welcome-content p, opt-user-email-settings .opt-user-settings-required-message, opt-user-email-settings .opt-user-settings-email-preferences-setting .opt-user-settings-email-preferences-caption, opt-user-email-settings .opt-user-settings-email-preferences-setting md-radio-group, opt-legal-footer, opt-legal-footer footer.opt-legal-footer-content a, .opt-md-body-1-secondary, .opt-account-data-sharing .opt-account-data-sharing-caption, md-select.md-optimize-theme .md-select-icon, .opt-onboarding-card .md-button, md-nav-bar.md-optimize-theme .md-button._md-nav-button.md-unselected, md-icon.md-optimize-theme, md-input-container.md-optimize-theme .md-placeholder, md-input-container.md-optimize-theme label, md-input-container.md-optimize-theme:not(.md-input-invalid).md-input-has-value label, md-input-container.md-optimize-theme:not(.md-input-focused):not(.md-input-invalid) label.md-required:after, .opt-side-dialog-label, .opt-side-dialog .opt-create-experiment-templates .opt-create-experiment-template .opt-template-text .opt-template-desc, .opt-side-dialog .opt-create-experiment-templates .opt-create-experiment-template .opt-template-icon, opt-editor-url:not(.opt-editor-url-dark) .opt-experience-editor-url {
+		color: var(--white-54);
+	}
+	.opt-welcome-marketing .opt-welcome-marketing-section p.opt-marketing-bullet-content, md-select-menu.md-optimize-theme md-content md-option, .opt-side-dialog-title, .opt-side-dialog .opt-create-experiment-templates .opt-create-experiment-template .opt-template-text .opt-template-name, .opt-md-overline {
+		color: var(--white-87);
+	}
+	md-dialog.md-optimize-theme.md-content-overflow .md-actions, md-dialog.md-optimize-theme.md-content-overflow md-dialog-actions, md-divider.md-optimize-theme, .opt-tos-country {
+		border-color: var(--border-11);
+	}
+	.opt-gm2 .md-button:not(.suite):not(.suite-free-chip):not(.gms-chip-button):not(.suite-up-button):not(.gmp-product-switcher-button):not(.suite-help-button):not(.suite-overflow-menu-button):not(.suite-gaia-switcher):not(.suite-org-item):not(.suite-gaia-item):not(.suite-feedback-button):not(.suite-extra-button):not(.suite-platform-home-link):not(.suite-up-no-entities-link):not(.opt-xl-option-button):not(.opt-edit-button).md-raised:focus, .opt-gm2 .mat-button:not(.suite):not(.suite-free-chip):not(.gms-chip-button):not(.suite-up-button):not(.gmp-product-switcher-button):not(.suite-help-button):not(.suite-overflow-menu-button):not(.suite-gaia-switcher):not(.suite-org-item):not(.suite-gaia-item):not(.suite-feedback-button):not(.suite-extra-button):not(.suite-platform-home-link):not(.suite-up-no-entities-link):not(.opt-xl-option-button):not(.opt-edit-button).md-raised:focus, .opt-gm2 .md-button:not(.suite):not(.suite-free-chip):not(.gms-chip-button):not(.suite-up-button):not(.gmp-product-switcher-button):not(.suite-help-button):not(.suite-overflow-menu-button):not(.suite-gaia-switcher):not(.suite-org-item):not(.suite-gaia-item):not(.suite-feedback-button):not(.suite-extra-button):not(.suite-platform-home-link):not(.suite-up-no-entities-link):not(.opt-xl-option-button):not(.opt-edit-button).md-raised:hover, .opt-gm2 .mat-button:not(.suite):not(.suite-free-chip):not(.gms-chip-button):not(.suite-up-button):not(.gmp-product-switcher-button):not(.suite-help-button):not(.suite-overflow-menu-button):not(.suite-gaia-switcher):not(.suite-org-item):not(.suite-gaia-item):not(.suite-feedback-button):not(.suite-extra-button):not(.suite-platform-home-link):not(.suite-up-no-entities-link):not(.opt-xl-option-button):not(.opt-edit-button).md-raised:hover {
+		background-color: var(--devsite-button-primary-background-hover) !important;
+	}
+	.md-button.md-optimize-theme.md-primary.md-fab, .md-button.md-optimize-theme.md-primary.md-raised {
+		background-color: var(--blue);
+		color: var(--bg-dark);
+	}
+	.opt-gm2 md-tabs md-tab-item[tabindex="-1"] {
+		color: var(--white-54) !important;
+	}
+	md-content.md-optimize-theme[style="background-color: rgb(248, 249, 250); color: rgba(0, 0, 0, 0.87);"] {
+		background-color: var(--bg-hover-1) !important;
+		color: var(--white-87) !important;
+	}
+	md-radio-button.md-optimize-theme:not([disabled]).md-primary .md-on, md-radio-button.md-optimize-theme:not([disabled]) .md-primary .md-on, md-radio-group.md-optimize-theme:not([disabled]).md-primary .md-on, md-radio-group.md-optimize-theme:not([disabled]) .md-primary .md-on, md-checkbox.md-optimize-theme:not([disabled]).md-primary.md-checked .md-icon {
+		background-color: var(--blue);
+		opacity: .87;
+	}
+	md-radio-button.md-optimize-theme:not([disabled]).md-primary.md-checked .md-off, md-radio-button.md-optimize-theme:not([disabled]) .md-primary.md-checked .md-off, md-radio-button.md-optimize-theme:not([disabled]).md-primary .md-checked .md-off, md-radio-button.md-optimize-theme:not([disabled]) .md-primary .md-checked .md-off, md-radio-group.md-optimize-theme:not([disabled]).md-primary.md-checked .md-off, md-radio-group.md-optimize-theme:not([disabled]) .md-primary.md-checked .md-off, md-radio-group.md-optimize-theme:not([disabled]).md-primary .md-checked .md-off, md-radio-group.md-optimize-theme:not([disabled]) .md-primary .md-checked .md-off {
+		border-color: var(--blue);
+		opacity: .87;
+	}
+	.opt-gm2 .md-button:not(.suite):not(.suite-free-chip):not(.gms-chip-button):not(.suite-up-button):not(.gmp-product-switcher-button):not(.suite-help-button):not(.suite-overflow-menu-button):not(.suite-gaia-switcher):not(.suite-org-item):not(.suite-gaia-item):not(.suite-feedback-button):not(.suite-extra-button):not(.suite-platform-home-link):not(.suite-up-no-entities-link):not(.opt-xl-option-button):not(.opt-edit-button).md-raised:disabled, .opt-gm2 .mat-button:not(.suite):not(.suite-free-chip):not(.gms-chip-button):not(.suite-up-button):not(.gmp-product-switcher-button):not(.suite-help-button):not(.suite-overflow-menu-button):not(.suite-gaia-switcher):not(.suite-org-item):not(.suite-gaia-item):not(.suite-feedback-button):not(.suite-extra-button):not(.suite-platform-home-link):not(.suite-up-no-entities-link):not(.opt-xl-option-button):not(.opt-edit-button).md-raised:disabled, .opt-gm2 .md-button:not(.suite):not(.suite-free-chip):not(.gms-chip-button):not(.suite-up-button):not(.gmp-product-switcher-button):not(.suite-help-button):not(.suite-overflow-menu-button):not(.suite-gaia-switcher):not(.suite-org-item):not(.suite-gaia-item):not(.suite-feedback-button):not(.suite-extra-button):not(.suite-platform-home-link):not(.suite-up-no-entities-link):not(.opt-xl-option-button):not(.opt-edit-button).md-protected:disabled, .opt-gm2 .mat-button:not(.suite):not(.suite-free-chip):not(.gms-chip-button):not(.suite-up-button):not(.gmp-product-switcher-button):not(.suite-help-button):not(.suite-overflow-menu-button):not(.suite-gaia-switcher):not(.suite-org-item):not(.suite-gaia-item):not(.suite-feedback-button):not(.suite-extra-button):not(.suite-platform-home-link):not(.suite-up-no-entities-link):not(.opt-xl-option-button):not(.opt-edit-button).md-protected:disabled {
+		background-color: var(--border-11) !important;
+	}
+	md-checkbox.md-optimize-theme:not([disabled]).md-primary.md-checked .md-icon:after {
+		border-color: var(--bg-dark);
+		opacity: .87;
+	}
+	.opt-gm2 md-select .md-select-value, .opt-gm2 md-input-container .md-input {
+    	box-shadow: 0 0 0 1px var(--border-11);
+	}
+		.opt-gm2 .md-button:not(.suite):not(.suite-free-chip):not(.gms-chip-button):not(.suite-up-button):not(.gmp-product-switcher-button):not(.suite-help-button):not(.suite-overflow-menu-button):not(.suite-gaia-switcher):not(.suite-org-item):not(.suite-gaia-item):not(.suite-feedback-button):not(.suite-extra-button):not(.suite-platform-home-link):not(.suite-up-no-entities-link):not(.opt-xl-option-button):not(.opt-edit-button), .opt-gm2 .mat-button:not(.suite):not(.suite-free-chip):not(.gms-chip-button):not(.suite-up-button):not(.gmp-product-switcher-button):not(.suite-help-button):not(.suite-overflow-menu-button):not(.suite-gaia-switcher):not(.suite-org-item):not(.suite-gaia-item):not(.suite-feedback-button):not(.suite-extra-button):not(.suite-platform-home-link):not(.suite-up-no-entities-link):not(.opt-xl-option-button):not(.opt-edit-button) {
+		position: relative;
+	}
+	.opt-gm2 .md-button:not(.suite):not(.suite-free-chip):not(.gms-chip-button):not(.suite-up-button):not(.gmp-product-switcher-button):not(.suite-help-button):not(.suite-overflow-menu-button):not(.suite-gaia-switcher):not(.suite-org-item):not(.suite-gaia-item):not(.suite-feedback-button):not(.suite-extra-button):not(.suite-platform-home-link):not(.suite-up-no-entities-link):not(.opt-xl-option-button):not(.opt-edit-button):hover, .opt-gm2 .mat-button:not(.suite):not(.suite-free-chip):not(.gms-chip-button):not(.suite-up-button):not(.gmp-product-switcher-button):not(.suite-help-button):not(.suite-overflow-menu-button):not(.suite-gaia-switcher):not(.suite-org-item):not(.suite-gaia-item):not(.suite-feedback-button):not(.suite-extra-button):not(.suite-platform-home-link):not(.suite-up-no-entities-link):not(.opt-xl-option-button):not(.opt-edit-button):hover {
+		background-color: #0000 !important;
+	}
+	.opt-gm2 .md-button:not(.suite):not(.suite-free-chip):not(.gms-chip-button):not(.suite-up-button):not(.gmp-product-switcher-button):not(.suite-help-button):not(.suite-overflow-menu-button):not(.suite-gaia-switcher):not(.suite-org-item):not(.suite-gaia-item):not(.suite-feedback-button):not(.suite-extra-button):not(.suite-platform-home-link):not(.suite-up-no-entities-link):not(.opt-xl-option-button):not(.opt-edit-button):hover::before, .opt-gm2 .mat-button:not(.suite):not(.suite-free-chip):not(.gms-chip-button):not(.suite-up-button):not(.gmp-product-switcher-button):not(.suite-help-button):not(.suite-overflow-menu-button):not(.suite-gaia-switcher):not(.suite-org-item):not(.suite-gaia-item):not(.suite-feedback-button):not(.suite-extra-button):not(.suite-platform-home-link):not(.suite-up-no-entities-link):not(.opt-xl-option-button):not(.opt-edit-button):hover::before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		margin: 0;
+		background-color: var(--blue);
+		opacity: .04;
+    	border-radius: 4px;
+	}
+	md-select-menu.md-optimize-theme md-content {
+		background-color: var(--bg-dark);
+	}
+	.opt-gm2 .opt-gm2-card, .opt-experiment-details-page .opt-card .opt-content, .opt-experiment-details-page .opt-card md-content {
+		border-color: var(--border-1);
+	}
+	md-input-container.md-optimize-theme .md-input {
+		border-color: var(--border-11);
+		color: var(--white-87);
+	}
+	.opt-gm2 md-input-container.md-input-focused .md-input {
+		box-shadow: 0 0 0 2px var(--blue);
+	}
+	mat-icon.opt-hovercard-tooltip-icon:hover svg, .opt-hovercard-tooltip-icon:hover svg {
+		fill: var(--blue);
+		opacity: .87;
+	}
+	md-input-container.md-optimize-theme:not(.md-input-invalid).md-input-focused label, md-input-container.md-optimize-theme:not(.md-input-invalid).md-input-focused md-icon, .opt-side-dialog .opt-create-experiment-templates .opt-create-experiment-template.selected .opt-template-icon, .opt-side-dialog .opt-create-experiment-templates .opt-create-experiment-template.selected:focus .opt-template-icon, .opt-side-dialog .opt-create-experiment-templates .opt-create-experiment-template.selected .opt-template-name, .opt-side-dialog .opt-create-experiment-templates .opt-create-experiment-template.selected:focus .opt-template-name {
+		color: var(--blue);
+	}
+	.opt-side-dialog .opt-create-experiment-templates .opt-create-experiment-template.selected, .opt-side-dialog .opt-create-experiment-templates .opt-create-experiment-template.selected:focus {
+		background-color: transparent !important;
+		position: relative;
+	}
+	.opt-side-dialog .opt-create-experiment-templates .opt-create-experiment-template.selected::before, .opt-side-dialog .opt-create-experiment-templates .opt-create-experiment-template.selected:focus::before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		margin: 0;
+		background-color: var(--blue);
+		opacity: .06;
+	}
+	.opt-side-dialog .opt-create-experiment-templates .opt-create-experiment-template {
+		border-color: var(--border-11);
+		background-color: var(--bg-dark);
+	}
+	.opt-side-dialog .opt-create-experiment-templates .opt-create-experiment-template:hover, .opt-side-dialog .opt-create-experiment-templates .opt-create-experiment-template:focus {
+		background-color: var(--bg-dark-2);
+	}
+	.opt-suite-header-experiment-type {
+		background-color: var(--bg-hover-1);
+		color: var(--white-54);
+	}
+	[src="//www.gstatic.com/analytics-suite/header/suite/v2/ic_analytics_blk.svg"], [src="//google.com/posts/claim/googlelogo_dark_clr_112x36px.svg"] {
+		filter: var(--invert-1-hue);
+	}
+	.opt-gm2 a._md-nav-button.md-accent.md-button.md-optimize-theme.md-ink-ripple.md-active.md-primary {
+		color: rgb(161,66,244);
+	}
+	.Lj9fsd.DU1Mzb .og3lId {
+		background-color: transparent;
+	}
+	.Tlae9d a, .Tlae9d .y0fQ9c, .znKVS.tnhqA a, .znKVS.tnhqA:hover {
+		color: var(--white-2);
+	}
+	.DCiuzf {
+		color: var(--white-4);
+	}
+	.pSz9Bb {
+		background-color: var(--bg-dark);
+	}
+	.ADsA2e, .article-list__load-more, .uni-newsletter-toast__cta--sub, .kw-button--high-emphasis {
+		background-color: var(--blue);
+		color: var(--bg-dark);
+	}
+	.laIE6e, .laIE6e:visited, .laIE6e:active {
+		color: var(--grey-1);
+	}
+	.Vk8cZ {
+		background-image: none !important;
+		position: relative;
+	}
+	.ueP2hf {
+		position: relative !important;
+	}
+	.ueP2hf::before {
+		content: url('https://google.com/posts/claim/background_overlay_left.png?v=164496790');
+		position: absolute !important;
+		width: 100%;
+		height: 100%;
+		filter: var(--invert-3);
+		top: 0;
+		left: 0;
+		margin: 0;
+	}
+	.kFwPee {
+		color: var(--white-87);
+	}
+	.article-list__load-more:hover, .uni-newsletter-toast__cta--sub:hover, .kw-button--high-emphasis:hover {
+		background-color: var(--devsite-button-primary-background-hover);
+	}
+	.uni-navigation--desktop .uni-main-menu__submenu.has-view-all {
+    	box-shadow: inset 0 -1px 0 0 var(--border-1);
+	}
+	.h-c-carousel__paginate-wrap:before, md-menu-content.md-optimize-theme, .md-optimize-theme .md-datepicker-calendar, md-autocomplete.md-optimize-theme, opt-schedule-display, opt-condensed-schedule-display, .opt-url-checker-box .opt-url-checker-url-input input {
+		background-color: var(--bg-dark);
+	}
+	.h-c-carousel__paginate-wrap svg {
+		stroke: var(--white-9);
+	}
+	.uni-blog-article-tags__tags-list>li .uni-link-active:hover {
+		color: var(--blue);
+		opacity: .87;
+	}
+	.opt-content, .md-optimize-theme .md-calendar {
+		background-color: var(--bg-dark);
+		color: var(--white-87);
+	}
+	.opt-help-link, .opt-gm2 .mat-primary:not(.mat-raised-button), md-switch.md-optimize-theme.md-checked:not([disabled]).md-primary .md-ink-ripple, .opt-md-overline:focus, .opt-note-box a {
+		color: var(--blue);
+	}
+	md-menu-content.md-optimize-theme md-menu-item, .opt-schedule-dialog .opt-scheduling-header, .md-optimize-theme .md-calendar-month-label md-icon, .md-optimize-theme .md-datepicker-input, md-autocomplete.md-optimize-theme input, .md-autocomplete-standard-list-container.md-optimize-theme .md-autocomplete-suggestion, .md-autocomplete-suggestions-container.md-optimize-theme .md-autocomplete-suggestion, .opt-empty-exp-report .opt-reporting-state-message, .opt-experiment-variations-card .opt-variation-row .opt-variation-name, md-chips.md-optimize-theme .md-chips .md-chip-input-container input {
+		color: var(--white-87);
+	}
+	opt-datetime-picker {
+		color: var(--white-1-20);
+	}
+	.md-optimize-theme .md-datepicker-input-container, opt-time-picker md-autocomplete-wrap.md-whiteframe-1dp, opt-time-picker md-autocomplete-wrap.md-whiteframe-z1, .opt-side-dialog-topbar, .opt-card-section, .opt-experiment-add-context {
+		border-color: var(--border-11);
+	}
+	.md-optimize-theme .md-datepicker-input-mask-opaque {
+    	box-shadow: 0 0 0 9999px var(--bg-dark);
+	}
+	.md-optimize-theme .md-calendar-day-header {
+		background-color: var(--grey-4-32);
+		color: var(--white-87);
+	}
+	.md-optimize-theme .md-calendar-date.md-calendar-date-today .md-calendar-date-selection-indicator, .md-optimize-theme .md-datepicker-input-container.md-datepicker-focused {
+		border-color: var(--blue);
+	}
+	.md-calendar-date.md-focus .md-optimize-theme .md-calendar-date-selection-indicator, .md-optimize-theme .md-calendar-date-selection-indicator:hover {
+		background-color: var(--grey-4-32);
+	}
+	.md-optimize-theme .md-calendar tr:last-child td {
+		border-color: var(--bg-dark-2);
+	}
+	.opt-schedule-dialog .opt-schedule-messages {
+		background-color: var(--bg-transparent-7);
+		color: var(--white-87);
+	}
+	.opt-confirm-dialog .opt-dialog-content, .opt-empty-exp-report .opt-reporting-state-submessage, .opt-experiment-model-feature-tag, .opt-url-checker-box .opt-url-checker-body {
+		color: var(--white-54);
+	}
+	md-switch.md-optimize-theme .md-thumb {
+		background-color: var(--bg-hover-1);
+	}
+	md-switch.md-optimize-theme .md-ink-ripple {
+		color: var(--grey-4);
+	}
+	md-switch.md-optimize-theme .md-bar {
+		background-color: var(--grey-4);
+	}
+	md-switch.md-optimize-theme.md-checked:not([disabled]).md-primary .md-thumb, md-slider.md-optimize-theme.md-primary .md-track.md-track-fill {
+		background-color: var(--blue);
+	}
+	md-switch.md-optimize-theme.md-checked:not([disabled]).md-primary .md-bar {
+		background-color: var(--blue);
+		opacity: .5;
+	}
+	md-slider.md-optimize-theme.md-primary .md-thumb:after {
+		background-color: var(--blue);
+		border-color: var(--blue);
+	}
+	md-slider.md-optimize-theme .md-track {
+		background-color: var(--white-38);
+	}
+	[md-svg-icon="empty_reporting_draft"] svg g .st0 {
+		fill: var(--bg-dark);
+	}
+	[md-svg-icon="empty_reporting_draft"] svg g .st1 {
+		fill: var(--border-1);
+	}
+	md-select.md-optimize-theme:not([disabled]):focus .md-select-value {
+		color: var(--white-87);
+		border-color: var(--blue);
+	}
+	.md-button.opt-edit-button md-icon.opt-edit-icon[md-svg-icon="edit"] {
+		color: var(--blue);
+		fill: var(--blue);
+	}
+	.md-button.md-optimize-theme.md-accent[disabled], .md-button.md-optimize-theme.md-fab[disabled], .md-button.md-optimize-theme.md-raised[disabled], .md-button.md-optimize-theme.md-warn[disabled], .md-button.md-optimize-theme[disabled] {
+		color: var(--white-38);
+	}
+	.opt-gm2 .md-button:not(.suite):not(.suite-free-chip):not(.gms-chip-button):not(.suite-up-button):not(.gmp-product-switcher-button):not(.suite-help-button):not(.suite-overflow-menu-button):not(.suite-gaia-switcher):not(.suite-org-item):not(.suite-gaia-item):not(.suite-feedback-button):not(.suite-extra-button):not(.suite-platform-home-link):not(.suite-up-no-entities-link):not(.opt-xl-option-button):not(.opt-edit-button).md-hairline:hover, .opt-gm2 .mat-button:not(.suite):not(.suite-free-chip):not(.gms-chip-button):not(.suite-up-button):not(.gmp-product-switcher-button):not(.suite-help-button):not(.suite-overflow-menu-button):not(.suite-gaia-switcher):not(.suite-org-item):not(.suite-gaia-item):not(.suite-feedback-button):not(.suite-extra-button):not(.suite-platform-home-link):not(.suite-up-no-entities-link):not(.opt-xl-option-button):not(.opt-edit-button).md-hairline:hover, .opt-gm2 .md-button:not(.suite):not(.suite-free-chip):not(.gms-chip-button):not(.suite-up-button):not(.gmp-product-switcher-button):not(.suite-help-button):not(.suite-overflow-menu-button):not(.suite-gaia-switcher):not(.suite-org-item):not(.suite-gaia-item):not(.suite-feedback-button):not(.suite-extra-button):not(.suite-platform-home-link):not(.suite-up-no-entities-link):not(.opt-xl-option-button):not(.opt-edit-button).md-hairline:focus, .opt-gm2 .mat-button:not(.suite):not(.suite-free-chip):not(.gms-chip-button):not(.suite-up-button):not(.gmp-product-switcher-button):not(.suite-help-button):not(.suite-overflow-menu-button):not(.suite-gaia-switcher):not(.suite-org-item):not(.suite-gaia-item):not(.suite-feedback-button):not(.suite-extra-button):not(.suite-platform-home-link):not(.suite-up-no-entities-link):not(.opt-xl-option-button):not(.opt-edit-button).md-hairline:focus {
+		border-color: var(--bg-dark-blue-1);
+	}
+	.opt-gm2 .md-button:not(.suite):not(.suite-free-chip):not(.gms-chip-button):not(.suite-up-button):not(.gmp-product-switcher-button):not(.suite-help-button):not(.suite-overflow-menu-button):not(.suite-gaia-switcher):not(.suite-org-item):not(.suite-gaia-item):not(.suite-feedback-button):not(.suite-extra-button):not(.suite-platform-home-link):not(.suite-up-no-entities-link):not(.opt-xl-option-button):not(.opt-edit-button).md-hairline, .opt-gm2 .mat-button:not(.suite):not(.suite-free-chip):not(.gms-chip-button):not(.suite-up-button):not(.gmp-product-switcher-button):not(.suite-help-button):not(.suite-overflow-menu-button):not(.suite-gaia-switcher):not(.suite-org-item):not(.suite-gaia-item):not(.suite-feedback-button):not(.suite-extra-button):not(.suite-platform-home-link):not(.suite-up-no-entities-link):not(.opt-xl-option-button):not(.opt-edit-button).md-hairline {
+		background-color: var(--bg-dark);
+		border-color: var(--border-1);
+	}
+	.opt-predicate-list .opt-predicate-list-connect-label {
+		color: var(--grey-1);
+		background-color: var(--bg-dark-2);
+	}
+	md-chips.md-optimize-theme md-chip {
+		background-color: var(--border-1);
+		color: var(--white-4);
+	}
+	.opt-gm2 md-chip {
+		background-color: var(--bg-dark) !important;
+		color: var(--grey-1);
+		box-shadow: 0 0 0 1px var(--border-1) inset;
+	}
+	.opt-url-checker-box {
+		background-color: var(--bg-dark-2);
+	}
+	md-chips.md-optimize-theme .md-chips {
+    	box-shadow: 0 1px rgba(255, 255, 255, .12);
+	}
+	md-chips.md-optimize-theme md-chip md-icon {
+		color: var(--grey-1);
+	}
+	md-chips.md-optimize-theme .md-chips.md-focused {
+    	box-shadow: 0 2px var(--blue);
+	}
+	.opt-note-box {
+		background-color: var(--bg-dark-2);
+		color: var(--white-87);
+	}
+	.UUhRt, .UUhRt:hover {
+		background-color: var(--blue);
+		border-color: var(--blue);
+		color: var(--bg-dark);
+	}
+	.UUhRt:focus, .UUhRt:focus:hover {
+		background-color: var(--devsite-button-primary-background-hover);
+	}
+	.zbvg1c {
+		color: var(--grey-2);
+	}
+	.ZtnWe, .r9PaP.KKjvXb, .Fmo8N {
+		color: var(--blue);
+	}
+	.H1KrKd.KKjvXb {
+		fill: var(--white-54);
+	}
+	.ge-Ci-Zb-Di-Yb-jh .a-Di-w {
+		color: var(--white-12);
+		border-color: var(--blue);
+	}
+	.ge-Ek-jf-cb {
+		color: var(--white-7);
+	}
+	.ge-fk-db-Di, .ge-fk-ok-pk, .ge-fk-b-zh {
+		filter: var(--invert-1-hue);
+	}
+	.ge-Fi-ke {
+		background-color: var(--bg-dark);
+		border-color: var(--border-6);
+	}
+	.ge-Fi-Oi-y, .ge-Ij-eg {
+		color: var(--grey-7);
+	}
+	.ge-Bi-Ef .ge-Ci-Zb-ke {
+    	border-bottom-color: var(--bg-dark-3);
+    	-moz-box-shadow: 0 1px 5px 1px var(--bg-dark-3);
+    	-webkit-box-shadow: 0 1px 5px 1px var(--bg-dark-3);
+    	box-shadow: 0 1px 5px 1px var(--bg-dark-3);
+	}
+	.KA.Kj-JD-Jh {
+		background-color: var(--bg-dark);
+	}
+	.ge-Qi .d-u-S.d-u-w, .ge-Qi .d-u-S.d-u-G-H.d-u-w {
+    	background-color: var(--bg-dark-3);
+    	background-image: -webkit-linear-gradient(top,var(--bg-dark-3),var(--bg-dark-3));
+    	background-image: -moz-linear-gradient(top,var(--bg-dark-3),var(--bg-dark-3));
+    	background-image: -ms-linear-gradient(top,var(--bg-dark-3),var(--bg-dark-3));
+    	background-image: -o-linear-gradient(top,var(--bg-dark-3),var(--bg-dark-3));
+    	background-image: linear-gradient(top,var(--bg-dark-3),var(--bg-dark-3));
+    	border-color: var(--border-10);
+    	color: var(--white-6);
+	}
+	.ge-Cn-jf-E .ge-Cn-jf-rb-pe, input.ge-nj-w {
+		border-color: var(--blue);
+	}
+	.ge-Ci-Zb-Di-Yb-jh .a-Di, .ge-Ci-Zb-Di-Yb-jh .a-kb-u {
+		color: var(--white-2);
+	}
+	.ge-bn-jf, .ge-nj-Df {
+		color: var(--white-7);
+	}
+	.ge-bn-jf-bn-nh {
+    	-webkit-box-shadow: 0 1px 0 var(--border-1);
+    	background-color: var(--bg-dark);
+    	border-color: var(--border-6);
+	}
+	.ge-Ij-Lj {
+    	border-color: transparent transparent transparent var(--grey-7);
+	}
+	.ge-bn-jf-cb {
+		color: var(--white-12);
+	}
+	.ge-cg-u-ad .ge-Xg-Qd-Jo .ge-Fc-cg-Io-qg {
+		border-color: var(--border-7);
+	}
+	.d-u-F.d-u-v {
+    	background-color: var(--devsite-button-primary-background-active);
+    	background-image: -webkit-linear-gradient(top,var(--devsite-button-primary-background-hover),var(--devsite-button-primary-background-active));
+    	background-image: -moz-linear-gradient(top,var(--devsite-button-primary-background-hover),var(--devsite-button-primary-background-active));
+    	background-image: -ms-linear-gradient(top,var(--devsite-button-primary-background-hover),var(--devsite-button-primary-background-active));
+    	background-image: -o-linear-gradient(top,var(--devsite-button-primary-background-hover),var(--devsite-button-primary-background-active));
+    	background-image: linear-gradient(top,var(--devsite-button-primary-background-hover),var(--devsite-button-primary-background-active));
+    	border-color: var(--border-blue);
+	}
+	.ge-nj-Qc {
+		border-color: var(--border-61);
+		border-top-color: var(--border-4);
+	}
+	.d-u-F.d-u-D {
+		background-color: var(--blue);
 	}
 	
 	
