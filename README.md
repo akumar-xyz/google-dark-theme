@@ -23,7 +23,7 @@
 
 <div id="legal">
   <h2>📋 Legal</h2>
-    <p>This work is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">©️ Attribution-ShareAlike 4.0</a></p>
+    <p>This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">©️ Attribution-NonCommercial-ShareAlike 4.0</a></p>
       <ul>You are free to:
         <li>Share — copy and redistribute the material in any medium or format.</li>
         <li>Adapt — remix, transform, and build upon the material
