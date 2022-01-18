@@ -16,7 +16,7 @@
           </ul>
    </div>
    <div class="user.css">
-     <h3>⬇️ Than 
+     <h3>👉 Than 
         <a href="https://github.com/blyad2137/google-dark-theme/raw/main/dark-theme.user.css" style="font-size: 2rem;"> install the user.css</a></h3>
    </div>
 </div>
