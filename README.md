@@ -2,7 +2,7 @@
 
 <div id="preview">
   <h2>🖼 Preview</h2>
-    <img src="https://i.imgur.com/2DKkJN5.png"></img>
+    <img src="https://i.imgur.com/w7tLB2N.png"></img>
 </div>
 
 <div id="installation">
