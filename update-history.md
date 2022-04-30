@@ -66,9 +66,9 @@
 - minor fixes
 
 ### Update 41 | 02.12.21
-- fixed month view at Google Calendar [(#13)](https://github.com/blyad2137/google-dark-theme/issues/13)
+- fixed month view at Google Calendar (#13)
 - small fixes
-Note: I've spend all of this time playing New Vegas and writing Google Cloud which will not be relased due to unability to edit few elements to be dark :)) So I just lost few days of work + my pc got fucked and I needed replacment.
+- Note: I've spend all of this time playing New Vegas and writing Google Cloud which will not be relased due to unability to edit few elements to be dark :)) So I just lost few days of work + my pc got fucked and I needed replacment.
 
 ### Update 40 | 11.11.21 | [Another Big One](https://www.youtube.com/watch?v=Z2NXAk-XkoQ)
 - added support for Google Firebase
