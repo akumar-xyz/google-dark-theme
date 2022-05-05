@@ -1,4 +1,4 @@
-<a href="https://userstyles.world/style/212/google-dark-theme"><img src="https://i.imgur.com/chAYelf.png" align="center"></img></a>
+<p align="center"><a href="https://userstyles.world/style/212/google-dark-theme"><img src="https://i.imgur.com/chAYelf.png" style="width: 30vh;"></img></a></p>
 
 <div id="preview">
   <h2>🖼 Preview</h2>
