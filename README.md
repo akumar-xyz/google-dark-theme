@@ -45,7 +45,7 @@
       <li>Google Contacts</li>
       <li>Google Docs</li>
       <li>Google Tasks</li>
-      <li>Google Keep Embed(Google Keep has built-in dark theme</li>
+      <li>Google Keep Embed(Google Keep has built-in dark theme)</li>
       <li>Google Photos</li>
       <li>Google Play</li>
       <li>Google Drive</li>
