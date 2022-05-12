@@ -85,5 +85,6 @@
       <li>Google Stadia</li>
       <li>Google Sites</li>
       <li>Google Alerts</li>
+      <li>Google Open Source Live</li>
     </ul>
 </div>
