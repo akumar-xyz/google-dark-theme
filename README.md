@@ -1,4 +1,4 @@
-<a href="https://userstyles.world/style/212/google-dark-theme"><img src="https://i.imgur.com/NSbmTAl.png" align="center"></img></a>
+<p align="center"><a href="https://userstyles.world/style/212/google-dark-theme"><img src="https://i.imgur.com/chAYelf.png" style="width: 30vh;"></img></a></p>
 
 <div id="preview">
   <h2>🖼 Preview</h2>
@@ -45,7 +45,7 @@
       <li>Google Contacts</li>
       <li>Google Docs</li>
       <li>Google Tasks</li>
-      <li>Google Keep Embed(Google Keep has built-in dark theme</li>
+      <li>Google Keep Embed(Google Keep has built-in dark theme)</li>
       <li>Google Photos</li>
       <li>Google Play</li>
       <li>Google Drive</li>

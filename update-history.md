@@ -17,7 +17,7 @@
 - minor fixes
 
 ### Update 47 | 11.02.22 | [Long Time No See](https://www.youtube.com/watch?v=28fyA9ZDzNY)
-- added support for Google Voice (#17)
+- added support for Google Voice [(#17)](https://github.com/blyad2137/google-dark-theme/issues/17)
 - added support for Google Groups
 - added support for Google Sites
 - added support for Google Stadia
@@ -50,7 +50,7 @@
 - fixes at Google Search
 - fixes at Google Docs
 - fixes at Google Drive
-- fixed one unstyled popup at G Docs (#18)
+- fixed one unstyled popup at G Docs [(#18)](https://github.com/blyad2137/google-dark-theme/issues/18)
 - minor fixes
 - Note: another late update, for my explanation PZ B41 MP just released.
 
@@ -61,8 +61,8 @@
 - fixes at Google Docs
 - fixes at Google Search
 - fixes at Google Drive
-- fixed illegible sheet names while renaming (#15)
-- fixed illiegible text in special character menu and replace menu at Google Docs (#16)
+- fixed illegible sheet names while renaming [(#15)](https://github.com/blyad2137/google-dark-theme/issues/15)
+- fixed illiegible text in special character menu and replace menu at Google Docs [(#16)](https://github.com/blyad2137/google-dark-theme/issues/16)
 - minor fixes
 
 ### Update 41 | 02.12.21
@@ -73,11 +73,11 @@
 ### Update 40 | 11.11.21 | [Another Big One](https://www.youtube.com/watch?v=Z2NXAk-XkoQ)
 - added support for Google Firebase
 - added support for Google Firebase On Air
-- added support for Google Images (#12)
+- added support for Google Images [(#12)](https://github.com/blyad2137/google-dark-theme/issues/12)
 - fixes at Google Analytics
 - fixes at Google Domains
 - fixes at Google Ads
-- fixed the entire Google Flight (#11)
+- fixed the entire Google Flight [(#11)](https://github.com/blyad2137/google-dark-theme/issues/11)
 - added ability to unlock Google Firebase On Air on unsupported browsers
 - added one easter egg
 - minor fixes
@@ -93,8 +93,8 @@ Note: Sorry for late update, been too distracted playing FH5
 ### Update 38 | 23.10.21 | [Data selling ))](https://www.youtube.com/watch?v=ZvAS2DsEDuQ)
 - added support for Google Analytics
 - fixed the entire Google One page
-- fixed white pivot table at Sheets (#10)
-- fixed invisible count at Sheets (#9)
+- fixed white pivot table at Sheets [(#10)](https://github.com/blyad2137/google-dark-theme/issues/10)
+- fixed invisible count at Sheets [(#9)](https://github.com/blyad2137/google-dark-theme/issues/9)
 - fixes at Google Docs
 - fixes at Google Travel
 - fixes at Google Search
@@ -111,7 +111,7 @@ Note: Sorry for late update, been too distracted playing FH5
 ### Update 35 | 03.10.21
 - added support for Google One
 - fixes at Google Calendar
-- merged pull request (#8)
+- merged pull request [(#8)](https://github.com/blyad2137/google-dark-theme/commit/158b434258fb1854b1ea77b5fa0a30727aea5382)
 - minor fixes
 
 ### Update 34 | 28.09.21
@@ -140,10 +140,10 @@ Note: Sorry for late update, been too distracted playing FH5
 ### Update 30 | 21.09.21
 - fixes at Google Docs
 - fixes at Google Translate
-- actually fixed color picker altering problem (#3)
-- fixed small white tab at presentation (#6)
-- fixed white background at Google Translaten (#5)
-- replaced blurry misligned 'error detector' with custom one in Google Search (#4)
+- actually fixed color picker altering problem ([(#3)](https://github.com/blyad2137/google-dark-theme/issues/3)
+- fixed small white tab at presentation [(#6)](https://github.com/blyad2137/google-dark-theme/issues/6)
+- fixed white background at Google Translate [(#5)](https://github.com/blyad2137/google-dark-theme/issues/5)
+- replaced blurry misligned 'error detector' with custom one in Google Search [(#4)](https://github.com/blyad2137/google-dark-theme/issues/4)
 - minor fixes, if any
 
 ### Update 29 | 19.09.21
@@ -156,8 +156,8 @@ Note: Sorry for late update, been too distracted playing FH5
 - added support for Google Doodles
 - fixes at Google Drive
 - fixes at Google Docs
-- fixed Colour Picker Altering problem at docs (#3)
-- fixed Google Drive recent tab (#2)
+- fixed Colour Picker Altering problem at docs [(#3)](https://github.com/blyad2137/google-dark-theme/issues/3)
+- fixed Google Drive recent tab [(#2)](https://github.com/blyad2137/google-dark-theme/issues/2)
 - minor fixes
 
 ### Update 28 | 16.09.21 | [Google Ads Update 😎🤙](https://www.youtube.com/watch?v=QvCHrGOdAWM)
