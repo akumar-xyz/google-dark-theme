@@ -1,4 +1,4 @@
-<p align="center"><a href="https://userstyles.world/style/212/google-dark-theme"><img src="https://i.imgur.com/chAYelf.png" style="width: 30vh;"></img></a></p>
+<p align="center"><a href="https://userstyles.world/style/212/google-dark-theme"><img src="https://i.imgur.com/chAYelf.png" style="width: 20rem;"></img></a></p>
 
 <div id="preview">
   <h2>🖼 Preview</h2>
@@ -85,5 +85,6 @@
       <li>Google Stadia</li>
       <li>Google Sites</li>
       <li>Google Alerts</li>
+      <li>Google Open Source Live</li>
     </ul>
 </div>
