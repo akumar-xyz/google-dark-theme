@@ -86,5 +86,8 @@
       <li>Google Sites</li>
       <li>Google Alerts</li>
       <li>Google Open Source Live</li>
+	  <li>Google AI Blog</li>
+	  <li>Google Careers</li>
+	  <li>Google Research</li>
     </ul>
 </div>
