@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Dark Theme
 @namespace      github.com/blyad2137/google-dark-theme
-@version        3.2.6
+@version        3.2.7
 @description    `Ultimate Dark Theme for Google`
 @author         blyad (https://github.com/blyad2137)
 @license        CC BY-NC-SA 4.0
@@ -2215,7 +2215,7 @@
 	.IVvPP .vnLNtd.mnr-c {
 		border-color: var(--border-4);
 	}
-	.DArqwd, .qyEGdc td:not(:last-child), .Ff5uNc, .jbcYye, hr:not(div#sites-chrome-everything hr) {
+	.DArqwd, .qyEGdc td:not(:last-child), .Ff5uNc, .jbcYye, hr:not(div#sites-chrome-everything hr):not([class*="c"] hr) {
 		border-color: var(--border-6);
 	}
 	.dU5Kl {
@@ -6792,8 +6792,8 @@
 		color: var(--white-3);
 	}
 	.docs-material-gm-labeled-checkbox-checkbox.docs-material-gm-labeled-checkbox-checked, .docs-material-gm-labeled-checkbox-checkbox.docs-material-gm-labeled-checkbox-undetermined {
-		background-color: var(--white-3);
-		border-color: var(--white-3);
+		background-color: var(--blue);
+		border-color: var(--blue);
 	}
 	.motion-ui .goog-flat-button-disabled .punch-animation-sidebar-add-icon path {
 		fill: var(--white-4);
@@ -9120,7 +9120,7 @@
 	.zXKHQ:after {
 		background: var(--bg-dark-gradient-47);
 	}
-	p:not(div#sites-chrome-everything p):not(.module-large-tile__text-container p):not(.dd-menu__section--hero p):not(.racial-equity-bar p):not(.callout .block__content .content__text .content__body p), li:not(div#sites-chrome-everything li) {
+	p:not(div#sites-chrome-everything p):not(.module-large-tile__text-container p):not(.dd-menu__section--hero p):not(.racial-equity-bar p):not(.callout .block__content .content__text .content__body p):not([class*="c"]), li:not(div#sites-chrome-everything li):not([class*="c"]) {
 		color: var(--white-87);
 	}
 	.srvjXe {
@@ -9361,7 +9361,7 @@
 	.hero-fb__dark-theme, .content-image-swap__dark-theme, .icon-copy-grid__dark-theme {
 		background-color: var(--bg-dark-16);
 	}
-	blockquote, h1, h2, h3, h4 {
+	blockquote, h1:not([class*="c"]), h2:not([class*="c"]), h3:not([class*="c"]):not(.DKV0Md):not(a > h3), h4:not([class*="c"]) {
 		color: var(--white-3);
 	}
 	.icon-copy-grid--item-description, .g-team-pricing-s-k-u-list .sku-clarifications p {
@@ -26917,7 +26917,7 @@
 	.gb_Qe input {
 		background-color: transparent !important;
 	}
-	.gb_cf:not(td.gsib_a.gb_cf), .gb_Qe.gb_Re, .oTqstd, .nrAB0c, .two-column-content, .voice-pricing-plans tr, table tr:not(div#sites-chrome-everything table tr):not(td):not(.ge-kh-jf-eb):not(.rc-imageselect-checkbox):not(.imspo_mt__mtc-no table tr):nth-of-type(even):not(.docos-shadow-table table tr), .voice-pricing-plans tbody tr:not(.pricing-feature-heading):nth-child(even), .wBCgo, .FmNPqf {
+	.gb_cf:not(td.gsib_a.gb_cf), .gb_Qe.gb_Re, .oTqstd, .nrAB0c, .two-column-content, .voice-pricing-plans tr, table tr:not(div#sites-chrome-everything table tr):not(td):not(.ge-kh-jf-eb):not(.rc-imageselect-checkbox):not(.imspo_mt__mtc-no table tr):nth-of-type(even):not(.docos-shadow-table table tr):not(tr[class*="c"]), .voice-pricing-plans tbody tr:not(.pricing-feature-heading):nth-child(even), .wBCgo, .FmNPqf {
 		background-color: var(--bg-dark);
 	}
 	.gb_Qe.gb_Re .gb_bf {
@@ -29174,7 +29174,7 @@
 		background-color: var(--bg-dark);
 		color: var(--grey-1);
 	}
-	.gc-account-menu, .Lvwayc, .utyhx, .fv6Jye, .yu5kgd, .wjCxie, .wjCxie:hover, .vij30, .g3U8Ic, .miFGmb, .U5xfxc, .sYmAxe, .Z7Mseb, .docs-gm .docos-calltoactionview-container, .docs-explore-kacard, .docs-explore-serp-webresult-cite-button {
+	.gc-account-menu, .Lvwayc, .utyhx, .fv6Jye, .yu5kgd, .wjCxie, .wjCxie:hover, .vij30, .g3U8Ic, .miFGmb, .U5xfxc, .sYmAxe, .Z7Mseb, .docs-gm .docos-calltoactionview-container, .docs-explore-kacard, .docs-explore-serp-webresult-cite-button, .collaborator-activity-status-container, .Bjtnaf {
 		background-color: var(--bg-dark);
 	}
 	.gc-account-menu__footer>a:focus, .gc-account-menu__footer>a:hover {
@@ -29207,19 +29207,19 @@
 	.gc-home-working-at-google__overline, .SZbnPc, .HOvhke, .he5u5d, .n6Ossf, .r6B9Fd .VfPpkd-rymPhb-L8ivfd-fmcmS, .r6B9Fd .VfPpkd-rymPhb-bC5pod-fmcmS, .r6B9Fd .VfPpkd-rymPhb-JMEf7e, .gc-card__meta, .gc-account-menu__email, .gc-account-menu__footer, .QG6Szf, .Wdz6e.BvDXcd, .zpoCob, .gb_oa svg, .gb_Fc svg, .gb_2c .gb_4d, .gb_Rc .gb_4d, .gb_Se.gb_Te button svg, .sieBfb, .WXMuEd, .QHGzOe, .n5hNje, .Diclqf, .fkGd4c, .NNnMUe, .e5V4cc, .rJmdr, .tWjoFb, .P7jf1c, .KRDV, .RrZAzc, .C6MYaf, .E5EIG, .U5xfxc .t9f27, .docs-material-gm-labeled-checkbox .docs-material-gm-labeled-checkbox-description {
 		color: var(--grey-1);
 	}
-	.UgZKXd, .KqEFYb, .KUej9d, .hPzYFf, .PNEhTd .VuCHmb, .vC55le, .y1GgUd .second-line, .e5SOw .directions-mode-distance-time, .O91i4d>.directions-mode-distance-time, .ic4ZY, .Mc8ESb.Mc8ESb .Kl21U:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-NLUYnc-V67aGc, .E5RKJb, .beNUBe, .EwVWYd, .HAc6k, .PSwX3c, .Z7Mseb .rllt__details, .gsan_a {
+	.UgZKXd, .KqEFYb, .KUej9d, .hPzYFf, .PNEhTd .VuCHmb, .vC55le, .y1GgUd .second-line, .e5SOw .directions-mode-distance-time, .O91i4d>.directions-mode-distance-time, .ic4ZY, .Mc8ESb.Mc8ESb .Kl21U:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-NLUYnc-V67aGc, .E5RKJb, .beNUBe, .EwVWYd, .HAc6k, .PSwX3c, .Z7Mseb .rllt__details, .gsan_a, .collaborator-activity-zero-state-text, .iuj2Xe {
 		color: var(--grey-2);
 	}
 	.HCOeSb, .u3P6t, .RhCUE, .yEACXb, .hTZttd, .sCpeKe, .GuNrwb, .OiM1Uc, .WXigkf, .CJllr, .ev7Xhb, .znj3je, .UUlDsf.Kdcijb:not(.POdh1) .Voxjqf, .XY0ASe, .GHfyHe, .RSDz9d, .OrVPg .qDuJzf, .OrVPg .K8LxIe, .rCln6c, .V5pUU, .g5FrDb, .AEXOwb, .Kfmwb, .GmmPjd, .zjJGke, .t62Ywe, .rGpk8c, .y3E9bc, .I8wYLc, .cHcWBe, .dJEOGd, .nhb85d .searchboxinput, .nhb85d .tactile-searchbox-input, .Fk3sm, .VuCHmb, .sErS0c, .MaEBLe .QolJlc+.ecVU0e, .MaEBLe .YNT4h+.uHbXc, .pWr6ic, .mY1Jkc, .Mc8ESb.Mc8ESb .Kl21U:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-XpnDCe):hover:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-NLUYnc-V67aGc, .QGvUHe, .a6hOPb, .Py6Qke, .YzSd, .Z7Mseb .dbg0pd, .visual-treatment-pageless-promo .docos-calltoactionview-header, .kix-spellcheck-with-explanation-bubble .kix-spellcheck-with-explanation-bubble-title-text, .mNL6p .d3Kuye .zv7tnb, .S9uFJc.VfPpkd-LgbsSe:not(:disabled), .fOEalf .Jw4Ike {
 		color: var(--white-3);
 	}
-	.xbCN0b .MyVLbf, .A0Tmdb, .r6B9Fd .VfPpkd-rymPhb-fpDzbe-fmcmS, .gc-account-menu .gc-button, .IIDhZe, .OtBgcb, .BvDXcd, .uarSJe, .H5jUgd, .ccr4rb, .NEqIkc, .PZ4dMe, .UFwzbb, .AL7fgd, .LHNkfd, .gBcgEf, .Uj47zb, .b9qW3d, .jUr7c, .vKMilc, .ketfyc, .BFLC5b, .G12Ljd, .Lv5FLb, .MlqQ3d .wouVQd .Ab1Xue, .RYaupb.fontBodyMedium, .KUej9d .mUekQe, .yIkJof, .JTjUec, .Mc8ESb.Mc8ESb .Kl21U:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-fmcmS-wGMbrd, .Tx7zmf.bmGT3, .zABGKc:not(:disabled), .nENuRb, .Mc8ESb.Mc8ESb .VfPpkd-StrnGf-rymPhb, .JpCtJf, .JpCtJf .DkEaL, .oAqNWe.vij30, .kix-spellcheck-with-explanation-bubble .kix-spellcheck-with-explanation-bubble-explanation-text, .docs-autocorrect-bubble .docs-autocorrect-bubble-undo, .quTB6, .kix-smart-summary-text-container {
+	.xbCN0b .MyVLbf, .A0Tmdb, .r6B9Fd .VfPpkd-rymPhb-fpDzbe-fmcmS, .gc-account-menu .gc-button, .IIDhZe, .OtBgcb, .BvDXcd, .uarSJe, .H5jUgd, .ccr4rb, .NEqIkc, .PZ4dMe, .UFwzbb, .AL7fgd, .LHNkfd, .gBcgEf, .Uj47zb, .b9qW3d, .jUr7c, .vKMilc, .ketfyc, .BFLC5b, .G12Ljd, .Lv5FLb, .MlqQ3d .wouVQd .Ab1Xue, .RYaupb.fontBodyMedium, .KUej9d .mUekQe, .yIkJof, .JTjUec, .Mc8ESb.Mc8ESb .Kl21U:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-fmcmS-wGMbrd, .Tx7zmf.bmGT3, .zABGKc:not(:disabled), .nENuRb, .Mc8ESb.Mc8ESb .VfPpkd-StrnGf-rymPhb, .JpCtJf, .JpCtJf .DkEaL, .oAqNWe.vij30, .kix-spellcheck-with-explanation-bubble .kix-spellcheck-with-explanation-bubble-explanation-text, .docs-autocorrect-bubble .docs-autocorrect-bubble-undo, .quTB6, .kix-smart-summary-text-container, .collaborator-activity-status-message, .docs-revisions-filter-selector .goog-menuitem-content, .docs-revisions-filter-selector .docs-material-gm-select-caption {
 		color: var(--white-4);
 	}
 	.JrN27d.TGiyyc, .HQc0Ze {
 		color: var(--white-1);
 	}
-	.xbCN0b.KiNied .Auu9lc, .xbCN0b .NOIZeb .o7t4D:not(:disabled), .GXg3Le:hover>.uarSJe, .WLjaOb .GXg3Le:focus>.uarSJe, .GXg3Le:active>.uarSJe, .L98R4b, .NEHYte, .SWKEdd.SWKEdd, .aTVMOe.qs41qe .RSDz9d, .L6rvjd, .EPZ6V, .T9KXbd .Pk6Fmf, .cCPyWb .PfcDvc .AuKbld, .NBKr7b, .cYlvTc, .XbJon, .cJ2Zuc~.b0elr, .cJ2Zuc~.BF0wKb, .Mc8ESb.Mc8ESb .Kl21U.VfPpkd-fmcmS-yrriRe-OWXEXe-XpnDCe:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-NLUYnc-V67aGc, .wF1tve.wF1tve:hover:not(:disabled), .MyHLpd.MyHLpd:hover:not(:disabled), .wF1tve.wF1tve:not(:disabled), .MyHLpd.MyHLpd:not(:disabled), .wF1tve.wF1tve:hover.VfPpkd-LgbsSe .VfPpkd-kBDsod, .wF1tve.wF1tve.VfPpkd-LgbsSe .VfPpkd-kBDsod, .T2ozWe:hover, .T2ozWe:hover .xwYt2d, .HBP3of, .docos-calltoactionview-body a, .docs-material-button-text-default.docs-material-button, .kix-smart-summary-view-header-container.kix-smart-summary-edit-mode .navigation-widget-header, .a11y-settings-dialog a, .a11y-settings-dialog a:hover, .a11y-settings-dialog a:visited, .a11y-settings-dialog a:focus, .a11y-settings-dialog a:active, .docs-material-button-hairline-primary.docs-material-button, .docs-explore-tabbar-tab-selected .docs-explore-tabbar-tab-label, .docs-explore-kacard-knowledgepanel-description a, a.docs-explore-serp-webresult-title-link:link {
+	.xbCN0b.KiNied .Auu9lc, .xbCN0b .NOIZeb .o7t4D:not(:disabled), .GXg3Le:hover>.uarSJe, .WLjaOb .GXg3Le:focus>.uarSJe, .GXg3Le:active>.uarSJe, .L98R4b, .NEHYte, .SWKEdd.SWKEdd, .aTVMOe.qs41qe .RSDz9d, .L6rvjd, .EPZ6V, .T9KXbd .Pk6Fmf, .cCPyWb .PfcDvc .AuKbld, .NBKr7b, .cYlvTc, .XbJon, .cJ2Zuc~.b0elr, .cJ2Zuc~.BF0wKb, .Mc8ESb.Mc8ESb .Kl21U.VfPpkd-fmcmS-yrriRe-OWXEXe-XpnDCe:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-NLUYnc-V67aGc, .wF1tve.wF1tve:hover:not(:disabled), .MyHLpd.MyHLpd:hover:not(:disabled), .wF1tve.wF1tve:not(:disabled), .MyHLpd.MyHLpd:not(:disabled), .wF1tve.wF1tve:hover.VfPpkd-LgbsSe .VfPpkd-kBDsod, .wF1tve.wF1tve.VfPpkd-LgbsSe .VfPpkd-kBDsod, .T2ozWe:hover, .T2ozWe:hover .xwYt2d, .HBP3of, .docos-calltoactionview-body a, .docs-material-button-text-default.docs-material-button, .kix-smart-summary-view-header-container.kix-smart-summary-edit-mode .navigation-widget-header, .a11y-settings-dialog a, .a11y-settings-dialog a:hover, .a11y-settings-dialog a:visited, .a11y-settings-dialog a:focus, .a11y-settings-dialog a:active, .docs-material-button-hairline-primary.docs-material-button, .docs-explore-tabbar-tab-selected .docs-explore-tabbar-tab-label, .docs-explore-kacard-knowledgepanel-description a, a.docs-explore-serp-webresult-title-link:link, .XCdOnb {
 		color: var(--blue);
 	}
 	.docs-explore-kacard-knowledgepanel-description a:hover {
@@ -29269,10 +29269,10 @@
 	.LObCOd {
 		background-color: var(--border-19);
 	}
-	.PukFX, .kAZple, .ifH5Xc, .gc-card__split-left, .UYRhzf, .J7hYXc, .F249q, .T6SHIc, .RroO5d, .z8t5Oc, .NBJ9cb, .LCTIRd, .QGvUHe {
+	.PukFX, .kAZple, .ifH5Xc, .gc-card__split-left, .UYRhzf, .J7hYXc, .F249q, .T6SHIc, .RroO5d, .z8t5Oc, .NBJ9cb, .LCTIRd, .QGvUHe, .collaborator-activity-zero-state.collaborator-activity-zero-state-collaborator-seen, .JJZKK.Wui1sd, .mzx9jb, hr[role="presentation"] {
 		border-color: var(--border-1);
 	}
-	.HsZQAe[style*="#dadce0"] {
+	.HsZQAe[style*="#dadce0"], hr[style*="border-color:#dadce0"] {
 		border-color: var(--border-1) !important;
 	}
 	.Mc8ESb.Mc8ESb .Kl21U:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-NSFCdd-Brv4Fb, .Mc8ESb.Mc8ESb .Kl21U:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-NSFCdd-Ra9xwd, .Mc8ESb.Mc8ESb .Kl21U:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-NSFCdd-MpmGFe {
@@ -29393,7 +29393,7 @@
 	.aTVMOe.qs41qe .lY57Fd svg path[fill="#1967D2"] {
 		fill: var(--blue);
 	}
-	.qfvgSe:not(.VfPpkd-ksKsZd-mWPk3d):focus .VfPpkd-J1Ukfc-LhBDec {
+	.qfvgSe:not(.VfPpkd-ksKsZd-mWPk3d):focus .VfPpkd-J1Ukfc-LhBDec, .lqyc1.d0jRmd, .d0jRmd {
 		border-color: var(--blue);
 	}
 	.fv6Jye {
@@ -29450,7 +29450,7 @@
 	.Ejy5Xd, .vMiBKc, .YENodc {
 		border-color: var(--border-1);
 	}
-	.ZLxsZ, .DNbnCb {
+	.ZLxsZ, .DNbnCb, .docs-revisions-chromecover-titlebar-button-action, .docs-revisions-chromecover-titlebar-second-button-action {
 		background-color: var(--blue);
 		color: var(--bg-dark);
 	}
@@ -29472,7 +29472,7 @@
 	.wSJUW {
 		color: var(--grey-5);
 	}
-	.docos.docs-gm .jfk-button.jfk-button-standard, .docs-gm .docs-explore-card-more-button {
+	.docos.docs-gm .jfk-button.jfk-button-standard, .docs-gm .docs-explore-card-more-button, #publish-banner-buttons a {
 		color: var(--blue);
 	}
 	.kix-spellcheck-with-explanation-bubble .kix-spellcheck-with-explanation-bubble-suggestion-text, .kix-spellcheck-with-explanation-bubble .kix-spellcheck-with-explanation-bubble-action {
@@ -29510,19 +29510,51 @@
 		background-color: var(--devsite-button-primary-background-hover);
 		color: var(--bg-dark) !important;
 	}
-	.docos.docs-gm .jfk-button.jfk-button-standard.jfk-button-hover {
+	.docos.docs-gm .jfk-button.jfk-button-standard.jfk-button-hover, .collaborator-activity-zero-state-earlier-edits.jfk-button-hover {
 		background-color: var(--bg-hover-1);
 		border-color: var(--bg-dark-blue-5) !important;
 	}
-	.docos.docs-gm .jfk-button.jfk-button-standard.jfk-button-focused {
+	.docos.docs-gm .jfk-button.jfk-button-standard.jfk-button-focused, .collaborator-activity-zero-state-earlier-edits.jfk-button-focused, .collaborator-activity-zero-state-earlier-edits.jfk-button-focused.jfk-button-hover {
 		background-color: var(--bg-dark-blue-2);
 		border-color: var(--bg-dark-blue-5) !important;
 	}
 	.df7kUc svg g g g path[fill="#000"] {
 		fill: var(--white-1);
 	}
-	.docs-gm .docs-gm-sidebar-icon-path {
+	.docs-gm .docs-gm-sidebar-icon-path, .collaborator-activity-zero-state-image svg g g path[fill="#1967D2"], .collaborator-activity-zero-state-image svg g g rect[fill="#1967D2"], #publish-banner-icon {
 		fill: var(--blue);
+	}
+	.collaborator-activity-titlebar-container, .collaborator-activity-sidebar {
+		background-color: var(--bg-dark);
+		color: var(--white-3);
+		border-color: var(--border-1);
+	}
+	.collaborator-activity-zero-state-image svg g g[fill="#D2E3FC"] {
+		fill: var(--bg-dark-blue-1);
+	}
+	.collaborator-activity-zero-state-image svg g g[fill="#FFF"] {
+		fill: var(--bg-dark);
+	}
+	.collaborator-activity-zero-state-earlier-edits {
+		background-color: var(--bg-dark);
+		border-color: var(--border-1) !important;
+		color: var(--blue);
+	}
+	#banners #publish-banner {
+		background-color: var(--bg-dark-blue-2);
+		color: var(--white-3);
+		border-color: var(--grey-17);
+	}
+	#contents {
+		padding: 0;
+		margin: 0 auto;
+	}
+	.c68 {
+		margin: 0 auto;
+	}
+	.OcgH4b .PNCib.fT6ABc::after {
+		background-color: var(--bg-dark-blue-2);
+		border-color: var(--blue);
 	}
 	
 		/* Fix radio button and checkbox colours in Calendar dialogs */
@@ -29531,8 +29563,39 @@
 		color: inherit;
 	}
 }
-@-moz-document regexp("^(https?)://(research).google.*") {
+@-moz-document regexp("^(https?)://(research).google.*$") {
 	footer {
 		background-color: var(--bg-hover-1);
+	}
+}
+
+@-moz-document url-prefix("https://www.google.com/search?q=world%27s+top+scientist"), url-prefix("https://www.google.com/search?q=world+top+scientist") {
+	[data-entityname="Michael Grätzel"] g-img img {
+		visibility: hidden;
+		position: relative;
+	}
+	[data-entityname="Michael Grätzel"] g-img::before {
+		content: '';
+		visibility: visible;
+		position: absolute;
+		width: 100%;
+		height: 64%;
+		top: 0;
+		left: 0;
+		margin: 0;
+		padding: 0;
+		background: url('https://i.scdn.co/image/ab67616d0000b273f26cafeac85f8df9d78ac0ad') no-repeat;
+		background-size: cover;
+	}
+	[data-entityname="Michael Grätzel"] .dAassd .FozYP {
+		visibility: hidden;
+		position: relative;
+	}
+	[data-entityname="Michael Grätzel"] .dAassd > .FozYP:nth-of-type(1)::before {
+		content: 'Heimerdinger';
+		visibility: visible;
+		position: absolute;
+		top: 0;
+		left: 0;
 	}
 }
