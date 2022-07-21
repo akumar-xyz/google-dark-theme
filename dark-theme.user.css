@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Dark Theme
 @namespace      github.com/blyad2137/google-dark-theme
-@version        3.2.7
+@version        3.2.8
 @description    `Ultimate Dark Theme for Google`
 @author         blyad (https://github.com/blyad2137)
 @license        CC BY-NC-SA 4.0
@@ -323,6 +323,7 @@
 	--white-902: rgba(255, 255, 255, .902);
 	--white-reddish: #b3a9a9;
 	--white-blueish: #c7daea;
+	--white-greenish: #c1d2cc;
 	
 	--grey-1: #afb3b9;
 	--grey-1-rgb: 175, 179, 185;
@@ -541,8 +542,8 @@
 	
 	--mdc-theme-primary: var(--blue);
 	--mdc-theme-text-primary-on-light: var(--white-87);
-	--mdc-theme-on-surface: #fff;
-	--mdc-ripple-color: #fff;
+	--mdc-theme-on-surface: var(--white-1);
+	--mdc-ripple-color: var(--white-1);
 	--mdc-theme-text-primary-on-background: var(--white-87);
 	--mdc-theme-text-secondary-on-background: var(--white-54);
 	--mdc-checkbox-unselected-hover-icon-color: var(--white-3);
@@ -3059,10 +3060,6 @@
 	}
 	.vtjJ8d-ZjTkM-mJSDk-z5C9Gb {
 		border-color: var(--border-6);
-	}
-	.XMkGfe:hover, .XMkGfe:focus {
-		border-color: var(--border-6);
-		background-color: var(--bg-dark-2);
 	}
 	.GgK1If, .szh09c {
 		color: var(--white-3);
@@ -9120,7 +9117,7 @@
 	.zXKHQ:after {
 		background: var(--bg-dark-gradient-47);
 	}
-	p:not(div#sites-chrome-everything p):not(.module-large-tile__text-container p):not(.dd-menu__section--hero p):not(.racial-equity-bar p):not(.callout .block__content .content__text .content__body p):not([class*="c"]), li:not(div#sites-chrome-everything li):not([class*="c"]) {
+	p:not(div#sites-chrome-everything p):not(.module-large-tile__text-container p):not(.dd-menu__section--hero p):not(.racial-equity-bar p):not(.callout .block__content .content__text .content__body p):not([class*="c"]):not(p.CmHxkb), li:not(div#sites-chrome-everything li):not([class*="c"]) {
 		color: var(--white-87);
 	}
 	.srvjXe {
@@ -14934,7 +14931,7 @@
 	.uni-related-articles-cards__abstract {
 		color: var(--white-9);
 	}
-	[class="vasquette id-app-container pane-open-mode"] .id-content-container .id-scene .widget-scene canvas, .kno-mrg-m a img[id="lu_map"], [class="vasquette id-app-container disable-searchbox-shadow pane-open-mode"] .id-content-container .id-scene .widget-scene canvas, .gQ5dJf div[aria-roledescription="map"]:not(body#yDmH0d[jscontroller="pjICDe"] .gQ5dJf div), [class="vasquette id-app-container pane-empty-mode"] div#content-container .fGpujc-scene canvas, [class="vasquette id-app-container pane-collapsed-mode"] [class="fGpujc-scene widget-scene"] canvas, .H93uF a[href="#"] g-img .rISBZc[src], .rhsg4.rhsmap5col img#lu_map, .wu1Wie a img[alt], .i4ewOd-ibnC6b-JUCs7e, #map-area-container:not([basemap="hybrid"]) div#map-canvas[class="i4ewOd-UzWXSb"] div[class="gm-style"] > div:nth-of-type(2) > div:nth-of-type(1), #map-area-container:not([basemap="hybrid"]) div#map-renderer-container div[class="gm-style"] > div:nth-of-type(2) > div:nth-of-type(1), div#mapDiv div[class="gm-style"] > div:nth-of-type(2) > div:nth-of-type(1), #map-area-container:not([basemap="hybrid"]), .gQ5dJf div[aria-roledescription="map"] > div:nth-of-type(1) > div, .QNI8Sb-minimap-W3j8xb .QNI8Sb-minimap > div:nth-of-type(5), .app-imagery-mode .QNI8Sb-minimap-ltEGzf img, [jscontroller="LRxGgc"] a.rreml img[src][jscontroller="n8Je5c"], .ULSxyf img.cYnjBd[id*="map"], .P8G8ic .yXg2De div[aria-roledescription="map"][style], .yXg2De > div div[aria-roledescription*="map"][role] > div:nth-of-type(1), [class="vasquette id-app-container pane-empty-mode"] [class="id-content-container"] .dmCR2e canvas, [class="gc-job-detail__map"] div[class="gm-style"] > div:nth-of-type(2) > div:nth-of-type(1), .gc-locations-map__google-map div[class="gm-style"] > div:nth-of-type(2) > div:nth-of-type(1), [class="vasquette id-app-container y2iKwd xcUKcd pane-open-mode"] .id-content-container .id-scene .widget-scene canvas, .kno-mrg-m a img[id="lu_map"], .ug6Jye .p03OQc[style*="background-image"], [class="vasquette id-app-container pane-open-mode y2iKwd xcUKcd"] .id-content-container .id-scene .widget-scene canvas  {
+	[class="vasquette id-app-container pane-open-mode"] .id-content-container .id-scene .widget-scene canvas, .kno-mrg-m a img[id="lu_map"], [class="vasquette id-app-container disable-searchbox-shadow pane-open-mode"] .id-content-container .id-scene .widget-scene canvas, .gQ5dJf div[aria-roledescription="map"]:not(body#yDmH0d[jscontroller="pjICDe"] .gQ5dJf div), [class="vasquette id-app-container pane-empty-mode"] div#content-container .fGpujc-scene canvas, [class="vasquette id-app-container pane-collapsed-mode"] [class="fGpujc-scene widget-scene"] canvas, .H93uF a[href="#"] g-img .rISBZc[src], .rhsg4.rhsmap5col img#lu_map, .wu1Wie a img[alt], .i4ewOd-ibnC6b-JUCs7e, #map-area-container:not([basemap="hybrid"]) div#map-canvas[class="i4ewOd-UzWXSb"] div[class="gm-style"] > div:nth-of-type(2) > div:nth-of-type(1), #map-area-container:not([basemap="hybrid"]) div#map-renderer-container div[class="gm-style"] > div:nth-of-type(2) > div:nth-of-type(1), div#mapDiv div[class="gm-style"] > div:nth-of-type(2) > div:nth-of-type(1), #map-area-container:not([basemap="hybrid"]), .gQ5dJf div[aria-roledescription="map"] > div:nth-of-type(1) > div, .QNI8Sb-minimap-W3j8xb .QNI8Sb-minimap > div:nth-of-type(5), .app-imagery-mode .QNI8Sb-minimap-ltEGzf img, [jscontroller="LRxGgc"] a.rreml img[src][jscontroller="n8Je5c"], .ULSxyf img.cYnjBd[id*="map"], .P8G8ic .yXg2De div[aria-roledescription="map"][style], .yXg2De > div div[aria-roledescription*="map"][role] > div:nth-of-type(1), [class="vasquette id-app-container pane-empty-mode"] [class="id-content-container"] .dmCR2e canvas, [class="gc-job-detail__map"] div[class="gm-style"] > div:nth-of-type(2) > div:nth-of-type(1), .gc-locations-map__google-map div[class="gm-style"] > div:nth-of-type(2) > div:nth-of-type(1), [class="vasquette id-app-container y2iKwd xcUKcd pane-open-mode"] .id-content-container .id-scene .widget-scene canvas, .kno-mrg-m a img[id="lu_map"], .ug6Jye .p03OQc[style*="background-image"], [class="vasquette id-app-container pane-open-mode y2iKwd xcUKcd"] .id-content-container .id-scene .widget-scene canvas, .Ymd7jc.ZNTm2e div img[src*="https://www.google.com/maps/vt/data="]  {
 		filter: /*[[map]]*/;
 	}
 	.uxOu9-sTGRBb {
@@ -20459,7 +20456,7 @@
 	.touchpoint-segments-breadcrumb li {
 		color: var(--white-3) !important;
 	}
-	.arrow {
+	.arrow:not(.section__faqs .arrow) {
 		fill: var(--bg-hover-1) !important;
 		stroke: var(--border-1) !important;
 	}
@@ -29204,7 +29201,7 @@
 	.UgZKXd, .KqEFYb, .AFogS {
 		border-color: var(--bg-dark-3);
 	}
-	.gc-home-working-at-google__overline, .SZbnPc, .HOvhke, .he5u5d, .n6Ossf, .r6B9Fd .VfPpkd-rymPhb-L8ivfd-fmcmS, .r6B9Fd .VfPpkd-rymPhb-bC5pod-fmcmS, .r6B9Fd .VfPpkd-rymPhb-JMEf7e, .gc-card__meta, .gc-account-menu__email, .gc-account-menu__footer, .QG6Szf, .Wdz6e.BvDXcd, .zpoCob, .gb_oa svg, .gb_Fc svg, .gb_2c .gb_4d, .gb_Rc .gb_4d, .gb_Se.gb_Te button svg, .sieBfb, .WXMuEd, .QHGzOe, .n5hNje, .Diclqf, .fkGd4c, .NNnMUe, .e5V4cc, .rJmdr, .tWjoFb, .P7jf1c, .KRDV, .RrZAzc, .C6MYaf, .E5EIG, .U5xfxc .t9f27, .docs-material-gm-labeled-checkbox .docs-material-gm-labeled-checkbox-description {
+	.gc-home-working-at-google__overline, .SZbnPc, .HOvhke, .he5u5d, .n6Ossf, .r6B9Fd .VfPpkd-rymPhb-L8ivfd-fmcmS, .r6B9Fd .VfPpkd-rymPhb-bC5pod-fmcmS, .r6B9Fd .VfPpkd-rymPhb-JMEf7e, .gc-card__meta, .gc-account-menu__email, .gc-account-menu__footer, .QG6Szf, .Wdz6e.BvDXcd, .zpoCob, .gb_oa svg, .gb_Fc svg, .gb_2c .gb_4d, .gb_Rc .gb_4d, .gb_Se.gb_Te button svg, .sieBfb, .WXMuEd, .QHGzOe, .n5hNje, .Diclqf, .fkGd4c, .NNnMUe, .e5V4cc, .rJmdr, .tWjoFb, .P7jf1c, .KRDV, .RrZAzc, .C6MYaf, .E5EIG, .U5xfxc .t9f27, .docs-material-gm-labeled-checkbox .docs-material-gm-labeled-checkbox-description, .ZnExKf {
 		color: var(--grey-1);
 	}
 	.UgZKXd, .KqEFYb, .KUej9d, .hPzYFf, .PNEhTd .VuCHmb, .vC55le, .y1GgUd .second-line, .e5SOw .directions-mode-distance-time, .O91i4d>.directions-mode-distance-time, .ic4ZY, .Mc8ESb.Mc8ESb .Kl21U:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-NLUYnc-V67aGc, .E5RKJb, .beNUBe, .EwVWYd, .HAc6k, .PSwX3c, .Z7Mseb .rllt__details, .gsan_a, .collaborator-activity-zero-state-text, .iuj2Xe {
@@ -29219,7 +29216,7 @@
 	.JrN27d.TGiyyc, .HQc0Ze {
 		color: var(--white-1);
 	}
-	.xbCN0b.KiNied .Auu9lc, .xbCN0b .NOIZeb .o7t4D:not(:disabled), .GXg3Le:hover>.uarSJe, .WLjaOb .GXg3Le:focus>.uarSJe, .GXg3Le:active>.uarSJe, .L98R4b, .NEHYte, .SWKEdd.SWKEdd, .aTVMOe.qs41qe .RSDz9d, .L6rvjd, .EPZ6V, .T9KXbd .Pk6Fmf, .cCPyWb .PfcDvc .AuKbld, .NBKr7b, .cYlvTc, .XbJon, .cJ2Zuc~.b0elr, .cJ2Zuc~.BF0wKb, .Mc8ESb.Mc8ESb .Kl21U.VfPpkd-fmcmS-yrriRe-OWXEXe-XpnDCe:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-NLUYnc-V67aGc, .wF1tve.wF1tve:hover:not(:disabled), .MyHLpd.MyHLpd:hover:not(:disabled), .wF1tve.wF1tve:not(:disabled), .MyHLpd.MyHLpd:not(:disabled), .wF1tve.wF1tve:hover.VfPpkd-LgbsSe .VfPpkd-kBDsod, .wF1tve.wF1tve.VfPpkd-LgbsSe .VfPpkd-kBDsod, .T2ozWe:hover, .T2ozWe:hover .xwYt2d, .HBP3of, .docos-calltoactionview-body a, .docs-material-button-text-default.docs-material-button, .kix-smart-summary-view-header-container.kix-smart-summary-edit-mode .navigation-widget-header, .a11y-settings-dialog a, .a11y-settings-dialog a:hover, .a11y-settings-dialog a:visited, .a11y-settings-dialog a:focus, .a11y-settings-dialog a:active, .docs-material-button-hairline-primary.docs-material-button, .docs-explore-tabbar-tab-selected .docs-explore-tabbar-tab-label, .docs-explore-kacard-knowledgepanel-description a, a.docs-explore-serp-webresult-title-link:link, .XCdOnb {
+	.xbCN0b.KiNied .Auu9lc, .xbCN0b .NOIZeb .o7t4D:not(:disabled), .GXg3Le:hover>.uarSJe, .WLjaOb .GXg3Le:focus>.uarSJe, .GXg3Le:active>.uarSJe, .L98R4b, .NEHYte, .SWKEdd.SWKEdd, .aTVMOe.qs41qe .RSDz9d, .L6rvjd, .EPZ6V, .T9KXbd .Pk6Fmf, .cCPyWb .PfcDvc .AuKbld, .NBKr7b, .cYlvTc, .XbJon, .cJ2Zuc~.b0elr, .cJ2Zuc~.BF0wKb, .Mc8ESb.Mc8ESb .Kl21U.VfPpkd-fmcmS-yrriRe-OWXEXe-XpnDCe:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-NLUYnc-V67aGc, .wF1tve.wF1tve:hover:not(:disabled), .MyHLpd.MyHLpd:hover:not(:disabled), .wF1tve.wF1tve:not(:disabled), .MyHLpd.MyHLpd:not(:disabled), .wF1tve.wF1tve:hover.VfPpkd-LgbsSe .VfPpkd-kBDsod, .wF1tve.wF1tve.VfPpkd-LgbsSe .VfPpkd-kBDsod, .T2ozWe:hover, .T2ozWe:hover .xwYt2d, .HBP3of, .docos-calltoactionview-body a, .docs-material-button-text-default.docs-material-button, .kix-smart-summary-view-header-container.kix-smart-summary-edit-mode .navigation-widget-header, .a11y-settings-dialog a, .a11y-settings-dialog a:hover, .a11y-settings-dialog a:visited, .a11y-settings-dialog a:focus, .a11y-settings-dialog a:active, .docs-material-button-hairline-primary.docs-material-button, .docs-explore-tabbar-tab-selected .docs-explore-tabbar-tab-label, .docs-explore-kacard-knowledgepanel-description a, a.docs-explore-serp-webresult-title-link:link, .XCdOnb, .uFar5e {
 		color: var(--blue);
 	}
 	.docs-explore-kacard-knowledgepanel-description a:hover {
@@ -29300,7 +29297,7 @@
 		color: var(--blue);
 		background-color: rgba(var(--blue-rgb),.16);
 	}
-	.QpgUNc, .oGZkwf, [src="//maps.gstatic.com/consumer/images/icons/1x/flight_grey800_24dp.png"], [src="//maps.gstatic.com/consumer/images/icons/1x/directions_bike_grey800_24dp.png"], [src="//maps.gstatic.com/consumer/images/icons/1x/directions_walk_grey800_24dp.png"], [src="//maps.gstatic.com/consumer/images/icons/1x/ic_directions_grey800_24px.png"], .PLEQOe.reverse, .InF6Wc, .Hse3Ec::before, .PLEQOe.lECG9c, .PLEQOe.IeZuN, .wZfvfe, .gCv4ne, .MaEBLe .YNT4h+.uHbXc:hover::before, body:not(.LoJzbe) .MaEBLe .YNT4h:focus+.uHbXc::before, .MaEBLe .QolJlc+.ecVU0e::before, .ysKsp, .Zsxnze, .ftEYtf, .Jb8x7e, [src="//www.gstatic.com/images/icons/material/system_gm/1x/search_black_18dp.png"], [src="https://maps.gstatic.com/consumer/images/icons/2x/straight_grey800_18dp.png"], [src="https://maps.gstatic.com/consumer/images/icons/2x/turn_left_grey800_18dp.png"], [src="https://maps.gstatic.com/consumer/images/icons/2x/turn_slight_left_grey800_18dp.png"], [src="https://maps.gstatic.com/consumer/images/icons/2x/merge_left_grey800_18dp.png"], [src="https://maps.gstatic.com/consumer/images/icons/2x/roundabout_grey800_18dp.png"], [src="https://maps.gstatic.com/consumer/images/icons/2x/turn_u_turn_grey800_18dp.png"], .PLEQOe.d2cEI, .pKQ3pb, .kR7P, .w8Xsjd, .JVpMu, .ExJQp, .YrysQe, .Iiwzxd, .wTbtv, .n8kHOd, [src="https://www.gstatic.com/images/icons/material/system_gm/2x/info_gm_grey_18dp.png"], .TGiyyc .yXjQde, .Rl3sHe, [src="//www.gstatic.com/images/icons/material/system_gm/1x/add_location_alt_white_18dp.png"], .fkIGwd, .lUinCd, .wU2Edf, .J32FTe>.Eg6Y7b, .dHhMrc, .docs-explore-forward-arrow-black, .docs-explore-more-black, .docs-explore-cite-black-18 {
+	.QpgUNc, .oGZkwf:not(.eifyne .oGZkwf), [src="//maps.gstatic.com/consumer/images/icons/1x/flight_grey800_24dp.png"], [src="//maps.gstatic.com/consumer/images/icons/1x/directions_bike_grey800_24dp.png"], [src="//maps.gstatic.com/consumer/images/icons/1x/directions_walk_grey800_24dp.png"], [src="//maps.gstatic.com/consumer/images/icons/1x/ic_directions_grey800_24px.png"], .PLEQOe.reverse, .InF6Wc, .Hse3Ec::before, .PLEQOe.lECG9c, .PLEQOe.IeZuN, .wZfvfe, .gCv4ne, .MaEBLe .YNT4h+.uHbXc:hover::before, body:not(.LoJzbe) .MaEBLe .YNT4h:focus+.uHbXc::before, .MaEBLe .QolJlc+.ecVU0e::before, .ysKsp, .Zsxnze, .ftEYtf, .Jb8x7e, [src="//www.gstatic.com/images/icons/material/system_gm/1x/search_black_18dp.png"], [src="https://maps.gstatic.com/consumer/images/icons/2x/straight_grey800_18dp.png"], [src="https://maps.gstatic.com/consumer/images/icons/2x/turn_left_grey800_18dp.png"], [src="https://maps.gstatic.com/consumer/images/icons/2x/turn_slight_left_grey800_18dp.png"], [src="https://maps.gstatic.com/consumer/images/icons/2x/merge_left_grey800_18dp.png"], [src="https://maps.gstatic.com/consumer/images/icons/2x/roundabout_grey800_18dp.png"], [src="https://maps.gstatic.com/consumer/images/icons/2x/turn_u_turn_grey800_18dp.png"], .PLEQOe.d2cEI, .pKQ3pb, .kR7P, .w8Xsjd, .JVpMu, .ExJQp, .YrysQe, .Iiwzxd, .wTbtv, .n8kHOd, [src="https://www.gstatic.com/images/icons/material/system_gm/2x/info_gm_grey_18dp.png"], .TGiyyc .yXjQde, .Rl3sHe, [src="//www.gstatic.com/images/icons/material/system_gm/1x/add_location_alt_white_18dp.png"], .fkIGwd, .lUinCd, .wU2Edf, .J32FTe>.Eg6Y7b, .dHhMrc, .docs-explore-forward-arrow-black, .docs-explore-more-black, .docs-explore-cite-black-18, [src="https://play-lh.googleusercontent.com/iFstqoxDElUVv4T3KxkxP3OTcuFvWF5ZQQjT7aIxy4n2uaVigCCykxeG6EZV9FQ10X1itPj1oORm=s20-rw"], [src="https://play-lh.googleusercontent.com/12USW7aflgz466ifDehKTnMoAep_VHxDmKJ6jEBoDZWCSefOC-ThRX14Mqe0r8KF9XCzrpMqJts=s20-rw"], [src="https://play-lh.googleusercontent.com/W5DPtvB8Fhmkn5LbFZki_OHL3ZI1Rdc-AFul19UK4f7np2NMjLE5QquD6H0HAeEJ977u3WH4yaQ=s20-rw"], [src="https://play-lh.googleusercontent.com/ohRyQRA9rNfhp7xLW0MtW1soD8SEX45Oec7MyH3FaxtukWUG_6GKVpvh3JiugzryLi7Bia02HPw=s20-rw"] {
 		filter: var(--invert-1-hue);
 	}
 	.Af2gee .ZYxz5c, .CMnFh .J7BD5b, .h8JnOe:before, .DOoYke canvas, .PNEhTd .LZfws canvas, .vDKrJb:before, [src="//ssl.gstatic.com/docs/documents/images/kix-animated-pageless-promo.gif"] {
@@ -29556,6 +29553,174 @@
 		background-color: var(--bg-dark-blue-2);
 		border-color: var(--blue);
 	}
+	span[style*="color:rgba(32,33,36,1.00)"] {
+		color: var(--white-3) !important;
+	}
+	span[style*="color:rgba(26,115,232,1.00)"] {
+		color: var(--blue) !important;
+	}
+	span[style*="color:rgba(60,64,67,1.00)"] {
+		color: var(--white-4) !important;
+	}
+	.AG25L.M0S7ae:hover .C9yzub, body:not(.LoJzbe) .M0S7ae.AG25L.x7ME4e .C9yzub {
+		background-image: -webkit-linear-gradient(left,rgba(241,243,244,0) 0,var(--bg-dark-2) 24px 100%);
+		background-image: linear-gradient(to right,rgba(241,243,244,0) 0,var(--bg-dark-2) 24px 100%);
+	}
+	.d1Bfob.d1Bfob.VfPpkd-suEOdc-OWXEXe-nzrxxc .VfPpkd-z59Tgd, .d1Bfob.d1Bfob.VfPpkd-suEOdc-OWXEXe-nzrxxc .VfPpkd-Djsh7e-XxIAqe-ma6Yeb, .d1Bfob.d1Bfob.VfPpkd-suEOdc-OWXEXe-nzrxxc .VfPpkd-Djsh7e-XxIAqe-bottom, .id-interactive-hovercard .k7jAl, .S3WLMd, .hQnXo.sMVRZe:not(:disabled), .help-panel-contact__option:hover>.help-panel-contact__icon-container, .B6Yvkd:not(:disabled), .UugpPb:not(:disabled), .ziykHb.VfPpkd-suEOdc-OWXEXe-nzrxxc .VfPpkd-z59Tgd, .ziykHb.VfPpkd-suEOdc-OWXEXe-nzrxxc .VfPpkd-Djsh7e-XxIAqe-ma6Yeb, .ziykHb.VfPpkd-suEOdc-OWXEXe-nzrxxc .VfPpkd-Djsh7e-XxIAqe-cGMI2b {
+		background-color: var(--bg-dark);
+	}
+	.hQnXo:not(:disabled), .glue-tab:after {
+		background-color: var(--bg-dark-2);
+	}
+	.KnEF3e.FwR7Pc:not(:disabled), .wVqUob:not(:first-child)::before, .RJfYGf:not(:disabled), .ArLwsf.KKjvXb:not(:disabled) {
+		background-color: var(--bg-dark-blue-2);
+	}
+	.section__get-started:after {
+		background-color: var(--bg-dark-16);
+	}
+	.footer, .footer__lower, .attention-section, .terms-section-redeem {
+		background-color: var(--bg-hover-1);
+	}
+	.kFwPee div[style*="background-color: rgb(232, 234, 237)"] {
+		background-color: var(--bg-dark-blue-2) !important;
+	}
+	a.K9vl4.e8GvOc[style*="background-color: rgb(245, 251, 255)"] {
+		background-color: var(--bg-dark-16) !important;
+	}
+	.x2kBMc[style*="background-image: linear-gradient(to right, rgb(245, 251, 255) 0%, rgba(245, 251, 255, 0) 30%, transparent);"] {
+		background-image: linear-gradient(to right, var(--bg-dark-16) 0%, var(--bg-dark-16) 18%, transparent) !important;
+	}
+	.d1Bfob.d1Bfob .VfPpkd-IqDDtd, .hero-section-fullbleed .hero-section .hero-headline, .giftcards-card-head, .ziykHb .VfPpkd-MlC99b, .ziykHb .VfPpkd-IqDDtd {
+		color: var(--white-4);
+	}
+	.help-panel-contact__text {
+		color: var(--white-23);
+	}
+	.ArLwsf.KKjvXb:not(:disabled), .KuPXpe.ArLwsf:not(:disabled), .u4ICaf .s7d6Ne:not(:disabled), .rLq5qb:not(:disabled) {
+		color: var(--blue);
+	}
+	.ArLwsf.KKjvXb, .KuPXpe.ArLwsf, .u4ICaf .s7d6Ne, .rLq5qb {
+		color: var(--blue);
+		fill: var(--blue);
+	}
+	.u4ICaf .s7d6Ne:not(:disabled):hover, .u4ICaf .s7d6Ne:not(:disabled).VfPpkd-ksKsZd-mWPk3d-OWXEXe-AHe6Kc-XpnDCe, .u4ICaf .s7d6Ne:not(:disabled):not(.VfPpkd-ksKsZd-mWPk3d):focus, .u4ICaf .s7d6Ne:not(:disabled):not(:disabled):active {
+		color: var(--devsite-button-primary-background-hover);
+	}
+	.help-panel-contact__snippet {
+		color: var(--white-greenish);
+	}
+	.i3LlFf, .kcen6d:not(:disabled), .DdYX5:not(:disabled), .HWAcU:not(:disabled), .FfLSic:not(:disabled), .omXQ6c:not(:disabled), .vWM94c:not(:disabled), .ClM7O:not(:disabled), .Epkrse:not(:disabled), .Hs29hd:not(:disabled), .wMUdtb:not(:disabled), .LMoCf:not(:disabled):hover, .lXlx5:not(:disabled), .jILTFe:not(:disabled), .X5PpBb:not(:disabled), .B6Yvkd:not(:disabled), .bO7Z3c:not(:disabled), .aA0Vnf:not(:disabled), .xzVNx:not(:disabled), .q078ud:not(:disabled), .ylijCc:not(:disabled), .DZiIDc:not(:disabled), .qcuwR:not(:disabled), .MT2Ged:not(:disabled), .q1rIdc:not(:disabled), .pDqbc:not(:disabled), .glue-tab:hover, .glue-tab[aria-selected=true], .vmrotd:not(:disabled), .e8GvOc, .e8GvOc:visited, .XjKdFd:not(:disabled), .WIHnIc:not(:disabled), .xFVDSb:not(:disabled), .Ss0uT:not(:disabled) {
+		color: var(--white-3);
+	}
+	.FfLSic, .omXQ6c, .vWM94c, .ClM7O, .Epkrse, .Hs29hd, .wMUdtb, .lXlx5, .jILTFe, .X5PpBb, .bO7Z3c, .aA0Vnf, .xzVNx, .q078ud, .ylijCc, .DZiIDc, .qcuwR, .MT2Ged, .q1rIdc, .pDqbc, .vmrotd, .XjKdFd, .WIHnIc, .xFVDSb, .Ss0uT {
+		color: var(--white-3);
+		fill: var(--white-3);
+	}
+	.B6Yvkd {
+		background-color: var(--bg-dark);
+		color: var(--white-3);
+		fill: var(--white-3);
+	}
+	.f0UV3d:not(:disabled), .r9optf:not(:disabled), .Q4fJQd .Yvy3Fd:not(:disabled), .sYJxkd:not(:disabled), .O9T88b:not(:disabled), .w2kbF:not(:disabled), .JUF8md:not(:disabled), .B1yxdb:not(:disabled), .j1R2Me .Ic6Vy:not(:disabled), .VnJy5c .dbAtlf:not(:disabled), .XLWCmc .VFjhDf:not(:disabled), .GMGZAc:not(:disabled), .CmHxkb:not(:disabled), .KvNvKe:not(:disabled), .dMOumf:not(:disabled), .KnEF3e:not(:disabled), .LbQbAe:not(:disabled), .SH9oqb:not(:disabled), .g1rdde:not(:disabled), .vlGucd:not(:disabled), .lmbN2b:not(:disabled), .VMq4uf .W7A5Qb:not(:disabled), .SfzRHd:not(:disabled), .LMoCf:not(:disabled), .jECfAf:not(:disabled), .EHUI5b:not(:disabled), .bp9Aid:not(:disabled), .aA0Vnf .GfskQe:not(:disabled), .sn1rbc:not(:disabled), .reAt0:not(:disabled), .UugpPb:not(:disabled), .KsX6rf:not(:disabled), .RGUlu:not(:disabled), .fozKzd a:not(:disabled), .GO2pB:not(:disabled), .viuTPb:not(:disabled), .footer__nav__item, .giftcards-card-desc, .attention-section-content, .glue-tab, .PZGfUd:not(:disabled), .fy9T3c:not(:disabled), .aJ3edd:not(:disabled), .sUSdNe:not(:disabled), .kMqehf:not(:disabled), .ulKokd:not(:disabled), .HtY85d:not(:disabled), .zjgV1c:not(:disabled), .pSEeg:not(:disabled), .VVmwY .j25Vu:not(:disabled) {
+		color: var(--grey-1);
+	}
+	.j1R2Me .Ic6Vy, .VnJy5c .dbAtlf, .XLWCmc .VFjhDf, .GMGZAc, .CmHxkb, .KvNvKe, .dMOumf, .KnEF3e, .LbQbAe, .SH9oqb, .g1rdde, .vlGucd, .lmbN2b, .VMq4uf .W7A5Qb, .SfzRHd, .jECfAf, .EHUI5b, .bp9Aid, .aA0Vnf .GfskQe, .sn1rbc, .reAt0, .KsX6rf, .RGUlu, .fozKzd a, .GO2pB, .PZGfUd, .fy9T3c, .aJ3edd, .sUSdNe, .kMqehf, .ulKokd, .HtY85d, .zjgV1c, .pSEeg, .VVmwY .j25Vu {
+		color: var(--grey-1);
+		fill: var(--grey-1);
+	}
+	.viuTPb {
+		color: var(--grey-1);
+		fill: var(--grey-1);
+		border-color: var(--bg-dark-blue-2);
+	}
+	.UugpPb {
+		background-color: var(--bg-dark);
+		color: var(--grey-1);
+		fill: var(--grey-1);
+	}
+	.help-panel-contact__icon {
+		fill: var(--blue);
+	}
+	.Wi7KIe {
+		fill: var(--bg-dark-2);
+		stop-color: var(--bg-dark-2);
+	}
+	.D3Qfie .Gggmbb {
+		background-color: var(--grey-1);
+	}
+	.mrSlsb.KKjvXb:not(:disabled), .EFMXQ.KKjvXb:not(:disabled) {
+		background-color: var(--bg-dark-mint);
+	}
+	.mrSlsb.KKjvXb:not(:disabled), .EFMXQ.KKjvXb:not(:disabled) {
+		color: var(--mint);
+	}
+	.EFMXQ.KKjvXb {
+		color: var(--mint);
+		fill: var(--mint);
+		background-color: var(--bg-dark-mint);
+	}
+	.Llk9yb, .XDi3Bc, .SPRMud, .eKbjU, .MsCHpb, #rhs.IVvPP .dG2XIf.XzTjhb, .mNzHDe, .hQnXo.sMVRZe .ePyrDc:not(:disabled), .ipRz4:not(:disabled), .LMoCf:not(:disabled), .LMoCf:not(:disabled):hover, .XGHsbd:not(:disabled), .GcNQi:not(:disabled), .GcNQi, .section__faqs .faq, .section__faqs .answer, .promotion .glue-card, .promotion .glue-card__asset, .ymHpFd:not(:disabled) {
+		border-color: var(--border-1);
+	}
+	.por-section-wrapper {
+		border-color: var(--border-41);
+	}
+	.LQeN7 .VfPpkd-J1Ukfc-LhBDec {
+		border-color: var(--blue);
+	}
+	.lightbox .kaAW0d {
+		background-color: var(--bg-dark);
+		color: var(--grey-1);
+	}
+	.Maj6Tc[style="color:#C73200;background:#FFC7A7"] {
+		background-color: var(--bg-dark-orange) !important;
+		color: var(--orange) !important;
+		filter: saturate(.8);
+	}
+	.REySof[style="color:#FFE6D4"] {
+		color: var(--bg-dark-orange) !important;
+		filter: saturate(1.2);
+	}
+	.NQyKp[style="color:#C73200;background:#FFC7A7"] {
+		background-color: var(--bg-dark-orange) !important;
+		color: var(--orange) !important;
+		filter: saturate(1.2);
+	}
+	.Jb0Zif .AxJnmb.Wdsnue .rl_item_base, .Jb0Zif:not(.IVvPP) .AxJnmb.Wdsnue {
+		border-color: var(--bg-dark-blue-6);
+	}
+	.Jb0Zif .kIXOkb:hover, .Jb0Zif .rl_item_base:hover, .IVvPP .y8Jpof:hover .ngPLf {
+		background-color: var(--bg-dark-17);
+	}
+	.D3Qfie {
+		background-color: var(--bg-dark);
+		border-color: var(--border-1);
+		color: var(--grey-1);
+		fill: var(--grey-1);
+	}
+	.YVhSle[aria-selected=true]:not(:disabled) {
+		background-color: rgba(var(--white-3),.04);
+	}
+	.help-panel-contact-feedback-divider {
+		border-color: var(--bg-dark-2);
+	}
+	.srvBL:not(:disabled), .G1zzid:not(:disabled), .Mf2Txd:not(:disabled), .Mf2Txd, .viuTPb:not(:disabled), .VTG6db:not(:disabled), .NWSLtc:not(:disabled), .NWSLtc {
+		border-color: var(--bg-dark-blue-2);
+	}
+	.Naydsb {
+		filter: var(--invert-3);
+	}
+	.py4s1c, [src="https://lh3.googleusercontent.com/a73ot8QvTKW_2riLcNhFwmUvwlAmgF7K3ggB6Hq58_nzns_rIjs12jIXixP0RM1H75V5uicKRzwGvLBd1rzhTkO-Ga9oUADDlQAkig"] {
+		filter: var(--invert-1-hue);
+	}
+	.LkLjZd, .LkLjZd:visited {
+		background-color: var(--bg-dark);
+		border-color: rgba(var(--white-rgb),.17);
+		color: var(--grey-5);
+	}
+	.NWM5Eb.KKjvXb:not(:disabled) {
+		background-color: var(--bg-dark-red);
+	}
 	
 		/* Fix radio button and checkbox colours in Calendar dialogs */
 	[role="dialog"] label,
@@ -29569,7 +29734,7 @@
 	}
 }
 
-@-moz-document url-prefix("https://www.google.com/search?q=world%27s+top+scientist"), url-prefix("https://www.google.com/search?q=world+top+scientist") {
+@-moz-document url-prefix("https://www.google.com/search?q=world%27s+top+scientist"), url-prefix("https://www.google.com/search?q=world+top+scientist"), url-prefix("https://www.google.com/search?q=top+scientist") {
 	[data-entityname="Michael Grätzel"] g-img img {
 		visibility: hidden;
 		position: relative;
