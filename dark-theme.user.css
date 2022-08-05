@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Dark Theme
 @namespace      github.com/blyad2137/google-dark-theme
-@version        3.2.9
+@version        3.3.0
 @description    `Ultimate Dark Theme for Google`
 @author         blyad (https://github.com/blyad2137)
 @license        CC BY-NC-SA 4.0
@@ -8110,7 +8110,7 @@
 	.B-ZB7aWe-UvFRu {
 		box-shadow: var(--box-shadow-25);
 	}
-	.uJtSke.paynGb:not(:disabled), .uJtSke.paynGb:active:not(:disabled), .uJtSke.paynGb:focus:not(:disabled), .uJtSke.paynGb:hover:not(:disabled), .a-s-Ba-Ak, .a-D-B-WErN3d-j, .RwLyCe, .a-U-xc>.a-da-fc-Ug::after, .a-U-xc>.a-da-ji::before, .a-U-xc>.a-da-Ul::before, .Kk7lMc-Yb-Il-j, .a-Kk7lMc-ae3xF-j, .h-Yo, .a-ub-ra-B>.h-ra-B, .a-Va-Zb-ut, .aabwZd .N7iPof, .a-t-cb, .Kk7lMc-Yb-Il-vc {
+	.uJtSke.paynGb:not(:disabled), .uJtSke.paynGb:active:not(:disabled), .uJtSke.paynGb:focus:not(:disabled), .uJtSke.paynGb:hover:not(:disabled), .a-s-Ba-Ak, .a-D-B-WErN3d-j, .RwLyCe, .a-U-xc>.a-da-fc-Ug::after, .a-U-xc>.a-da-ji::before, .a-U-xc>.a-da-Ul::before, .Kk7lMc-Yb-Il-j, .a-Kk7lMc-ae3xF-j, .h-Yo, .a-ub-ra-B>.h-ra-B, .a-Va-Zb-ut, .a-t-cb, .Kk7lMc-Yb-Il-vc {
 		border-color: var(--border-1);
 	}
 	.g-Qa:hover:before, .g-Qa.g-Qa-W:before, .g-Qa:focus:before, .g-Qa.g-Qa-Pb:before {
@@ -9665,9 +9665,6 @@
 	}
 	.RmrYyf {
 		color: var(--bg-dark);
-	}
-	.gb_uc:hover:not(.gb_3c .gb_uc) {
-		background-color: var(--bg-transparent-28);
 	}
 	.d5Ncgc {
 		background-color: var(--bg-hover-1);
@@ -26914,7 +26911,7 @@
 	.gb_Qe input {
 		background-color: transparent !important;
 	}
-	.gb_cf:not(td.gsib_a.gb_cf), .gb_Qe.gb_Re, .oTqstd, .nrAB0c, .two-column-content, .voice-pricing-plans tr, table tr:not(div#sites-chrome-everything table tr):not(td):not(.ge-kh-jf-eb):not(.rc-imageselect-checkbox):not(.imspo_mt__mtc-no table tr):nth-of-type(even):not(.docos-shadow-table table tr):not(tr[class*="c"]), .voice-pricing-plans tbody tr:not(.pricing-feature-heading):nth-child(even), .wBCgo, .FmNPqf {
+	.gb_cf:not(td.gsib_a.gb_cf), .gb_Qe.gb_Re, .oTqstd, .nrAB0c, .two-column-content, .voice-pricing-plans tr, table tr:not(div#sites-chrome-everything table tr):not(td):not(.ge-kh-jf-eb):not(.rc-imageselect-checkbox):not(.imspo_mt__mtc-no table tr):nth-of-type(even):not(.docos-shadow-table table tr):not(tr[class*="c"]):not(.gsar_b tr), .voice-pricing-plans tbody tr:not(.pricing-feature-heading):nth-child(even), .wBCgo, .FmNPqf {
 		background-color: var(--bg-dark);
 	}
 	.gb_Qe.gb_Re .gb_bf {
@@ -29566,7 +29563,7 @@
 		background-image: -webkit-linear-gradient(left,rgba(241,243,244,0) 0,var(--bg-dark-2) 24px 100%);
 		background-image: linear-gradient(to right,rgba(241,243,244,0) 0,var(--bg-dark-2) 24px 100%);
 	}
-	.d1Bfob.d1Bfob.VfPpkd-suEOdc-OWXEXe-nzrxxc .VfPpkd-z59Tgd, .d1Bfob.d1Bfob.VfPpkd-suEOdc-OWXEXe-nzrxxc .VfPpkd-Djsh7e-XxIAqe-ma6Yeb, .d1Bfob.d1Bfob.VfPpkd-suEOdc-OWXEXe-nzrxxc .VfPpkd-Djsh7e-XxIAqe-bottom, .id-interactive-hovercard .k7jAl, .S3WLMd, .hQnXo.sMVRZe:not(:disabled), .help-panel-contact__option:hover>.help-panel-contact__icon-container, .B6Yvkd:not(:disabled), .UugpPb:not(:disabled), .ziykHb.VfPpkd-suEOdc-OWXEXe-nzrxxc .VfPpkd-z59Tgd, .ziykHb.VfPpkd-suEOdc-OWXEXe-nzrxxc .VfPpkd-Djsh7e-XxIAqe-ma6Yeb, .ziykHb.VfPpkd-suEOdc-OWXEXe-nzrxxc .VfPpkd-Djsh7e-XxIAqe-cGMI2b, .g3Fmkb, .waffle-ac-renderer {
+	.d1Bfob.d1Bfob.VfPpkd-suEOdc-OWXEXe-nzrxxc .VfPpkd-z59Tgd, .d1Bfob.d1Bfob.VfPpkd-suEOdc-OWXEXe-nzrxxc .VfPpkd-Djsh7e-XxIAqe-ma6Yeb, .d1Bfob.d1Bfob.VfPpkd-suEOdc-OWXEXe-nzrxxc .VfPpkd-Djsh7e-XxIAqe-bottom, .id-interactive-hovercard .k7jAl, .S3WLMd, .hQnXo.sMVRZe:not(:disabled), .help-panel-contact__option:hover>.help-panel-contact__icon-container, .B6Yvkd:not(:disabled), .UugpPb:not(:disabled), .ziykHb.VfPpkd-suEOdc-OWXEXe-nzrxxc .VfPpkd-z59Tgd, .ziykHb.VfPpkd-suEOdc-OWXEXe-nzrxxc .VfPpkd-Djsh7e-XxIAqe-ma6Yeb, .ziykHb.VfPpkd-suEOdc-OWXEXe-nzrxxc .VfPpkd-Djsh7e-XxIAqe-cGMI2b, .g3Fmkb, .waffle-ac-renderer, .cloudsearch_suggestion_overlay, .tFoQfe, .S630me, .PolqHc {
 		background-color: var(--bg-dark);
 	}
 	.input-box[style*="background-color: rgb(255, 255, 255)"], .input-box[style*="background-color: rgb(255, 255, 255)"] div#waffle-rich-text-editor[style*="background-color: rgb(255, 255, 255)"] {
@@ -29576,7 +29573,7 @@
 	.hQnXo:not(:disabled), .glue-tab:after {
 		background-color: var(--bg-dark-2);
 	}
-	.KnEF3e.FwR7Pc:not(:disabled), .wVqUob:not(:first-child)::before, .RJfYGf:not(:disabled), .ArLwsf.KKjvXb:not(:disabled) {
+	.KnEF3e.FwR7Pc:not(:disabled), .wVqUob:not(:first-child)::before, .RJfYGf:not(:disabled), .ArLwsf.KKjvXb:not(:disabled), .f22Zib {
 		background-color: var(--bg-dark-blue-2);
 	}
 	.match-paren {
@@ -29597,13 +29594,13 @@
 	.x2kBMc[style*="background-image: linear-gradient(to right, rgb(245, 251, 255) 0%, rgba(245, 251, 255, 0) 30%, transparent);"] {
 		background-image: linear-gradient(to right, var(--bg-dark-16) 0%, var(--bg-dark-16) 18%, transparent) !important;
 	}
-	.d1Bfob.d1Bfob .VfPpkd-IqDDtd, .hero-section-fullbleed .hero-section .hero-headline, .giftcards-card-head, .ziykHb .VfPpkd-MlC99b, .ziykHb .VfPpkd-IqDDtd {
+	.d1Bfob.d1Bfob .VfPpkd-IqDDtd, .hero-section-fullbleed .hero-section .hero-headline, .giftcards-card-head, .ziykHb .VfPpkd-MlC99b, .ziykHb .VfPpkd-IqDDtd, .waffle-arguments-parameter-help-section .waffle-arguments-help-section-title, .waffle-arguments-help-parameter-content {
 		color: var(--white-4);
 	}
 	.help-panel-contact__text {
 		color: var(--white-23);
 	}
-	.ArLwsf.KKjvXb:not(:disabled), .KuPXpe.ArLwsf:not(:disabled), .u4ICaf .s7d6Ne:not(:disabled), .rLq5qb:not(:disabled), .aabwZd:not(.KBj6Qd) .GZwC2b .M3pype .YUNZ4c, .number {
+	.ArLwsf.KKjvXb:not(:disabled), .KuPXpe.ArLwsf:not(:disabled), .u4ICaf .s7d6Ne:not(:disabled), .rLq5qb:not(:disabled), .aabwZd:not(.KBj6Qd) .GZwC2b .M3pype .YUNZ4c, .number, .h1Utz, .EPPd4e, .EPPd4e:visited, .J0glDf {
 		color: var(--blue);
 	}
 	.ArLwsf.KKjvXb, .KuPXpe.ArLwsf, .u4ICaf .s7d6Ne, .rLq5qb {
@@ -29616,7 +29613,7 @@
 	.help-panel-contact__snippet {
 		color: var(--white-greenish);
 	}
-	.i3LlFf, .kcen6d:not(:disabled), .DdYX5:not(:disabled), .HWAcU:not(:disabled), .FfLSic:not(:disabled), .omXQ6c:not(:disabled), .vWM94c:not(:disabled), .ClM7O:not(:disabled), .Epkrse:not(:disabled), .Hs29hd:not(:disabled), .wMUdtb:not(:disabled), .LMoCf:not(:disabled):hover, .lXlx5:not(:disabled), .jILTFe:not(:disabled), .X5PpBb:not(:disabled), .B6Yvkd:not(:disabled), .bO7Z3c:not(:disabled), .aA0Vnf:not(:disabled), .xzVNx:not(:disabled), .q078ud:not(:disabled), .ylijCc:not(:disabled), .DZiIDc:not(:disabled), .qcuwR:not(:disabled), .MT2Ged:not(:disabled), .q1rIdc:not(:disabled), .pDqbc:not(:disabled), .glue-tab:hover, .glue-tab[aria-selected=true], .vmrotd:not(:disabled), .e8GvOc, .e8GvOc:visited, .XjKdFd:not(:disabled), .WIHnIc:not(:disabled), .xFVDSb:not(:disabled), .Ss0uT:not(:disabled), .CxRgyd>[jsslot]>:first-child:not(section), .waffle-function-autocomplete-row-name, .waffle-function-autocomplete-row-formula, .waffle-function-autocomplete-row-assisted-action {
+	.i3LlFf, .kcen6d:not(:disabled), .DdYX5:not(:disabled), .HWAcU:not(:disabled), .FfLSic:not(:disabled), .omXQ6c:not(:disabled), .vWM94c:not(:disabled), .ClM7O:not(:disabled), .Epkrse:not(:disabled), .Hs29hd:not(:disabled), .wMUdtb:not(:disabled), .LMoCf:not(:disabled):hover, .lXlx5:not(:disabled), .jILTFe:not(:disabled), .X5PpBb:not(:disabled), .B6Yvkd:not(:disabled), .bO7Z3c:not(:disabled), .aA0Vnf:not(:disabled), .xzVNx:not(:disabled), .q078ud:not(:disabled), .ylijCc:not(:disabled), .DZiIDc:not(:disabled), .qcuwR:not(:disabled), .MT2Ged:not(:disabled), .q1rIdc:not(:disabled), .pDqbc:not(:disabled), .glue-tab:hover, .glue-tab[aria-selected=true], .vmrotd:not(:disabled), .e8GvOc, .e8GvOc:visited, .XjKdFd:not(:disabled), .WIHnIc:not(:disabled), .xFVDSb:not(:disabled), .Ss0uT:not(:disabled), .CxRgyd>[jsslot]>:first-child:not(section), .waffle-function-autocomplete-row-name, .waffle-function-autocomplete-row-formula, .waffle-function-autocomplete-row-assisted-action, .fVoy0e, .ndfHFb-c4YZDc-Wrql6b-V1ur5d, .ndfHFb-c4YZDc-EglORb-haAclf, .ndfHFb-c4YZDc-i5oIFb .ndfHFb-c4YZDc-Wrql6b .ndfHFb-c4YZDc-to915-LgbsSe.ndfHFb-c4YZDc-LgbsSe.ndfHFb-c4YZDc-Wrql6b-PlOyMe, .ndfHFb-c4YZDc-i5oIFb .ndfHFb-c4YZDc-Wrql6b .ndfHFb-c4YZDc-to915-LgbsSe.ndfHFb-c4YZDc-LgbsSe.ndfHFb-c4YZDc-Wrql6b-FNFY6c, .ndfHFb-c4YZDc-i5oIFb .ndfHFb-c4YZDc-Wrql6b .ndfHFb-c4YZDc-to915-LgbsSe.ndfHFb-c4YZDc-LgbsSe.ndfHFb-c4YZDc-Wrql6b-qMHh7d, .ndfHFb-c4YZDc-rovI0b {
 		color: var(--white-3);
 	}
 	.FfLSic, .omXQ6c, .vWM94c, .ClM7O, .Epkrse, .Hs29hd, .wMUdtb, .lXlx5, .jILTFe, .X5PpBb, .bO7Z3c, .aA0Vnf, .xzVNx, .q078ud, .ylijCc, .DZiIDc, .qcuwR, .MT2Ged, .q1rIdc, .pDqbc, .vmrotd, .XjKdFd, .WIHnIc, .xFVDSb, .Ss0uT {
@@ -29628,7 +29625,7 @@
 		color: var(--white-3);
 		fill: var(--white-3);
 	}
-	.f0UV3d:not(:disabled), .r9optf:not(:disabled), .Q4fJQd .Yvy3Fd:not(:disabled), .sYJxkd:not(:disabled), .O9T88b:not(:disabled), .w2kbF:not(:disabled), .JUF8md:not(:disabled), .B1yxdb:not(:disabled), .j1R2Me .Ic6Vy:not(:disabled), .VnJy5c .dbAtlf:not(:disabled), .XLWCmc .VFjhDf:not(:disabled), .GMGZAc:not(:disabled), .CmHxkb:not(:disabled), .KvNvKe:not(:disabled), .dMOumf:not(:disabled), .KnEF3e:not(:disabled), .LbQbAe:not(:disabled), .SH9oqb:not(:disabled), .g1rdde:not(:disabled), .vlGucd:not(:disabled), .lmbN2b:not(:disabled), .VMq4uf .W7A5Qb:not(:disabled), .SfzRHd:not(:disabled), .LMoCf:not(:disabled), .jECfAf:not(:disabled), .EHUI5b:not(:disabled), .bp9Aid:not(:disabled), .aA0Vnf .GfskQe:not(:disabled), .sn1rbc:not(:disabled), .reAt0:not(:disabled), .UugpPb:not(:disabled), .KsX6rf:not(:disabled), .RGUlu:not(:disabled), .fozKzd a:not(:disabled), .GO2pB:not(:disabled), .viuTPb:not(:disabled), .footer__nav__item, .giftcards-card-desc, .attention-section-content, .glue-tab, .PZGfUd:not(:disabled), .fy9T3c:not(:disabled), .aJ3edd:not(:disabled), .sUSdNe:not(:disabled), .kMqehf:not(:disabled), .ulKokd:not(:disabled), .HtY85d:not(:disabled), .zjgV1c:not(:disabled), .pSEeg:not(:disabled), .VVmwY .j25Vu:not(:disabled), .waffle-function-autocomplete-row-description, .waffle-arguments-help-section-inactive .waffle-arguments-help-parameter-content, .waffle-arguments-help-section.waffle-arguments-help-section-inactive .waffle-arguments-help-section-title {
+	.f0UV3d:not(:disabled), .r9optf:not(:disabled), .Q4fJQd .Yvy3Fd:not(:disabled), .sYJxkd:not(:disabled), .O9T88b:not(:disabled), .w2kbF:not(:disabled), .JUF8md:not(:disabled), .B1yxdb:not(:disabled), .j1R2Me .Ic6Vy:not(:disabled), .VnJy5c .dbAtlf:not(:disabled), .XLWCmc .VFjhDf:not(:disabled), .GMGZAc:not(:disabled), .CmHxkb:not(:disabled), .KvNvKe:not(:disabled), .dMOumf:not(:disabled), .KnEF3e:not(:disabled), .LbQbAe:not(:disabled), .SH9oqb:not(:disabled), .g1rdde:not(:disabled), .vlGucd:not(:disabled), .lmbN2b:not(:disabled), .VMq4uf .W7A5Qb:not(:disabled), .SfzRHd:not(:disabled), .LMoCf:not(:disabled), .jECfAf:not(:disabled), .EHUI5b:not(:disabled), .bp9Aid:not(:disabled), .aA0Vnf .GfskQe:not(:disabled), .sn1rbc:not(:disabled), .reAt0:not(:disabled), .UugpPb:not(:disabled), .KsX6rf:not(:disabled), .RGUlu:not(:disabled), .fozKzd a:not(:disabled), .GO2pB:not(:disabled), .viuTPb:not(:disabled), .footer__nav__item, .giftcards-card-desc, .attention-section-content, .glue-tab, .PZGfUd:not(:disabled), .fy9T3c:not(:disabled), .aJ3edd:not(:disabled), .sUSdNe:not(:disabled), .kMqehf:not(:disabled), .ulKokd:not(:disabled), .HtY85d:not(:disabled), .zjgV1c:not(:disabled), .pSEeg:not(:disabled), .VVmwY .j25Vu:not(:disabled), .waffle-function-autocomplete-row-description, .waffle-arguments-help-section-inactive .waffle-arguments-help-parameter-content, .waffle-arguments-help-section.waffle-arguments-help-section-inactive .waffle-arguments-help-section-title, .y-C-cg-Es-V {
 		color: var(--grey-1);
 	}
 	.j1R2Me .Ic6Vy, .VnJy5c .dbAtlf, .XLWCmc .VFjhDf, .GMGZAc, .CmHxkb, .KvNvKe, .dMOumf, .KnEF3e, .LbQbAe, .SH9oqb, .g1rdde, .vlGucd, .lmbN2b, .VMq4uf .W7A5Qb, .SfzRHd, .jECfAf, .EHUI5b, .bp9Aid, .aA0Vnf .GfskQe, .sn1rbc, .reAt0, .KsX6rf, .RGUlu, .fozKzd a, .GO2pB, .PZGfUd, .fy9T3c, .aJ3edd, .sUSdNe, .kMqehf, .ulKokd, .HtY85d, .zjgV1c, .pSEeg, .VVmwY .j25Vu {
@@ -29652,6 +29649,12 @@
 		fill: var(--bg-dark-2);
 		stop-color: var(--bg-dark-2);
 	}
+	.HkuhB {
+		color: var(--grey-5);
+	}
+	.DGsGGe {
+		color: var(--grey-2);
+	}
 	.D3Qfie .Gggmbb {
 		background-color: var(--grey-1);
 	}
@@ -29661,13 +29664,25 @@
 	.mrSlsb.KKjvXb:not(:disabled), .EFMXQ.KKjvXb:not(:disabled) {
 		color: var(--mint);
 	}
+	.Ke58ze {
+		color: rgba(var(--white-rgb),.87);
+	}
 	.EFMXQ.KKjvXb {
 		color: var(--mint);
 		fill: var(--mint);
 		background-color: var(--bg-dark-mint);
 	}
-	.Llk9yb, .XDi3Bc, .SPRMud, .eKbjU, .MsCHpb, #rhs.IVvPP .dG2XIf.XzTjhb, .mNzHDe, .hQnXo.sMVRZe .ePyrDc:not(:disabled), .ipRz4:not(:disabled), .LMoCf:not(:disabled), .LMoCf:not(:disabled):hover, .XGHsbd:not(:disabled), .GcNQi:not(:disabled), .GcNQi, .section__faqs .faq, .section__faqs .answer, .promotion .glue-card, .promotion .glue-card__asset, .ymHpFd:not(:disabled), hr, .waffle-unified-formula-help-instructions-border-arrow, .waffle-unified-formula-help-instructions-border-tab {
+	.gb_Se.gb_Te .gb_df, .glX3de:hover:not(.RDPZE) {
+		color: var(--white-1);
+	}
+	.glX3de.KKjvXb:hover:not(.RDPZE) {
+		color: var(--devsite-button-primary-background-hover);
+	}
+	.Llk9yb, .XDi3Bc, .SPRMud, .eKbjU, .MsCHpb, #rhs.IVvPP .dG2XIf.XzTjhb, .mNzHDe, .hQnXo.sMVRZe .ePyrDc:not(:disabled), .ipRz4:not(:disabled), .LMoCf:not(:disabled), .LMoCf:not(:disabled):hover, .XGHsbd:not(:disabled), .GcNQi:not(:disabled), .GcNQi, .section__faqs .faq, .section__faqs .answer, .promotion .glue-card, .promotion .glue-card__asset, .ymHpFd:not(:disabled), hr, .waffle-unified-formula-help-instructions-border-arrow, .waffle-unified-formula-help-instructions-border-tab, .JGjjEc, .imNLU {
 		border-color: var(--border-1);
+	}
+	.cloudsearch_suggestion_filter_section, .cloudsearch_suggestion_footer_section {
+		border-color: var(--bg-dark-3);
 	}
 	.por-section-wrapper {
 		border-color: var(--border-41);
@@ -29714,10 +29729,10 @@
 	.srvBL:not(:disabled), .G1zzid:not(:disabled), .Mf2Txd:not(:disabled), .Mf2Txd, .viuTPb:not(:disabled), .VTG6db:not(:disabled), .NWSLtc:not(:disabled), .NWSLtc {
 		border-color: var(--bg-dark-blue-2);
 	}
-	.Naydsb, .jfk-freestanding-menu-button.waffle-kennedy-column-menu-button {
+	.Naydsb, .jfk-freestanding-menu-button.waffle-kennedy-column-menu-button, [src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkBAMAAACCzIhnAAAAElBMVEX39/fv8PDa29zGyMq8vsC0trlukSkhAAAApElEQVR4Ae3StQHEAAgFUHITxPp4H+3PWCCB/Uc5txLOqv96HAIAAIC/CUJyisdd4awxqS4heSQqrB15NFLEPJPHNJ/CFtcovCFKJfxtiL8x//j+JftP6X+Yt98yiMuyCH1tsap4WotZL8Qcs2KVXV+NrJKTTa1LEZ7nmXRLNpMU9wYX+0/epBJaQ6Ibe4jsb9gcog/WkHH/sAvJJHpBAAAA8AdH4QwmpxE5siEAAAAASUVORK5CYII="], .ndfHFb-c4YZDc-bN97Pc-nupQLb-LgbsSe .ndfHFb-c4YZDc-nupQLb-Bz112c.ndfHFb-c4YZDc-bN97Pc-nupQLb-LgbsSe-Bz112c {
 		filter: var(--invert-3);
 	}
-	.py4s1c, [src="https://lh3.googleusercontent.com/a73ot8QvTKW_2riLcNhFwmUvwlAmgF7K3ggB6Hq58_nzns_rIjs12jIXixP0RM1H75V5uicKRzwGvLBd1rzhTkO-Ga9oUADDlQAkig"], [style="background-image: url(https://fonts.gstatic.com/s/i/googlematerialicons/add/v21/black-24dp/1x/gm_add_black_24dp.png)"], .docs-icon-img-container.docs-icon-img.docs-icon-close {
+	.py4s1c, [src="https://lh3.googleusercontent.com/a73ot8QvTKW_2riLcNhFwmUvwlAmgF7K3ggB6Hq58_nzns_rIjs12jIXixP0RM1H75V5uicKRzwGvLBd1rzhTkO-Ga9oUADDlQAkig"], [style="background-image: url(https://fonts.gstatic.com/s/i/googlematerialicons/add/v21/black-24dp/1x/gm_add_black_24dp.png)"], .docs-icon-img-container.docs-icon-img.docs-icon-close, [src="https://drive-thirdparty.googleusercontent.com/16/type/application/x-zip-compressed"] {
 		filter: var(--invert-1-hue);
 	}
 	.LkLjZd, .LkLjZd:visited {
@@ -29737,8 +29752,41 @@
 		background-color: var(--bg-dark);
 		box-shadow: 2px 2px 2px rgba(123, 123, 123, 20%);
 	}
-	.cell-input span[style*="background-color:#EEE;"] {
+	.cell-input span[style*="background-color:#EEE"] {
 		background-color: var(--bg-dark-3) !important;
+	}
+	.R83xKc {
+		background-color: var(--bg-dark);
+		border-color: var(--bg-dark-3);
+	}
+	.glX3de {
+		mix-blend-mode: screen;
+	}
+	.glX3de.u3bW4e:not(.RDPZE) {
+		background-color: rgba(var(--blue-rgb),.12);
+		color: var(--white-3);
+	}
+	.glX3de.KKjvXb.u3bW4e:not(.RDPZE) {
+		border-color: var(--devsite-button-primary-background-active);
+		background-color: var(--bg-dark-blue-1);
+		color: var(--devsite-button-primary-background-active);
+	}
+	.glX3de.KKjvXb.T8Y28d {
+		border-right-color: var(--devsite-button-primary-background-active);
+	}
+	.UHqLAb .vARBRb[aria-selected="true"], .UHqLAb .vARBRb:focus, .dc[aria-selected="true"], .dc:focus {
+		background-color: var(--bg-dark-2);
+		outline-color: var(--bg-dark-2);
+	}
+	.OelKyd {
+		background-color: var(--bg-dark);
+		border-top-color: var(--border-1);
+	}
+	.aabwZd .N7iPof {
+		border-bottom-color: var(--border-1);
+	}
+	.ndfHFb-c4YZDc-bN97Pc-nupQLb-LgbsSe {
+		text-shadow: none;
 	}
 	
 		/* Fix radio button and checkbox colours in Calendar dialogs */
