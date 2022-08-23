@@ -1,3 +1,59 @@
+### Update 60 | 05.08.22
+- again fixed Google Drive
+- minor fixes
+
+### Update 59 | 23.07.22
+- fixed Google Drive listing background [(#21)](https://github.com/blyad2137/google-dark-theme/issues/21)
+- fixed Google Sheets formulas background and text color [(#22)](https://github.com/blyad2137/google-dark-theme/issues/22)
+- minor fixes
+
+### Update 58 | 21.07.22 | [Family Guy Funny Moments](https://youtu.be/wXzEYOqTDhQ)
+- fixed entire Google Play because of the new design
+- fixes at Google Search
+- fixes at Google Docs
+- minor fixes
+
+### Update 57 | 09.07.22 | [I'm tweakin'](https://www.youtube.com/watch?v=j_K2f-FgBzc)
+- fixes at Google Docs
+- fixes at Google Drive
+- tweakn' something else
+
+### Update 56 | 29.06.22 | [I just wrote the entire script of An Incorrect Summary of Metal Gear Rising | Part 1 for no fucking reason Update](https://docs.google.com/document/d/1vfmInZL0t7qKSLJLC2YUoNMfrYmcV_DYC6tmDor8cJA/edit?usp=sharing)
+- fixes at Google Docs(well, obviously)
+- fixes at Google Search
+- fixes at Google Maps
+- minor fixes
+
+### Update 55 | 22.06.22 | [Pre-Anniversary Update](https://www.youtube.com/watch?v=9Vq1G4f0zyI)
+- added support for Google AI Blog
+- added support for Google Research
+- added support for Google Careers
+- fixes at Google One
+- fixes at Google My Account
+- fixes at Google Translate
+- fixes at Google Search
+- minor fixes
+- Note: I've been [a little bit busy](https://i.imgur.com/NNKFcyn.png)
+
+### Update 54 | 28.05.22
+- fixed entire Google Drive [(#20)](https://github.com/blyad2137/google-dark-theme/issues/20)
+- fixes at Google Search
+- minor fixes
+
+### Update 53 | 13.05.22 | [<img src="https://im4.ezgif.com/tmp/ezgif-4-6f8b0aab78.gif"></img>](https://www.youtube.com/watch?v=5KVWITpv6hQ)
+- added support for Google Open Source Live
+- fixes at Google Search
+- fixes at Google Docs
+- fixes at Google Drive
+- minor fixes
+
+### Update 52 | 01.05.22 | [Well, if it isn't sussy Jack](https://www.youtube.com/watch?v=4wXWMezSWMk)
+- remade scrollbar look
+- improved /*[[map]]*/ filter
+- fixes at Google Search
+- fixes at Google Docs
+- [minor](https://youtu.be/RGyGoIeuy8E?t=30) improvements
+
 ### Update 51 | 14.04.22 | [Hey, Palpatine](https://www.youtube.com/watch?v=LFWnFg0tEyQ)
 - fixes at Google Search
 
