@@ -86,8 +86,15 @@
       <li>Google Sites</li>
       <li>Google Alerts</li>
       <li>Google Open Source Live</li>
-	  <li>Google AI Blog</li>
-	  <li>Google Careers</li>
-	  <li>Google Research</li>
+      <li>Google AI Blog</li>
+      <li>Google Careers</li>
+      <li>Google Research</li>
+      <li>Google Dataset Search</li>
+      <li>Google Cloud Print</li>
+      <li>Google AR&VR</li>
+      <li>Google Fi</li>
+      <li>Google Payments</li>
+      <li>Google Pay</li>
+      <li>Google Pixel</li>
     </ul>
 </div>
