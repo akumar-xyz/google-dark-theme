@@ -96,5 +96,6 @@
       <li>Google Payments</li>
       <li>Google Pay</li>
       <li>Google Pixel</li>
+      <li>Google Lens</li>
     </ul>
 </div>
