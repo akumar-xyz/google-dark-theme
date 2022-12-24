@@ -97,5 +97,8 @@
       <li>Google Pay</li>
       <li>Google Pixel</li>
       <li>Google Lens</li>
+      <li>Google WearOS</li>
+      <li>Google Input Tools</li>
+      <li>Google Trends</li>
     </ul>
 </div>
